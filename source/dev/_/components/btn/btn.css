@@ -10,10 +10,37 @@
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  overflow: hidden;
   background: transparent;
   transition: 0.3s;
   border: none;
   outline: none;
   width: 100%;
+}
+.btn.--green:before, .btn.--green:after {
+  content: "";
+  transition: 0.3s;
+  position: absolute;
+}
+.btn.--green:before {
+  z-index: -1;
+  top: 5px;
+  left: 20px;
+  width: 203px;
+  height: 64px;
+  background: linear-gradient(90deg, #84E28E -9.36%, #54AA39 100%);
+  clip-path: path("M203 33C203 62.2711 157.557 64 101.5 64C50 57 -3.05176e-05 62.2711 -3.05176e-05 33C-3.05176e-05 3.72891 45.4431 0 101.5 0C154.5 7 203 3.72891 203 33Z");
+}
+.btn.--green:after {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 203px;
+  height: 64px;
+  background: url("../../uploads/icons/btn-line.svg") no-repeat;
+}
+.btn.--green:hover:before {
+  left: 0;
+}
+.btn.--md {
+  min-height: 69px;
 }

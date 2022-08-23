@@ -1,0 +1,55 @@
+@import ../../sys/sass/vars
+
+.intro
+	padding: 16px 0 0
+	&__info
+		width: 410px
+		margin-right: auto
+		position: relative
+		&:before
+			z-index: -1
+			content: ""
+			top: -215px
+			left: -195px
+			width: 963px
+			height: 869px
+			background: $yellow-grad
+			clip-path: path('M963 413.195C963 537.344 889.268 640.243 804.221 722.445C716.821 806.922 616.277 869 481.5 869C349.03 869 259.39 804.392 172.333 722.445C84.6294 639.889 0 539.528 0 413.195C0 161.46 215.575 0 481.5 0C645.67 0 717.306 40.2312 804.221 146.555C858.093 212.456 963 316.869 963 413.195Z')
+			position: absolute
+	&__title
+		margin-bottom: 40px
+	&__list
+		margin-bottom: 50px
+		li
+			margin-bottom: 20px
+			&:last-of-type
+				margin-bottom: 0
+	&__btn
+		padding: 10px 20px
+		max-width: 203px
+	&__preview
+		width: 704px
+		margin-top: -138px
+		margin-right: -68px
+		margin-left: auto
+	&__img
+		pointer-events: none
+		position: relative
+		&:before
+			z-index: -1
+			content: ""
+			left: -50px
+			bottom: 10px
+			width: 690px
+			height: 672px
+			background: url('../../uploads/icons/intro-line.svg') no-repeat
+			position: absolute
+
+@media screen and (max-width: 1220px)
+	// .intro
+
+@media screen and (max-width: 992px)
+	// .intro
+
+@media screen and (max-width: 767px)
+	// .intro

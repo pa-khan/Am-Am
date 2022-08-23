@@ -12,9 +12,33 @@
 	font-size: $fzMain
 	font-family: $ffMain
 	font-weight: 400
-	overflow: hidden
 	background: transparent
 	transition: .3s
 	border: none
 	outline: none
 	width: 100%
+	&.--green
+		&:before, &:after
+			content: ""
+			transition: .3s
+			position: absolute
+		&:before
+			z-index: -1
+			top: 5px
+			left: 20px
+			width: 203px
+			height: 64px
+			background: $green-grad
+			clip-path: path('M203 33C203 62.2711 157.557 64 101.5 64C50 57 -3.05176e-05 62.2711 -3.05176e-05 33C-3.05176e-05 3.72891 45.4431 0 101.5 0C154.5 7 203 3.72891 203 33Z')
+		&:after
+			z-index: 1
+			top: 0
+			left: 0
+			width: 203px
+			height: 64px
+			background: url('../../uploads/icons/btn-line.svg') no-repeat
+		&:hover
+			&:before
+				left: 0
+	&.--md
+		min-height: 69px

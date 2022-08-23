@@ -5,7 +5,7 @@
 @import reset
 @import grid
 
-// @import ../../components/btn/btn
+@import ../../components/btn/btn
 // @import ../../components/checkbox/checkbox
 // @import ../../components/radio/radio
 // @import ../../components/input/input
@@ -16,10 +16,12 @@
 // TYPOGRAPHY	
 .h1
 	font-size: 48px
+	font-family: $ffTitle
 	line-height: 72px
 
 .h2
 	font-size: 36px
+	font-family: $ffTitle
 	line-height: 54px
 
 .h3
@@ -36,3 +38,18 @@
 .logo
 	width: 100%
 	display: block
+
+.h-list
+	ul
+		flex-direction: column
+		li
+			padding-left: 34px
+			position: relative
+			&:before
+				content: ""
+				top: 0
+				left: 0
+				width: 20px
+				height: 20px
+				background: url('../../uploads/icons/heart.svg') no-repeat
+				position: absolute
