@@ -7,16 +7,22 @@
 
 html, body {
   height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+html.with-fancybox {
+  overflow: hidden;
 }
 
 body {
   color: #000;
-  font-size: 16px;
-  font-family: "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,11 +47,24 @@ a {
   text-decoration: none;
   outline: none;
   transition: 0.3s;
-  font-weight: 600;
-  border-bottom: 1px solid transparent;
 }
 
-input, textarea, button {
+input, textarea {
+  outline: none !important;
+  appearance: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input::-webkit-autofill {
+  transition: background 5000s ease-in-out 0s;
+}
+
+button {
   outline: none;
   appearance: none;
 }
@@ -72,8 +91,12 @@ picture {
 
 img {
   display: block;
-  max-width: 100% !important;
-  max-height: 100% !important;
+  max-width: 100%;
+  max-height: 100%;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 svg {

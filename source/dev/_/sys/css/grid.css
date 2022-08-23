@@ -21,6 +21,16 @@
 }
 @media screen and (max-width: 767px) {
   .case {
+    width: 560px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .case {
+    width: 390px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .case {
     width: 100%;
   }
 }
@@ -28,8 +38,4 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-}
-
-.grid {
-  display: grid;
 }

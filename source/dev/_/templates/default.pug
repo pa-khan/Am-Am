@@ -4,22 +4,29 @@ block vars
 html(lang="ru")
 	head
 		meta(charset="UTF-8")
+		meta(name="format-detection" content="telephone=no")
 		meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.0, user-scalable=no")
 		meta(name="apple-mobile-web-app-capable" content="yes")
 		title=title
-		link(rel="icon" type="image/png" sizes="16x16" href="_/uploads/favicon.png")
+		link(rel="apple-touch-icon" sizes="180x180" href="_/uploads/logos/favicon.png")
+		link(rel="icon" type="image/png" sizes="16x16" href="_/uploads/logos/favicon.png")
+		link(rel="icon" type="image/png" sizes="32x32" href="_/uploads/logos/favicon.png")
+		link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
+		link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css")
 		link(rel="stylesheet" href="_/sys/css/style.css" + version)
 	body
-		.inner
+		.inner.an.fadeIn
 			
 			+style('header', 'blocks')
 			include ../blocks/header/header
 			
-			main.main.fadeIn
+			main.main
 				block content
 
 			+style('footer', 'blocks')
 			include ../blocks/footer/footer
 
-			script(src="_/sys/js/libs.js" + version)
+			script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+			script(src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js")
+			script(src="https://unpkg.com/imask")
 			script(src="_/sys/js/common.js" + version)

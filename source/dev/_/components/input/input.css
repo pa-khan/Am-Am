@@ -15,7 +15,7 @@
   width: 100%;
   color: #000;
   font-size: 14px;
-  font-family: "Tahoma", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   background: transparent;
   transition: 0.3s;
@@ -24,7 +24,7 @@
 .input__area::placeholder {
   color: #000;
   font-size: 14px;
-  font-family: "Tahoma", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   transition: 0.3s;
 }
