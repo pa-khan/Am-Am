@@ -1,0 +1,67 @@
+.reviews__title {
+  margin-bottom: 70px;
+}
+.reviews__slider {
+  padding-bottom: 100px;
+}
+.reviews__preview {
+  margin-bottom: 30px;
+  position: relative;
+}
+.reviews__preview:before {
+  z-index: -1;
+  content: "";
+  top: 0;
+  left: 15px;
+  width: 306px;
+  height: 304px;
+  background: url("../../uploads/icons/reviews-line.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.reviews__img {
+  width: 290px;
+  height: 270px;
+  clip-path: path("M240.961 26.4762C271.349 54.2618 281.542 93.6309 284.369 130.875C287.274 169.151 282.023 205.325 254.616 235.193C227.679 264.549 193.637 269.954 155.876 270.906C117.834 271.866 76.0596 268.158 45.1372 239.884C-16.4795 183.544 -12.1632 99.635 41.9121 40.704C75.2958 4.32278 99.7103 -2.54839 143.409 1.98674C170.494 4.7977 217.384 4.91785 240.961 26.4762Z");
+}
+.reviews__name {
+  font-family: "Bad Script", sans-serif;
+  margin: 18px 0 10px;
+}
+.reviews__text {
+  line-height: 27px;
+  position: relative;
+}
+.reviews__text:before {
+  z-index: -1;
+  content: "";
+  top: -40px;
+  right: 0;
+  width: 84px;
+  height: 82px;
+  background: url("../../uploads/icons/quote.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.reviews__controls {
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.reviews__arrow {
+  top: 0;
+  margin-top: 0;
+  position: relative;
+}
+.reviews__arrow.swiper-button-prev {
+  left: 0;
+}
+.reviews__arrow.swiper-button-next {
+  right: 0;
+}
+.reviews__pagination {
+  margin: 0 100px;
+  width: auto !important;
+  bottom: 0 !important;
+  position: relative;
+}

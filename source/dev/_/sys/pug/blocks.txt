@@ -18,3 +18,7 @@ include ../../blocks/favs/favs
 +style('awards', 'blocks')
 include ../../blocks/awards/awards
 
+//- reviews 
++style('reviews', 'blocks')
+include ../../blocks/reviews/reviews
+

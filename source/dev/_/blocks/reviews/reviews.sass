@@ -1,0 +1,66 @@
+@import ../../sys/sass/vars
+
+.reviews
+	&__title
+		margin-bottom: 70px
+	&__slider
+		padding-bottom: 100px
+	&__preview
+		margin-bottom: 30px
+		position: relative
+		&:before
+			z-index: -1
+			content: ""
+			top: 0
+			left: 15px
+			width: 306px
+			height: 304px
+			background: url('../../uploads/icons/reviews-line.svg') no-repeat
+			background-size: contain
+			position: absolute
+	&__img
+		width: 290px
+		height: 270px
+		clip-path: path('M240.961 26.4762C271.349 54.2618 281.542 93.6309 284.369 130.875C287.274 169.151 282.023 205.325 254.616 235.193C227.679 264.549 193.637 269.954 155.876 270.906C117.834 271.866 76.0596 268.158 45.1372 239.884C-16.4795 183.544 -12.1632 99.635 41.9121 40.704C75.2958 4.32278 99.7103 -2.54839 143.409 1.98674C170.494 4.7977 217.384 4.91785 240.961 26.4762Z')
+	&__name
+		font-family: $ffTitle
+		margin: 18px 0 10px
+	&__text
+		line-height: 27px
+		position: relative
+		&:before
+			z-index: -1
+			content: ""
+			top: -40px
+			right: 0
+			width: 84px
+			height: 82px
+			background: url('../../uploads/icons/quote.png') no-repeat
+			background-size: contain
+			position: absolute
+	&__controls
+		margin-top: 40px
+		align-items: center
+		justify-content: center
+	&__arrow
+		top: 0
+		margin-top: 0
+		position: relative
+		&.swiper-button-prev
+			left: 0
+		&.swiper-button-next
+			right: 0
+	&__pagination
+		margin: 0 100px
+		width: auto !important
+		bottom: 0 !important
+		position: relative
+
+@media screen and (max-width: 1220px)
+	// .reviews
+
+@media screen and (max-width: 992px)
+	// .reviews
+
+@media screen and (max-width: 767px)
+	// .reviews
