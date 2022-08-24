@@ -26,3 +26,11 @@ include ../../blocks/reviews/reviews
 +style('promo', 'blocks')
 include ../../blocks/promo/promo
 
+//- intro-news 
++style('intro-news', 'blocks')
+include ../../blocks/intro-news/intro-news
+
+//- news 
++style('news', 'blocks')
+include ../../blocks/news/news
+
