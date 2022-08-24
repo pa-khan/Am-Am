@@ -286,5 +286,19 @@ block content
 			a.intro-arts__link.link(href="") Все статьи
 				<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L13.9342 10.5L1 20" stroke="#656565" stroke-linecap="square"/></svg>
 
-
+	+style('sub', 'blocks')
+	.sub
+		.case
+			.sub__wrap
+				.sub__title Подпишитесь на нашу рассылку #[br]и получайте полезные материалы и новости компании прямо на почту
+				form.sub__form
+					.sub__input.input.--gray.--required
+						.input__wrap
+							input.input__area(type="email" name="email" placeholder="Электронная почта")
+					.sub__check.check.--check.--required
+						input.check__input(type="check" name="policy-check")
+						.check__wrap
+							.check__point
+							.check__text Я согласен на обработку своих #[a(href="" target="_blank") персональных данных].
+					button.sub__btn.btn.--green.--md Подписаться
 

@@ -6,15 +6,10 @@
 .input__wrap {
   position: relative;
 }
-.input__label {
-  font-size: 13px;
-  font-weight: 600;
-  display: block;
-}
 .input__area {
   width: 100%;
-  color: #000;
-  font-size: 14px;
+  color: #656565;
+  font-size: 12px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   background: transparent;
@@ -22,14 +17,29 @@
   position: relative;
 }
 .input__area::placeholder {
-  color: #000;
-  font-size: 14px;
+  color: #656565;
+  font-size: 12px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   transition: 0.3s;
+  opacity: 1;
+}
+.input__area:focus::placeholder {
+  opacity: 0;
+}
+.input.--gray .input__wrap:before {
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 380px;
+  height: 64px;
+  transform: translate(-50%, -50%);
+  background: url("../../uploads/icons/input-line.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
 }
 .input.--error .input__area {
-  border: 1px solid #ff1d1d;
+  color: #ff1d1d;
 }
 .input.--error .input__area::placeholder {
   color: #ff1d1d;

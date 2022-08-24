@@ -5,6 +5,14 @@ const mailPattern = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  // CHECK INIT
+  let checks = document.querySelectorAll('.check');
+  if (checks) {
+    checks.forEach((check) => {
+      new Check(check);
+    });
+  }
+
   // ANIMATION
   let anBlocks = document.querySelectorAll('.an');
 
@@ -61,10 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
       slidesPerView: 3,
       spaceBetween: 30,
       speed: 900,
-      // effect: 'fade',
-      // fadeEffect: {
-      //   crossFade: true
-      // },
       navigation: {
         prevEl: '.reviews__arrow.swiper-button-prev',
         nextEl: '.reviews__arrow.swiper-button-next',

@@ -38,3 +38,7 @@ include ../../blocks/news/news
 +style('arts', 'blocks')
 include ../../blocks/arts/arts
 
+//- sub 
++style('sub', 'blocks')
+include ../../blocks/sub/sub
+

@@ -1,0 +1,67 @@
+@import ../../sys/sass/vars
+
+.check
+  cursor: pointer
+  transition: .3s
+  &__input
+    display: none
+  &__wrap
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    position: relative
+  &__point
+    transition: .3s
+    position: relative
+  &__text
+    font-size: 18px
+    font-weight: 400
+    transition: .3s
+    user-select: none
+    -moz-user-select: none
+    -webkit-user-select: none
+    -webkit-touch-callout: none
+    -webkit-tap-highlight-color: transparent
+    a
+      border-bottom: 1px solid transparent
+      &:hover
+        border-color: rgba($cMain, .7 )
+
+  &.--check
+    .check
+      &__point
+        width: 20px
+        height: 20px
+        position: relative
+        &:before, &:after
+          content: ""
+          width: 20px
+          height: 20px
+          position: absolute
+        &:before
+          top: 0
+          left: 0
+          background: url('../../uploads/icons/slider-bullet-line.svg') no-repeat
+          background-size: contain
+        &:after
+          opacity: 0
+          z-index: -1
+          top: 2px
+          left: 4px
+          background: $green-grad
+          clip-path: path('M19.6286 10.3125C19.6286 19.4597 15.2346 20 9.81432 20C4.83464 17.8125 0 19.4597 0 10.3125C0 1.16528 4.39402 0 9.81432 0C14.939 2.1875 19.6286 1.16528 19.6286 10.3125Z')
+      &__text
+        width: calc( 100% - 20px )
+        font-size: 12px
+        padding-left: 15px
+    &.--checked
+      .check
+        &__point
+          &:after
+            opacity: 1
+            left: 0
+
+  &.--error
+    .check
+      &__text
+        color: #ff1d1d
