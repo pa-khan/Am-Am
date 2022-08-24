@@ -37,17 +37,19 @@
           content: ""
           width: 20px
           height: 20px
+          transition: .5s
           position: absolute
         &:before
+          z-index: 1
           top: 0
           left: 0
           background: url('../../uploads/icons/slider-bullet-line.svg') no-repeat
           background-size: contain
         &:after
           opacity: 0
-          z-index: -1
           top: 2px
           left: 4px
+          transform: scale(0)
           background: $green-grad
           clip-path: path('M19.6286 10.3125C19.6286 19.4597 15.2346 20 9.81432 20C4.83464 17.8125 0 19.4597 0 10.3125C0 1.16528 4.39402 0 9.81432 0C14.939 2.1875 19.6286 1.16528 19.6286 10.3125Z')
       &__text
@@ -59,7 +61,7 @@
         &__point
           &:after
             opacity: 1
-            left: 0
+            transform: scale(1)
 
   &.--error
     .check
