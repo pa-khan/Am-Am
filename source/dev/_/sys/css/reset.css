@@ -101,6 +101,7 @@ img {
 
 svg {
   display: block;
+  transition: 0.3s;
 }
 
 path, circle, rect, line {

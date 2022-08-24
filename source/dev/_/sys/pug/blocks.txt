@@ -10,3 +10,7 @@ include ../../blocks/footer/footer
 +style('intro', 'blocks')
 include ../../blocks/intro/intro
 
+//- favs 
++style('favs', 'blocks')
+include ../../blocks/favs/favs
+

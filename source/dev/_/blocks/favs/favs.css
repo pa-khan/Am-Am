@@ -1,0 +1,133 @@
+.favs {
+  padding-bottom: 66px;
+}
+.favs__title {
+  margin-bottom: 78px;
+}
+.favs__list {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(374px, 0fr));
+  gap: 40px 0;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.favs__act {
+  margin-top: 50px;
+  justify-content: center;
+}
+.favs__btn {
+  max-width: 203px;
+}
+.favs__link {
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+}
+.favs__link svg {
+  left: 0;
+  margin-left: 15px;
+  position: relative;
+}
+.favs__link:hover svg {
+  left: 5px;
+}
+.favs .p-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  position: relative;
+}
+.favs .p-item:before, .favs .p-item:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+}
+.favs .p-item:before {
+  top: -10px;
+  left: 128px;
+  width: 178px;
+  height: 172px;
+  background: url("../../uploads/products/logo.png") no-repeat;
+}
+.favs .p-item__img {
+  width: 200px;
+}
+.favs .p-item__name {
+  min-height: 60px;
+  width: calc( 100% - 184px );
+  margin-left: -18px;
+  font-family: "Bad Script", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+}
+.favs .p-item__name-text {
+  display: inline-block;
+  position: relative;
+}
+.favs .p-item__name-text:before, .favs .p-item__name-text:after {
+  content: "";
+  position: absolute;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+.favs .p-item__name-text:before {
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: translateY(5px);
+  background: url("../../uploads/icons/line.svg") repeat-x;
+  background-position-x: center;
+}
+.favs .p-item__name-text:after {
+  z-index: -1;
+  top: 10px;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-50%) scale(0);
+  background: url("../../uploads/icons/nav-bg.svg") no-repeat;
+  background-size: contain;
+}
+.favs .p-item__name-text:hover:before, .favs .p-item__name-text:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+.favs .p-item__name-text:hover:before {
+  transform: translateY(0);
+}
+.favs .p-item__name-text:hover:after {
+  transform: translateX(-50%) scale(1);
+}
+.favs .p-item.--lg {
+  padding-left: 38px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.favs .p-item.--lg:before {
+  top: auto;
+  bottom: 10px;
+  left: -5px;
+  width: 276px;
+  height: 266px;
+  background: url("../../uploads/products/logo-lg.png") no-repeat;
+}
+.favs .p-item.--lg .p-item__img {
+  width: 142px;
+  margin-bottom: 20px;
+}
+.favs .p-item.--lg .p-item__name {
+  min-height: auto;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 6px;
+}
+.favs .p-item.--f-right {
+  grid-column-end: 2;
+  grid-row-end: span 2;
+}
+.favs .p-item.--up {
+  margin-top: -55%;
+}
