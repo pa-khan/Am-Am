@@ -22,3 +22,7 @@ include ../../blocks/awards/awards
 +style('reviews', 'blocks')
 include ../../blocks/reviews/reviews
 
+//- promo 
++style('promo', 'blocks')
+include ../../blocks/promo/promo
+

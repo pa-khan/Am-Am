@@ -1,0 +1,49 @@
+.promo {
+  padding: 35px 0 100px;
+}
+.promo__info {
+  width: 360px;
+  margin-top: 58px;
+  margin-left: auto;
+  position: relative;
+}
+.promo__info:before {
+  z-index: -1;
+  content: "";
+  top: -90px;
+  left: -130px;
+  width: 757px;
+  height: 476px;
+  background: linear-gradient(123deg, rgba(250, 215, 185, 0.3) 6.06%, #FAD7B9 93.02%);
+  position: absolute;
+  clip-path: path("M757 226.33C757 294.333 699.04 350.697 632.186 395.724C563.483 441.997 484.446 476 378.5 476C274.367 476 203.902 440.61 135.469 395.724C66.5259 350.503 0 295.53 0 226.33C0 88.4409 169.46 0 378.5 0C507.551 0 563.864 22.0369 632.186 80.2764C674.534 116.374 757 173.567 757 226.33Z");
+}
+.promo__arrow {
+  margin-top: -12px;
+  right: -65px;
+  transform: scale(1, -1);
+  position: absolute;
+}
+.promo__text {
+  margin: 30px 0;
+  line-height: 31px;
+}
+.promo__text i {
+  display: block;
+  position: relative;
+}
+.promo__text i:before {
+  z-index: -1;
+  content: "";
+  top: 2px;
+  left: -15px;
+  width: 250px;
+  height: 26px;
+  background: linear-gradient(131.45deg, rgba(252, 227, 130, 0.3) 7.7%, #FCE382 91.64%);
+  position: absolute;
+  clip-path: path("M249 13.8426C249 32.4806 193.259 24.1391 124.5 24.1391C61.3301 19.6819 0 32.4806 0 13.8426C0 -4.79533 55.7405 0.781777 124.5 0.781777C189.51 5.23893 249 -4.79533 249 13.8426Z");
+}
+.promo__img {
+  width: 375px;
+  margin-right: 135px;
+}

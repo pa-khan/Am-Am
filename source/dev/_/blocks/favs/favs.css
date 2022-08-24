@@ -21,16 +21,6 @@
 }
 .favs__link {
   margin-left: 70px;
-  display: flex;
-  align-items: center;
-}
-.favs__link svg {
-  left: 0;
-  margin-left: 15px;
-  position: relative;
-}
-.favs__link:hover svg {
-  left: 5px;
 }
 .favs .p-item {
   display: flex;

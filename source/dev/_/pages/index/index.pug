@@ -92,7 +92,7 @@ block content
 						.p-item__name-text Фруктовое пюре «Груша-яблоко»
 			.favs__act.row
 				.favs__btn.btn.--green.--md Где купить
-				a.favs__link(href="") Смотреть все
+				a.favs__link(href="").link Смотреть все
 					<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L13.9342 10.5L1 20" stroke="#656565" stroke-linecap="square"/></svg>
 
 	+style('awards', 'blocks')
@@ -214,3 +214,20 @@ block content
 					.reviews__pagination.swiper-pagination
 					.reviews__arrow.swiper-button-next
 						<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.13477 1L14.0689 10.5L1.13477 20" stroke="#656565" stroke-linecap="square"/></svg>
+
+	+style('promo', 'blocks')
+	.promo
+		.case
+			.promo__wrap.row
+				.promo__info
+					.promo__title.h2 #[h2 Акция!]
+					.promo__arrow
+						img(src="_/uploads/icons/arrow.svg", alt="" width="128" heigth="24")
+					.promo__text
+						p Отправьте отзыв о любом продукте “Ам-Ам” на нашу электронную почту и получите целый набор на сумму #[i 2645 рублей бесплатно.]
+					a.promo__link.link(href="") Узнать подробности
+						<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L13.9342 10.5L1 20" stroke="#656565" stroke-linecap="square"/></svg>
+				.promo__img
+					img(src="_/uploads/intro-img.png", alt="" width="375" height="432")
+
+						

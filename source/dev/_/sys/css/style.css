@@ -290,6 +290,19 @@ path, circle, rect, line {
   background-size: contain;
 }
 
+.link {
+  display: flex;
+  align-items: center;
+}
+.link svg {
+  left: 0;
+  margin-left: 15px;
+  position: relative;
+}
+.link:hover svg {
+  left: 5px;
+}
+
 .h-list ul {
   flex-direction: column;
 }
