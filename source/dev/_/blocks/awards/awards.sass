@@ -1,0 +1,48 @@
+@import ../../sys/sass/vars
+
+.awards
+	padding: 35px 0
+	&__list-wrap
+		width: 100%
+		max-width: 1004px
+		margin: 0 auto
+		position: relative
+		&:before, &:after
+			z-index: -1
+			content: ""
+			position: absolute
+		&:before
+			top: 0
+			left: 50%
+			width: 1010px
+			height: 235px
+			transform: translateX(-50%)
+			background: $peach-grad
+			clip-path: path('M1005.03 75.644C1013.99 178.002 789.655 203.72 512.272 227.988C255.296 225.805 9.49652 265.883 0.541401 163.526C-8.41372 61.1682 215.309 28.4557 492.692 4.18779C757.09 5.72146 996.079 -26.7135 1005.03 75.644Z')
+		&:after
+			top: 0
+			left: 50%
+			width: 1010px
+			height: 248px
+			transform: translateX(-50%)
+			background: url('../../uploads/icons/awards-line.svg') no-repeat
+	&__list
+		padding: 88px 130px
+		margin: 0 -50px -50px
+		align-items: center
+		justify-content: center
+	&__item
+		width: calc( 100% / 5 - 100px )
+		margin: 0 50px 50px
+		transition: .4s
+		&:hover
+			transform: translateY(-5px)
+
+@media screen and (max-width: 1220px)
+	// .awards
+
+@media screen and (max-width: 992px)
+	// .awards
+
+@media screen and (max-width: 767px)
+	// .awards

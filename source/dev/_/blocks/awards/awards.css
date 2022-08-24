@@ -1,0 +1,45 @@
+.awards {
+  padding: 35px 0;
+}
+.awards__list-wrap {
+  width: 100%;
+  max-width: 1004px;
+  margin: 0 auto;
+  position: relative;
+}
+.awards__list-wrap:before, .awards__list-wrap:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+}
+.awards__list-wrap:before {
+  top: 0;
+  left: 50%;
+  width: 1010px;
+  height: 235px;
+  transform: translateX(-50%);
+  background: linear-gradient(123deg, rgba(250, 215, 185, 0.3) 6.06%, #FAD7B9 93.02%);
+  clip-path: path("M1005.03 75.644C1013.99 178.002 789.655 203.72 512.272 227.988C255.296 225.805 9.49652 265.883 0.541401 163.526C-8.41372 61.1682 215.309 28.4557 492.692 4.18779C757.09 5.72146 996.079 -26.7135 1005.03 75.644Z");
+}
+.awards__list-wrap:after {
+  top: 0;
+  left: 50%;
+  width: 1010px;
+  height: 248px;
+  transform: translateX(-50%);
+  background: url("../../uploads/icons/awards-line.svg") no-repeat;
+}
+.awards__list {
+  padding: 88px 130px;
+  margin: 0 -50px -50px;
+  align-items: center;
+  justify-content: center;
+}
+.awards__item {
+  width: calc( 100% / 5 - 100px );
+  margin: 0 50px 50px;
+  transition: 0.4s;
+}
+.awards__item:hover {
+  transform: translateY(-5px);
+}
