@@ -1,18 +1,18 @@
 @import ../../sys/sass/vars
 
-.intro-news
+.intro-arts
 	padding-bottom: 85px
 	position: relative
 	&:before
 		z-index: -1
 		content: ""
-		top: 55px
+		top: 70px
 		left: 0
 		width: 100%
 		height: 100%
-		background: $yellow-grad
+		background: $peach-grad
 		position: absolute
-		clip-path: path('M1341.58 290.604C1312.89 481.601 1011.42 466.655 641.636 434.303C308.772 358.906 -26.2242 364.444 2.46475 173.447C31.1537 -17.5498 334.579 -15.6549 704.364 16.6971C1047.12 92.9606 1370.26 99.6071 1341.58 290.604Z')
+		clip-path: path('M1339.72 159.518C1344.64 352.595 1045.16 390.225 675.371 422.577C334.471 406.126 5.52584 469.752 0.612715 276.675C-4.30041 83.598 294.844 32.775 664.629 0.422979C1015.42 16.0083 1334.81 -33.559 1339.72 159.518Z')
 	&__title
 		margin-bottom: 50px
 	&__list
@@ -21,7 +21,7 @@
 		margin-top: 40px
 		justify-content: center
 
-.n-item
+.a-item
 	width: calc( 100% / 4 - 30px )
 	margin: 0 15px 30px
 	&__preview
@@ -51,16 +51,16 @@
 		-webkit-line-clamp: 3
 		-webkit-box-orient: vertical
 	&:hover
-		.n-item
+		.a-item
 			&__img
 				img
 					transform: scale(1.05)
 
 @media screen and (max-width: 1220px)
-	// .news
+	// .arts
 
 @media screen and (max-width: 992px)
-	// .news
+	// .arts
 
 @media screen and (max-width: 767px)
-	// .news
+	// .arts

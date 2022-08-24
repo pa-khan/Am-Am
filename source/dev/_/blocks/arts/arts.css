@@ -1,0 +1,64 @@
+.intro-arts {
+  padding-bottom: 85px;
+  position: relative;
+}
+.intro-arts:before {
+  z-index: -1;
+  content: "";
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(123deg, rgba(250, 215, 185, 0.3) 6.06%, #FAD7B9 93.02%);
+  position: absolute;
+  clip-path: path("M1339.72 159.518C1344.64 352.595 1045.16 390.225 675.371 422.577C334.471 406.126 5.52584 469.752 0.612715 276.675C-4.30041 83.598 294.844 32.775 664.629 0.422979C1015.42 16.0083 1334.81 -33.559 1339.72 159.518Z");
+}
+.intro-arts__title {
+  margin-bottom: 50px;
+}
+.intro-arts__list {
+  margin: 0 -15px -30px;
+}
+.intro-arts__link {
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.a-item {
+  width: calc( 100% / 4 - 30px );
+  margin: 0 15px 30px;
+}
+.a-item__preview {
+  margin-bottom: 30px;
+  position: relative;
+}
+.a-item__preview:before {
+  z-index: -1;
+  content: "";
+  top: 0;
+  left: 5px;
+  width: 272px;
+  height: 198px;
+  background: url("../../uploads/icons/news-line.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.a-item__img {
+  width: 259px;
+  height: 187px;
+  clip-path: path("M42.1238 22.2637C100.784 6.42329 99.0225 18.0315 137.338 6.42329C175.653 -5.18494 203.447 -1.72325 231.821 22.2637C268.836 53.5561 266.729 123.789 231.821 158.177C202.131 187.425 176.209 172.143 137.338 175.468C97.9937 178.833 72.4002 199.531 32.1013 175.468C-8.19765 151.405 -16.5369 38.1041 42.1238 22.2637Z");
+}
+.a-item__img img {
+  transition: 0.4s;
+  transform: scale(1);
+}
+.a-item__text {
+  line-height: 27px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.a-item:hover .a-item__img img {
+  transform: scale(1.05);
+}
