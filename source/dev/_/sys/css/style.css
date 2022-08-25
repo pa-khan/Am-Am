@@ -542,6 +542,14 @@ path, circle, rect, line {
   position: absolute;
 }
 
+.pt0 {
+  padding-top: 0 !important;
+}
+
+.tac {
+  text-align: center;
+}
+
 .form__wrap {
   width: 100%;
   max-width: 828px;

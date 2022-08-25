@@ -1,0 +1,77 @@
+@import ../../sys/sass/vars
+
+.win
+	&__title
+		margin-bottom: 40px
+	&__desc
+		line-height: 31px
+		max-width: 438px
+		margin: 0 auto
+	&__list
+		margin-top: -52px
+		justify-content: center
+	&__item
+		width: 50%
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		position: relative
+		&:before
+			z-index: -1
+			content: ""
+			top: 15px
+			left: 0
+			width: 580px
+			height: 366px
+			background: $yellow-grad
+			clip-path: path('M560 174.027C560 226.315 517.123 269.653 467.668 304.275C416.843 339.854 358.375 366 280 366C202.966 366 150.839 338.789 100.214 304.275C49.2133 269.505 0 227.235 0 174.027C0 68.0028 125.36 0 280 0C375.467 0 417.125 16.9443 467.668 61.7251C498.995 89.4811 560 133.457 560 174.027Z')
+			position: absolute
+		&.--reverse
+			&:before
+				left: 25px
+				background: $gray-grad
+			.win
+				&__text
+					order: 1
+					padding-left: 0
+					padding-right: 40px
+					text-align: right
+				&__img
+					order: 2
+		&.--fd
+			flex-direction: column
+			&:before
+				top: -60px
+				left: 50%
+				width: 372px
+				height: 243px
+				transform: translateX(-50%)
+				background: $peach-grad
+				clip-path: path('M372 115.542C372 150.258 343.518 179.032 310.665 202.019C276.903 225.641 238.063 243 186 243C134.828 243 100.2 224.933 66.571 202.019C32.6917 178.933 0 150.869 0 115.542C0 45.1494 83.275 0 186 0C249.418 0 277.09 11.2499 310.665 40.9814C331.475 59.4096 372 88.6067 372 115.542Z')
+			.win
+				&__text
+					order: 1
+					padding-left: 0
+					padding-bottom: 30px
+					text-align: center
+				&__img
+					order: 2
+
+	&__img
+		width: 192px
+	&__text
+		width: calc( 100% - 192px )
+		padding-left: 40px
+		line-height: 31px
+	&__link
+		margin-top: 55px
+		justify-content: center
+
+@media screen and (max-width: 1220px)
+	// .win
+
+@media screen and (max-width: 992px)
+	// .win
+
+@media screen and (max-width: 767px)
+	// .win

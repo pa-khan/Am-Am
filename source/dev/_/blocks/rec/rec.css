@@ -1,0 +1,62 @@
+.rec {
+  padding-bottom: 122px;
+}
+.rec__title {
+  margin-bottom: 45px;
+}
+.rec__desc {
+  line-height: 31px;
+  max-width: 710px;
+  margin: 0 auto 70px;
+}
+.rec__preview {
+  width: 335px;
+  position: relative;
+}
+.rec__preview:before {
+  z-index: -1;
+  content: "";
+  top: -10px;
+  left: 15px;
+  width: 359px;
+  height: 355px;
+  background: url("../../uploads/icons/reviews-line.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.rec__img {
+  width: 335px;
+  height: 315px;
+  clip-path: path("M282.056 30.3588C317.57 62.8315 329.483 108.842 332.786 152.369C336.181 197.101 330.044 239.378 298.014 274.284C266.533 308.592 226.748 314.909 182.617 316.022C138.158 317.143 89.3368 312.81 53.198 279.767C-18.8128 213.922 -13.7684 115.859 49.429 46.9867C88.4441 4.46828 116.977 -3.56199 168.047 1.73817C199.702 5.02331 254.501 5.16373 282.056 30.3588Z");
+}
+.rec__info {
+  width: calc( 100% - 335px );
+  line-height: 31px;
+  padding-top: 15px;
+  padding-left: 65px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.rec__info:before {
+  z-index: -1;
+  content: "";
+  top: -50px;
+  left: 50%;
+  width: 1203px;
+  height: 417px;
+  margin-left: -40px;
+  transform: translateX(-50%);
+  background: linear-gradient(131.45deg, rgba(252, 227, 130, 0.3) 7.7%, #FCE382 91.64%);
+  position: absolute;
+  clip-path: path("M1203 198.276C1203 257.851 1110.89 307.228 1004.65 346.674C895.468 387.211 769.867 417 601.5 417C436.015 417 324.035 385.997 215.282 346.674C105.721 307.058 0 258.899 0 198.276C0 77.4787 269.301 0 601.5 0C806.584 0 896.074 19.3054 1004.65 70.3261C1071.95 101.95 1203 152.054 1203 198.276Z");
+}
+.rec__info p {
+  margin-bottom: 20px;
+}
+.rec__info p:last-of-type {
+  margin-bottom: 0;
+}
+.rec__info p i {
+  font-family: "Bad Script", sans-serif;
+}

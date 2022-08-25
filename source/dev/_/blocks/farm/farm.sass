@@ -1,0 +1,56 @@
+@import ../../sys/sass/vars
+
+.farm
+	padding-bottom: 200px
+	&__info
+		width: calc( 100% - 585px - 25px )
+		margin-right: auto
+		position: relative
+		&:before
+			z-index: -1
+			content: ""
+			top: 0
+			left: 50%
+			width: 789px
+			height: 530px
+			margin-left: -30px
+			transform: translateX(-50%)
+			background: $yellow-grad
+			position: absolute
+			clip-path: path('M789 252.006C789 327.724 728.59 390.482 658.91 440.617C587.302 492.139 504.925 530 394.5 530C285.965 530 212.522 490.596 141.195 440.617C69.3381 390.266 0 329.056 0 252.006C0 98.4741 176.624 0 394.5 0C529.007 0 587.7 24.5369 658.91 89.3834C703.048 129.576 789 193.257 789 252.006Z')
+	&__title
+		margin-bottom: 40px
+	&__text
+		line-height: 31px
+		p
+			margin-bottom: 20px
+			&:last-of-type
+				margin-bottom: 0
+	&__preview
+		width: 585px
+		margin-right: 25px
+		margin-left: auto
+		position: relative
+		&:before
+			z-index: -1
+			content: ""
+			top: 0
+			left: 0
+			width: 610px
+			height: 437px
+			background: url('../../uploads/icons/farm-line.svg') no-repeat
+			background-size: contain
+			position: absolute
+	&__img
+		width: 585px
+		height: 419px
+		clip-path: path('M95.5802 49.8886C228.004 14.3933 224.026 40.405 310.521 14.3933C397.016 -11.6184 459.76 -3.86145 523.813 49.8886C607.374 120.009 602.616 277.386 523.813 354.442C456.788 419.982 398.272 385.739 310.521 393.189C221.704 400.73 163.928 447.109 72.9548 393.189C-18.0181 339.269 -36.8436 85.3838 95.5802 49.8886Z')
+
+@media screen and (max-width: 1220px)
+	// .farm
+
+@media screen and (max-width: 992px)
+	// .farm
+
+@media screen and (max-width: 767px)
+	// .farm

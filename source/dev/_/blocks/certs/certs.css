@@ -1,0 +1,45 @@
+.certs {
+  padding-bottom: 100px;
+}
+.certs__title {
+  margin-bottom: 40px;
+}
+.certs__desc {
+  line-height: 31px;
+  max-width: 500px;
+  margin: 0 auto 72px;
+}
+.certs__list {
+  margin: 0 -50px -100px;
+  position: relative;
+}
+.certs__list:before, .certs__list:after {
+  z-index: -1;
+  content: "";
+  width: 359px;
+  height: 355px;
+  background: url(../../uploads/icons/reviews-line.svg) no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.certs__list:before {
+  top: -25px;
+  left: 240px;
+}
+.certs__list:after {
+  top: 105px;
+  right: 330px;
+}
+.certs__item {
+  width: calc( 100% / 3 - 100px );
+  margin: 0 50px 100px;
+  transform: translateY(0);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.certs__item img {
+  border: 1px solid #656565;
+}
+.certs__item:hover {
+  transform: translateY(-5px);
+}

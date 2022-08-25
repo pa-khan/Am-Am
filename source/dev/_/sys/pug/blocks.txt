@@ -46,3 +46,23 @@ include ../../blocks/sub/sub
 +style('contacts', 'blocks')
 include ../../blocks/contacts/contacts
 
+//- about 
++style('about', 'blocks')
+include ../../blocks/about/about
+
+//- win 
++style('win', 'blocks')
+include ../../blocks/win/win
+
+//- certs 
++style('certs', 'blocks')
+include ../../blocks/certs/certs
+
+//- rec 
++style('rec', 'blocks')
+include ../../blocks/rec/rec
+
+//- farm 
++style('farm', 'blocks')
+include ../../blocks/farm/farm
+
