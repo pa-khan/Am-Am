@@ -23,9 +23,9 @@
     -webkit-touch-callout: none
     -webkit-tap-highlight-color: transparent
     a
-      border-bottom: 1px solid transparent
+      border-bottom: 1px dashed rgba($cMain, .5)
       &:hover
-        border-color: rgba($cMain, .7 )
+        border-color: transparent
 
   &.--check
     .check
@@ -37,7 +37,7 @@
           content: ""
           width: 20px
           height: 20px
-          transition: .5s
+          transition: .4s
           position: absolute
         &:before
           z-index: 1

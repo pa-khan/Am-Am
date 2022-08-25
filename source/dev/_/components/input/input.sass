@@ -12,6 +12,7 @@
 		font-size: 12px
 		font-family: $ffMain
 		font-weight: 400
+		text-align: center
 		background: transparent
 		transition: .3s
 		position: relative
@@ -26,18 +27,21 @@
 			&::placeholder
 				opacity: 0
 	&.--gray
-		.input
-			&__wrap
-				&:before
-					content: ""
-					top: 50%
-					left: 50%
-					width: 380px
-					height: 64px
-					transform: translate(-50%, -50%)
-					background: url('../../uploads/icons/input-line.svg') no-repeat
-					background-size: contain
-					position: absolute
+		width: 100%
+		min-height: 64px
+		display: flex
+		align-items: center
+		justify-content: center
+		&:before
+			content: ""
+			top: 50%
+			left: 50%
+			width: 380px
+			height: 64px
+			transform: translate(-50%, -50%)
+			background: url('../../uploads/icons/input-line.svg') no-repeat
+			background-size: contain
+			position: absolute
 
 	&.--error
 		.input

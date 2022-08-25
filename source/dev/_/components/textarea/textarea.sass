@@ -1,32 +1,59 @@
 @import ../../sys/sass/vars
 
 .textarea
+	display: block
+	transition: .3s
+	position: relative
 	&__wrap
 		position: relative
-	&__label
-		font-size: 13px
-		font-weight: 600
-		display: block
 	&__area
 		width: 100%
-		min-height: 100px
-		color: $cMain
-		font-size: 14px
+		color: $gray
+		font-size: 12px
 		font-family: $ffMain
 		font-weight: 400
+		text-align: center
 		background: transparent
 		transition: .3s
 		position: relative
 		resize: none
+		scrollbar-width: none
+		&::-webkit-scrollbar
+			width: 0
 		&::placeholder
-			color: $cMain
-			font-size: 14px
+			color: $gray
+			font-size: 12px
 			font-family: $ffMain
 			font-weight: 400
 			transition: .3s
+			opacity: 1
+		&:focus
+			&::placeholder
+				opacity: 0
+	&.--gray
+		width: 100%
+		min-height: 120px
+		display: flex
+		align-items: center
+		justify-content: center
+		&:before
+			content: ""
+			top: 50%
+			left: 50%
+			width: 380px
+			height: 119px
+			transform: translate(-50%, -50%)
+			background: url('../../uploads/icons/textarea-line.svg') no-repeat
+			background-size: contain
+			position: absolute
+		.textarea
+			&__wrap
+				width: 100%
+			&__area
+				padding: 20px
 	&.--error
 		.textarea
 			&__area
-				border: 1px solid #ff1d1d
+				color: #ff1d1d
 				&::placeholder
 					color: #ff1d1d

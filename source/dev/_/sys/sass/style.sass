@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap')
 
 @import vars
@@ -8,7 +8,7 @@
 @import ../../components/btn/btn
 @import ../../components/input/input
 @import ../../components/check/check
-// @import ../../components/textarea/textarea
+@import ../../components/textarea/textarea
 
 // TYPOGRAPHY	
 .h1
@@ -23,11 +23,15 @@
 
 .h3
 	font-size: 24px
+	font-family: $ffTitle
 	line-height: 36px
 
 // COMMON ELEMENTS
 .inner
 	overflow: hidden
+
+.page
+	padding-top: 85px
 
 .overflow-disable
 	overflow: hidden
@@ -133,6 +137,54 @@
 				height: 20px
 				background: url('../../uploads/icons/heart.svg') no-repeat
 				position: absolute
+
+.form
+	&__wrap
+		width: 100%
+		max-width: 828px
+		padding: 88px 140px
+		margin: 0 auto
+		position: relative
+		&:before, &:after
+			content: ""
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			position: absolute
+		&:before
+			width: 828px
+			height: 498px
+			background: url('../../uploads/icons/form-line.svg') no-repeat
+			background-size: contain
+		&:after
+			z-index: -1
+			width: 757px
+			height: 476px
+			background: $yellow-grad
+			clip-path: path('M757 226.33C757 294.333 699.04 350.697 632.186 395.724C563.483 441.996 484.446 476 378.5 476C274.367 476 203.902 440.61 135.469 395.724C66.5259 350.503 0 295.53 0 226.33C0 88.4409 169.46 0 378.5 0C507.551 0 563.864 22.0369 632.186 80.2764C674.534 116.374 757 173.567 757 226.33Z')
+	&__title
+		text-align: center
+		margin-bottom: 30px
+	&__subtitle
+		line-height: 31px
+		text-align: center
+		margin: 0 auto 60px
+		max-width: 540px
+	&__form
+		margin: 0 auto
+		max-width: 380px
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__input
+		margin-bottom: 20px
+	&__textarea
+		margin-bottom: 20px
+	&__check
+		margin-bottom: 20px
+	&__btn
+		max-width: 203px
+		margin-left: -15px
 
 // SLDIER
 .swiper-button-prev, .swiper-button-next

@@ -42,3 +42,7 @@ include ../../blocks/arts/arts
 +style('sub', 'blocks')
 include ../../blocks/sub/sub
 
+//- contacts 
++style('contacts', 'blocks')
+include ../../blocks/contacts/contacts
+

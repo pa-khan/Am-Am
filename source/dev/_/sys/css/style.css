@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
 *, :before, :after {
   padding: 0;
@@ -76,7 +76,7 @@ var {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 i {
@@ -213,6 +213,7 @@ path, circle, rect, line {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  text-align: center;
   background: transparent;
   transition: 0.3s;
   position: relative;
@@ -228,7 +229,14 @@ path, circle, rect, line {
 .input__area:focus::placeholder {
   opacity: 0;
 }
-.input.--gray .input__wrap:before {
+.input.--gray {
+  width: 100%;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input.--gray:before {
   content: "";
   top: 50%;
   left: 50%;
@@ -274,10 +282,10 @@ path, circle, rect, line {
   -webkit-tap-highlight-color: transparent;
 }
 .check__text a {
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
 }
 .check__text a:hover {
-  border-color: rgba(0, 0, 0, 0.7);
+  border-color: transparent;
 }
 .check.--check .check__point {
   width: 20px;
@@ -288,7 +296,7 @@ path, circle, rect, line {
   content: "";
   width: 20px;
   height: 20px;
-  transition: 0.5s;
+  transition: 0.4s;
   position: absolute;
 }
 .check.--check .check__point:before {
@@ -319,6 +327,72 @@ path, circle, rect, line {
   color: #ff1d1d;
 }
 
+.textarea {
+  display: block;
+  transition: 0.3s;
+  position: relative;
+}
+.textarea__wrap {
+  position: relative;
+}
+.textarea__area {
+  width: 100%;
+  color: #656565;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  background: transparent;
+  transition: 0.3s;
+  position: relative;
+  resize: none;
+  scrollbar-width: none;
+}
+.textarea__area::-webkit-scrollbar {
+  width: 0;
+}
+.textarea__area::placeholder {
+  color: #656565;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  transition: 0.3s;
+  opacity: 1;
+}
+.textarea__area:focus::placeholder {
+  opacity: 0;
+}
+.textarea.--gray {
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.textarea.--gray:before {
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 380px;
+  height: 119px;
+  transform: translate(-50%, -50%);
+  background: url("../../uploads/icons/textarea-line.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.textarea.--gray .textarea__wrap {
+  width: 100%;
+}
+.textarea.--gray .textarea__area {
+  padding: 20px;
+}
+.textarea.--error .textarea__area {
+  color: #ff1d1d;
+}
+.textarea.--error .textarea__area::placeholder {
+  color: #ff1d1d;
+}
+
 .h1 {
   font-size: 48px;
   font-family: "Bad Script", sans-serif;
@@ -333,11 +407,16 @@ path, circle, rect, line {
 
 .h3 {
   font-size: 24px;
+  font-family: "Bad Script", sans-serif;
   line-height: 36px;
 }
 
 .inner {
   overflow: hidden;
+}
+
+.page {
+  padding-top: 85px;
 }
 
 .overflow-disable {
@@ -461,6 +540,64 @@ path, circle, rect, line {
   height: 20px;
   background: url("../../uploads/icons/heart.svg") no-repeat;
   position: absolute;
+}
+
+.form__wrap {
+  width: 100%;
+  max-width: 828px;
+  padding: 88px 140px;
+  margin: 0 auto;
+  position: relative;
+}
+.form__wrap:before, .form__wrap:after {
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.form__wrap:before {
+  width: 828px;
+  height: 498px;
+  background: url("../../uploads/icons/form-line.svg") no-repeat;
+  background-size: contain;
+}
+.form__wrap:after {
+  z-index: -1;
+  width: 757px;
+  height: 476px;
+  background: linear-gradient(131.45deg, rgba(252, 227, 130, 0.3) 7.7%, #FCE382 91.64%);
+  clip-path: path("M757 226.33C757 294.333 699.04 350.697 632.186 395.724C563.483 441.996 484.446 476 378.5 476C274.367 476 203.902 440.61 135.469 395.724C66.5259 350.503 0 295.53 0 226.33C0 88.4409 169.46 0 378.5 0C507.551 0 563.864 22.0369 632.186 80.2764C674.534 116.374 757 173.567 757 226.33Z");
+}
+.form__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form__subtitle {
+  line-height: 31px;
+  text-align: center;
+  margin: 0 auto 60px;
+  max-width: 540px;
+}
+.form__form {
+  margin: 0 auto;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form__input {
+  margin-bottom: 20px;
+}
+.form__textarea {
+  margin-bottom: 20px;
+}
+.form__check {
+  margin-bottom: 20px;
+}
+.form__btn {
+  max-width: 203px;
+  margin-left: -15px;
 }
 
 .swiper-button-prev, .swiper-button-next {

@@ -26,10 +26,10 @@
   -webkit-tap-highlight-color: transparent;
 }
 .check__text a {
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
 }
 .check__text a:hover {
-  border-color: rgba(0, 0, 0, 0.7);
+  border-color: transparent;
 }
 .check.--check .check__point {
   width: 20px;
@@ -40,7 +40,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  transition: 0.5s;
+  transition: 0.4s;
   position: absolute;
 }
 .check.--check .check__point:before {

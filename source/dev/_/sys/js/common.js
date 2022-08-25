@@ -80,4 +80,57 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
   }
+
+  // MAP
+  let $map = document.querySelector('#map');
+  if ($map && ymaps) {
+    ymaps.ready(mapInit);
+
+    function mapInit() {
+      let mapPosition, mapPlaceholder;
+
+      mapPosition = $map.getAttribute('data-map');
+      mapPosition = mapPosition.split(',');
+
+      for (let i = 0; i < mapPosition.length; i++) {
+        mapPosition[i] = Number(mapPosition[i]);
+      }
+
+      mapPlaceholder = $map.getAttribute('data-map');
+      mapPlaceholder = mapPlaceholder.split(',');
+
+      let ymap = new ymaps.Map($map, {
+        center: [mapPosition[0], mapPosition[1]],
+        zoom: 18,
+      });
+
+      let placemark = new ymaps.Placemark(mapPlaceholder, {
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: '_/uploads/icons/placemark.png',
+        iconImageSize: [50, 52],
+      }, {});
+
+      ymap.geoObjects.add(placemark);
+
+      ymap.behaviors.disable('scrollZoom');
+
+      // function setMapPostion() {
+      //   let dw = window.innerWidth;
+
+      //   if (dw > 1220) {
+      //     ymap.setCenter([mapPosition[0], mapPosition[1]]);
+      //   } else if (dw <= 1220 && dw > 767) {
+      //     ymap.setCenter([mapPosition[0], mapPosition[1] - 0.01]);
+      //   } else {
+      //     ymap.setCenter(mapPosition);
+      //   }
+      // }
+
+      // setMapPostion();
+      // window.addEventListener('resize', () => {
+      //   setMapPostion();
+      // });
+    }
+  }
 })
