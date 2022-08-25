@@ -45,7 +45,7 @@
   flex-direction: column;
 }
 .win__item.--fd:before {
-  top: -60px;
+  top: -65px;
   left: 50%;
   width: 372px;
   height: 243px;
@@ -71,6 +71,6 @@
   line-height: 31px;
 }
 .win__link {
-  margin-top: 55px;
+  margin-top: 50px;
   justify-content: center;
 }

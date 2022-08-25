@@ -66,3 +66,7 @@ include ../../blocks/rec/rec
 +style('farm', 'blocks')
 include ../../blocks/farm/farm
 
+//- natural 
++style('natural', 'blocks')
+include ../../blocks/natural/natural
+

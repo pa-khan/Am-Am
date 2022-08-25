@@ -1,0 +1,73 @@
+.natural {
+  padding-bottom: 100px;
+}
+.natural__title {
+  z-index: 1;
+  position: relative;
+}
+.natural__preview {
+  width: 688px;
+  height: 394px;
+  margin: -60px auto 0;
+  background: linear-gradient(123deg, rgba(250, 215, 185, 0.3) 6.06%, #FAD7B9 93.02%);
+  clip-path: path("M688 187.34C688 243.629 635.323 290.283 574.563 327.553C512.122 365.854 440.289 394 344 394C249.359 394 185.317 364.707 123.121 327.553C60.4621 290.122 0 244.619 0 187.34C0 73.2052 154.014 0 344 0C461.288 0 512.468 18.2406 574.563 66.4472C613.051 96.3266 688 143.667 688 187.34Z");
+  position: relative;
+}
+.natural__img {
+  width: 518px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.natural__list {
+  margin-top: -215px;
+  margin-bottom: -100px;
+}
+.natural__item {
+  width: 50%;
+  margin-bottom: 100px;
+  position: relative;
+}
+.natural__item:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 128px;
+  height: 24px;
+  background: url("../../uploads/icons/arrow.svg") no-repeat;
+  position: absolute;
+}
+.natural__item:nth-of-type(1):before {
+  top: -45px;
+  left: 240px;
+  transform: scale(1, -1);
+}
+.natural__item:nth-of-type(2):before {
+  top: -55px;
+  left: 250px;
+  transform: scale(-1, -1) rotate(10deg);
+}
+.natural__item:nth-of-type(3):before {
+  top: -60px;
+  left: 220px;
+  transform: scale(1, -1) rotate(20deg);
+}
+.natural__item:nth-of-type(4):before {
+  top: 20px;
+  left: -30px;
+  transform: scale(-1, 1) rotate(-20deg);
+}
+.natural__item:nth-of-type(even) {
+  margin-left: auto;
+}
+.natural__item:nth-of-type(even) .natural__text {
+  margin-left: auto;
+}
+.natural__item.--sm .natural__text {
+  max-width: 300px;
+}
+.natural__text {
+  max-width: 460px;
+  line-height: 31px;
+}

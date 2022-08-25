@@ -1,0 +1,76 @@
+@import ../../sys/sass/vars
+
+.natural
+	padding-bottom: 100px
+	&__title
+		z-index: 1
+		position: relative
+	&__preview
+		width: 688px
+		height: 394px
+		margin: -60px auto 0
+		background: $peach-grad
+		clip-path: path('M688 187.34C688 243.629 635.323 290.283 574.563 327.553C512.122 365.854 440.289 394 344 394C249.359 394 185.317 364.707 123.121 327.553C60.4621 290.122 0 244.619 0 187.34C0 73.2052 154.014 0 344 0C461.288 0 512.468 18.2406 574.563 66.4472C613.051 96.3266 688 143.667 688 187.34Z')
+		position: relative
+	&__img
+		width: 518px
+		left: 50%
+		bottom: 0
+		transform: translateX(-50%)
+		position: absolute
+	&__list
+		margin-top: -215px
+		margin-bottom: -100px
+	&__item
+		width: 50%
+		margin-bottom: 100px
+		position: relative
+		&:before
+			content: ""
+			top: 0
+			left: 0
+			width: 128px
+			height: 24px
+			background: url('../../uploads/icons/arrow.svg') no-repeat
+			position: absolute
+		&:nth-of-type(1)
+			&:before
+				top: -45px
+				left: 240px
+				transform: scale(1, -1)
+		&:nth-of-type(2)
+			&:before
+				top: -55px
+				left: 250px
+				transform: scale(-1, -1) rotate(10deg)
+		&:nth-of-type(3)
+			&:before
+				top: -60px
+				left: 220px
+				transform: scale(1, -1) rotate(20deg)
+		&:nth-of-type(4)
+			&:before
+				top: 20px
+				left: -30px
+				transform: scale(-1, 1) rotate(-20deg)
+		&:nth-of-type(even)
+			margin-left: auto
+			.natural
+				&__text
+					margin-left: auto
+		&.--sm
+			.natural
+				&__text
+					max-width: 300px
+	&__text
+		max-width: 460px
+		line-height: 31px
+
+@media screen and (max-width: 1220px)
+	// .natural
+
+@media screen and (max-width: 992px)
+	// .natural
+
+@media screen and (max-width: 767px)
+	// .natural
