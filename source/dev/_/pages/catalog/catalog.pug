@@ -1,0 +1,77 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Каталог"
+
+block content
+	.page
+
+		+style('catalog', 'blocks')
+		.catalog
+			.case
+				.catalog__filter.filter
+					.filter__select.select(data-placeholder="Все").--list
+						.select__wrap
+							.select__label Продукт:
+							.select__area
+								.select__title
+								.select__icon
+								.select__bg
+									img(src="_/uploads/icons/select-line.svg", alt="")
+							.select__drop
+								select.select__parse(name="select-product")
+									option(value="Все") Все
+									option(value="Биотворог") Биотворог
+									option(value="Бифилайф") Бифилайф
+									option(value="Молоко") Молоко
+									option(value="Кефир") Кефир
+									option(value="Биолакт") Биолакт
+									option(value="Молочные каши") Молочные каши
+									option(value="Молочные коктейли") Молочные коктейли
+									option(value="Мясные пюре") Мясные пюре
+									option(value="Фруктовые пюре") Фруктовые пюре
+									option(value="Овощные пюре") Овощные пюре
+					.filter__select.select(data-placeholder="Все").--list
+						.select__wrap
+							.select__label Возраст:
+							.select__area
+								.select__title
+								.select__icon
+							.select__drop
+								select.select__parse(name="select-age")
+									option(value="Все") Все
+									option(value="4 мес") 4 мес
+									option(value="5 мес.") 5 мес.
+									option(value="6 мес.") 6 мес.
+									option(value="8 мес.") 8 мес.
+									option(value="12 мес.") 12 мес.
+				.catalog__main.row
+					.catalog__item.p-item
+						.p-item__img
+							img(src="_/uploads/products/item-2.png", alt="")
+						a.p-item__name(href="")
+							.p-item__name-text Биотворог с бананом
+					.catalog__item.p-item 
+					.catalog__item.p-item 
+					.catalog__item.p-item 
+					.catalog__item.p-item 
+					.catalog__item.p-item 
+					.catalog__item.p-item 
+					.catalog__item.p-item 
+
+		+style('awards', 'blocks')
+		.awards
+			.case
+				.awards__list-wrap
+					.awards__list.row
+						.awards__item
+							img(src="_/uploads/award-1.png", alt="")
+						.awards__item
+							img(src="_/uploads/award-2.png", alt="")
+						.awards__item
+							img(src="_/uploads/award-3.png", alt="")
+						.awards__item
+							img(src="_/uploads/award-4.png", alt="")
+						.awards__item
+							img(src="_/uploads/award-5.png", alt="")
+

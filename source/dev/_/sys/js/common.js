@@ -13,6 +13,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // SELECT INIT
+  var selects = document.querySelectorAll('.select');
+  if (selects) {
+    selects.forEach(select => {
+      new Select(select);
+    });
+
+    document.addEventListener('click', (event) => {
+      let openSelects = document.querySelectorAll('.select.--open');
+      if (!event.target.closest('.select') && openSelects) {
+        openSelects.forEach((select) => {
+          select.classList.remove(Select.classOpen);
+        });
+      }
+    })
+  }
+
+
   // ANIMATION
   let anBlocks = document.querySelectorAll('.an');
 
