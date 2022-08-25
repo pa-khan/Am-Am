@@ -1,0 +1,59 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Биотворог с яблоком"
+
+block content
+
+	+style('product', 'blocks')
+	.product
+		.case
+			.product__main.row
+				.product__preview
+					.product__img
+						img(src="_/uploads/products/item-3.png", alt="")
+				.product__about
+					.product__title.h2 #[h2 Биотворог с яблоком]
+					.product__params.params
+						.params__item
+							.params__name Для детей
+							.params__value от 6 мес.
+						.params__item
+							.params__name Масса нетто
+							.params__value 100 г
+			.product__info.row
+				.product__info-item
+					.product__info-title #[h3.h3 Пищевая ценность] #[i На 100 грамм]
+					.product__info-params.params
+						.params__item
+							.params__name Жиры
+							.params__value 4,2 г
+						.params__item
+							.params__name Белки
+							.params__value 7,6 г
+						.params__item
+							.params__name Углеводы
+							.params__value 11,2 г
+						.params__item
+							.params__name Сахароза
+							.params__value 7,5 г
+						.params__item
+							.params__name Кальций
+							.params__value 85 мг
+						.params__item
+							.params__name Энерг. ценность
+							.params__value 74,5 кКал
+				.product__info-item
+					.product__info-title.h3 #[h3 Особенности продукта]
+					.product__info-text
+						p Биотворог обогащен пробиотическими культурами, польза которых состоит в укреплении защитных сил организма ребенка, нормализации работы кишечника, восстановлении микрофло
+						p Продукт предназначен для непосредственного употребления в пищу детей и является источником кальция и фосфора, необходимых для развития костной ткани в организме ребенка. Для детей старше 6 месяц
+						p Его получают методом ультрафильтрации, что значительно повышает пищевую ценность
+				.product__info-item
+					.product__info-title.h3 #[h3 Условия хранения]
+					.product__info-text
+						p Хранить 14 суток при температуре 4±2°С. #[br]Вскрытая упаковка хранению не подлежит.
+				.product__info-item
+					.product__info-title.h3 #[h3 Способ употребления]
+					.product__info-text
+						p Перед употреблением рекомендованную врачом массу продукта из упаковки переложить чистой ложкой в чистую прокипяченную посуду, подогреть на водяной бане до температуры от 36°С до 38°С.

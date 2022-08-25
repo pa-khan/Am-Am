@@ -70,3 +70,7 @@ include ../../blocks/farm/farm
 +style('natural', 'blocks')
 include ../../blocks/natural/natural
 
+//- product 
++style('product', 'blocks')
+include ../../blocks/product/product
+
