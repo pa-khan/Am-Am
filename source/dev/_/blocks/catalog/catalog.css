@@ -1,0 +1,103 @@
+.catalog__item {
+  width: calc( 100% / 4 );
+}
+
+.p-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  position: relative;
+}
+.p-item:before, .p-item:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+}
+.p-item:before {
+  top: -10px;
+  left: 128px;
+  width: 178px;
+  height: 172px;
+  background: url("../../uploads/products/logo.png") no-repeat;
+}
+.p-item__img {
+  width: 200px;
+}
+.p-item__name {
+  min-height: 60px;
+  width: calc( 100% - 184px );
+  margin-left: -18px;
+  font-family: "Bad Script", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+}
+.p-item__name-text {
+  display: inline-block;
+  position: relative;
+}
+.p-item__name-text:before, .p-item__name-text:after {
+  content: "";
+  position: absolute;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+.p-item__name-text:before {
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: translateY(5px);
+  background: url("../../uploads/icons/line.svg") repeat-x;
+  background-position-x: center;
+}
+.p-item__name-text:after {
+  z-index: -1;
+  top: 10px;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-50%) scale(0);
+  background: url("../../uploads/icons/nav-bg.svg") no-repeat;
+  background-size: contain;
+}
+.p-item__name-text:hover:before, .p-item__name-text:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+.p-item__name-text:hover:before {
+  transform: translateY(0);
+}
+.p-item__name-text:hover:after {
+  transform: translateX(-50%) scale(1);
+}
+.p-item.--lg {
+  padding-left: 38px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.p-item.--lg:before {
+  top: auto;
+  bottom: 10px;
+  left: -5px;
+  width: 276px;
+  height: 266px;
+  background: url("../../uploads/products/logo-lg.png") no-repeat;
+}
+.p-item.--lg .p-item__img {
+  width: 142px;
+  margin-bottom: 20px;
+}
+.p-item.--lg .p-item__name {
+  min-height: auto;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 6px;
+}
+.p-item.--f-right {
+  grid-column-end: 2;
+  grid-row-end: span 2;
+}
+.p-item.--up {
+  margin-top: -55%;
+}
