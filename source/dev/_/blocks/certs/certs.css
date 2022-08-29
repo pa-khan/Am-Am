@@ -43,3 +43,20 @@
 .certs__item:hover {
   transform: translateY(-5px);
 }
+
+@media screen and (max-width: 1220px) {
+  .certs__list {
+    margin: 0 -20px -60px;
+  }
+  .certs__list:before {
+    left: 125px;
+  }
+  .certs__list:after {
+    top: 125px;
+    right: 125px;
+  }
+  .certs__item {
+    width: calc( 100% / 3 - 40px );
+    margin: 0 20px 60px;
+  }
+}

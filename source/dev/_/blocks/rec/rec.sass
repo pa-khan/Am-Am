@@ -9,6 +9,7 @@
 		max-width: 710px
 		margin: 0 auto 70px
 	&__preview
+		z-index: 1
 		width: 335px
 		position: relative
 		&:before
@@ -53,7 +54,12 @@
 				font-family: $ffTitle
 
 @media screen and (max-width: 1220px)
-	// .rec
+	.rec
+		&__info
+			&:before
+				width: 1002px
+				height: 458px
+				clip-path: path('M1002 217.771C1002 283.203 925.282 337.435 836.791 380.759C745.851 425.282 641.235 458 501 458C363.165 458 269.895 423.949 179.312 380.759C88.0567 337.249 0 284.354 0 217.771C0 85.0965 224.305 0 501 0C671.818 0 746.356 21.2036 836.791 77.2407C892.844 111.974 1002 167.004 1002 217.771Z')
 
 @media screen and (max-width: 992px)
 	// .rec

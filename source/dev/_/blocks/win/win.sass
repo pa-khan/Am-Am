@@ -67,7 +67,28 @@
 		justify-content: center
 
 @media screen and (max-width: 1220px)
-	// .win
+	.win
+		&__list
+			margin-top: 0
+			flex-direction: column
+		&__item
+			width: 58%
+			margin-top: -70px
+			&:first-of-type
+				margin-top: 0
+			&.--reverse
+				margin-left: auto
+				&:before
+					left: -100px
+			&.--fd
+				margin-left: -80px
+				margin-right: auto
+		&__text
+			padding-left: 20px
+			br
+				display: none
+		&__link
+			margin-top: 40px
 
 @media screen and (max-width: 992px)
 	// .win

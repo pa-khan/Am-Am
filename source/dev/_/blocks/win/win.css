@@ -74,3 +74,36 @@
   margin-top: 50px;
   justify-content: center;
 }
+
+@media screen and (max-width: 1220px) {
+  .win__list {
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .win__item {
+    width: 58%;
+    margin-top: -70px;
+  }
+  .win__item:first-of-type {
+    margin-top: 0;
+  }
+  .win__item.--reverse {
+    margin-left: auto;
+  }
+  .win__item.--reverse:before {
+    left: -100px;
+  }
+  .win__item.--fd {
+    margin-left: -80px;
+    margin-right: auto;
+  }
+  .win__text {
+    padding-left: 20px;
+  }
+  .win__text br {
+    display: none;
+  }
+  .win__link {
+    margin-top: 40px;
+  }
+}

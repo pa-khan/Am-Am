@@ -37,7 +37,17 @@
 			transform: translateY(-5px)
 
 @media screen and (max-width: 1220px)
-	// .certs
+	.certs
+		&__list
+			margin: 0 -20px -60px
+			&:before
+				left: 125px
+			&:after
+				top: 125px
+				right: 125px
+		&__item
+			width: calc( 100% / 3 - 40px )
+			margin: 0 20px 60px
 
 @media screen and (max-width: 992px)
 	// .certs
