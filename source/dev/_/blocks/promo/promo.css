@@ -47,3 +47,9 @@
   width: 375px;
   margin-right: 135px;
 }
+
+@media screen and (max-width: 1220px) {
+  .promo__img {
+    margin-right: 40px;
+  }
+}

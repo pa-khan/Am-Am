@@ -13,7 +13,7 @@
   justify-content: space-between;
 }
 .favs__act {
-  margin-top: 50px;
+  margin-top: 46px;
   justify-content: center;
 }
 .favs__btn {
@@ -21,4 +21,13 @@
 }
 .favs__link {
   margin-left: 70px;
+}
+
+@media screen and (max-width: 1220px) {
+  .favs__list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 0fr));
+  }
+  .favs__item .p-item.--lg .p-item__img {
+    width: 122px;
+  }
 }

@@ -49,7 +49,18 @@
 						transform: translateX(-50%) scale(1)
 
 @media screen and (max-width: 1220px)
-	// .header
+	.header
+		&__logo
+			max-width: 85px
+			height: 121px
+		&__nav
+			width: calc( 50% - 85px )
+			ul
+				li
+					&:after
+						width: calc( 100% + 30px )
+					a
+						font-size: 16px
 
 @media screen and (max-width: 992px)
 	// .header

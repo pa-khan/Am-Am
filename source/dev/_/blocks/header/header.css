@@ -56,3 +56,19 @@
 .header__nav ul li:hover:after {
   transform: translateX(-50%) scale(1);
 }
+
+@media screen and (max-width: 1220px) {
+  .header__logo {
+    max-width: 85px;
+    height: 121px;
+  }
+  .header__nav {
+    width: calc( 50% - 85px );
+  }
+  .header__nav ul li:after {
+    width: calc( 100% + 30px );
+  }
+  .header__nav ul li a {
+    font-size: 16px;
+  }
+}

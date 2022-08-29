@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-
   // ANIMATION
   let anBlocks = document.querySelectorAll('.an');
 
@@ -96,8 +95,101 @@ document.addEventListener('DOMContentLoaded', function () {
         type: 'bullets',
         clickable: true,
       },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 60,
+        },
+        1221: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      }
     });
   }
+
+  // MOBILE SLIDRES
+  function MobileSlider(windowSize, wrap, list, items, options = { slidesPerView: 1 }, removeSlide) {
+    this.wrap = document.querySelector(wrap);
+
+    if (this.wrap) {
+      this.list = document.querySelector(list);
+      this.items = document.querySelectorAll(items);
+      this.slider = null;
+      this.options = options;
+
+      if (typeof removeSlide != 'undefined') {
+        this.copeEl = this.items[removeSlide].cloneNode(true);
+      }
+
+      this.toggleSlider = () => {
+        if (window.innerWidth <= windowSize) {
+          if (!this.wrap.classList.contains('swiper')) {
+            this.wrap.classList.add('swiper');
+            this.list.classList.add('swiper-wrapper');
+            this.items.forEach((item) => {
+              item.classList.add('swiper-slide')
+            });
+            this.slider = new Swiper(this.wrap, this.options);
+            this.slider.update();
+            if (typeof removeSlide != 'undefined') {
+              this.slider.removeSlide(removeSlide);
+            }
+            this.slider.update();
+
+            setTimeout(() => {
+              this.slider.updateAutoHeight(100);
+            }, 1000)
+
+          }
+        } else {
+          if (this.wrap.classList.contains('swiper')) {
+            if (typeof removeSlide != 'undefined') {
+              this.list.prepend(this.copeEl);
+              this.slider.update();
+            }
+
+            this.wrap.classList.remove('swiper');
+            this.list.classList.remove('swiper-wrapper');
+            this.items.forEach((item) => {
+              item.classList.remove('swiper-slide');
+              item.removeAttribute('style');
+            });
+
+            this.slider.updateAutoHeight(100);
+
+            this.wrap.style.height = 'auto'
+            setTimeout(() => {
+              this.wrap.removeAttribute('style');
+            }, 500);
+
+            if (this.slider != null) {
+              this.slider = null;
+            }
+          }
+        }
+      }
+
+      this.toggleSlider();
+
+      window.addEventListener('resize', this.toggleSlider);
+    }
+  }
+
+  new MobileSlider(1220, '.intro-news__inner', '.intro-news__list', '.intro-news__item', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    speed: 900,
+  });
+
+  new MobileSlider(1220, '.intro-arts__inner', '.intro-arts__list', '.intro-arts__item', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    speed: 900,
+  });
 
   // MAP
   let $map = document.querySelector('#map');
@@ -133,22 +225,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
       ymap.behaviors.disable('scrollZoom');
 
-      // function setMapPostion() {
-      //   let dw = window.innerWidth;
+      function setMapPostion() {
+        let dw = window.innerWidth;
 
-      //   if (dw > 1220) {
-      //     ymap.setCenter([mapPosition[0], mapPosition[1]]);
-      //   } else if (dw <= 1220 && dw > 767) {
-      //     ymap.setCenter([mapPosition[0], mapPosition[1] - 0.01]);
-      //   } else {
-      //     ymap.setCenter(mapPosition);
-      //   }
-      // }
+        if (dw > 1220) {
+          ymap.setCenter([mapPosition[0] - 0.001, mapPosition[1] - 0.001]);
+        } else if (dw <= 1220 && dw > 767) {
+          ymap.setCenter([mapPosition[0], mapPosition[1] - 0.01]);
+        } else {
+          ymap.setCenter(mapPosition);
+        }
+      }
 
-      // setMapPostion();
-      // window.addEventListener('resize', () => {
-      //   setMapPostion();
-      // });
+      setMapPostion();
+      window.addEventListener('resize', () => {
+        setMapPostion();
+      });
     }
   }
 

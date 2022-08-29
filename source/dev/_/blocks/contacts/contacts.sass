@@ -85,7 +85,19 @@
 	display: none
 
 @media screen and (max-width: 1220px)
-	// .contacts
+	.contacts
+		&__info
+			&:before
+				margin-left: -140px
+			&-item
+				margin-bottom: 70px
+		&__desc
+			justify-content: space-between
+			&-col
+				width: calc( 50% - 10px )
+			&-text
+				strong
+					font-size: 22px
 
 @media screen and (max-width: 992px)
 	// .contacts

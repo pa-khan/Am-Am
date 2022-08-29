@@ -63,3 +63,16 @@
 .n-item:hover .n-item__img img {
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 1220px) {
+  .intro-news__inner {
+    overflow: visible;
+  }
+  .intro-news__list {
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+  .intro-news__item {
+    margin: 0;
+  }
+}

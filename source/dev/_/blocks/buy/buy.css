@@ -1,5 +1,5 @@
 .buy {
-  padding: 90px 0;
+  padding: 82px 0 90px;
 }
 .buy__wrap {
   position: relative;
@@ -33,4 +33,11 @@
 
 .ymaps-2-1-79-map-copyrights-promo {
   display: none;
+}
+
+@media screen and (max-width: 1220px) {
+  .buy__wrap {
+    width: 1170px;
+    margin-left: -100px;
+  }
 }

@@ -12,7 +12,7 @@
 		align-items: flex-start
 		justify-content: space-between
 	&__act
-		margin-top: 50px
+		margin-top: 46px
 		justify-content: center
 	&__btn
 		max-width: 203px
@@ -20,7 +20,15 @@
 		margin-left: 70px
 
 @media screen and (max-width: 1220px)
-	// .favs
+	.favs
+		&__list
+			grid-template-columns: repeat(auto-fill, minmax(300px, 0fr))
+		&__item
+			.p-item
+				&.--lg
+					.p-item
+						&__img
+							width: 122px
 
 @media screen and (max-width: 992px)
 	// .favs

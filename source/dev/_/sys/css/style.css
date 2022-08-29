@@ -115,6 +115,8 @@ path, circle, rect, line {
   width: 1190px;
   padding-left: 10px;
   padding-right: 10px;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
   margin: 0 auto;
 }
 .case .case {
@@ -776,4 +778,13 @@ path, circle, rect, line {
 .swiper-pagination-bullet-active:before {
   opacity: 1;
   transform: scale(1);
+}
+
+@media screen and (max-width: 1220px) {
+  .socials__item {
+    margin-bottom: 23px;
+  }
+  .socials__text {
+    font-size: 16px;
+  }
 }

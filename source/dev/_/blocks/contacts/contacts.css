@@ -103,3 +103,21 @@
 .ymaps-2-1-79-map-copyrights-promo {
   display: none;
 }
+
+@media screen and (max-width: 1220px) {
+  .contacts__info:before {
+    margin-left: -140px;
+  }
+  .contacts__info-item {
+    margin-bottom: 70px;
+  }
+  .contacts__desc {
+    justify-content: space-between;
+  }
+  .contacts__desc-col {
+    width: calc( 50% - 10px );
+  }
+  .contacts__desc-text strong {
+    font-size: 22px;
+  }
+}

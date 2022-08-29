@@ -52,7 +52,28 @@
 		position: relative
 
 @media screen and (max-width: 1220px)
-	// .about
+	.about
+		padding: 100px 0
+		&__preview
+			width: 520px
+			&:before
+				width: 545px
+				height: 400px
+				left: -10px
+				background-size: contain
+		&__img
+			height: 381px
+			clip-path: path('M84.6388 45.3728C202.505 13.0905 198.965 36.7477 275.951 13.0905C352.938 -10.5668 408.784 -3.51193 465.795 45.3728C540.17 109.146 535.936 252.278 465.795 322.36C406.138 381.966 354.055 350.823 275.951 357.599C196.897 364.457 145.473 406.638 64.5007 357.599C-16.4714 308.559 -33.2274 77.6552 84.6388 45.3728Z')
+		&__info
+			width: calc( 100% - 520px )
+			margin-top: 45px
+		&__text
+			p
+				margin-bottom: 25px
+			br
+				display: none
+		&__act
+			margin-top: 0
 
 @media screen and (max-width: 992px)
 	// .about

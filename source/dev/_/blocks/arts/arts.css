@@ -63,3 +63,16 @@
 .a-item:hover .a-item__img img {
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 1220px) {
+  .intro-arts__inner {
+    overflow: visible;
+  }
+  .intro-arts__list {
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+  .intro-arts__item {
+    margin: 0;
+  }
+}
