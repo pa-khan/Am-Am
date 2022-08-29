@@ -78,3 +78,7 @@ include ../../blocks/product/product
 +style('catalog', 'blocks')
 include ../../blocks/catalog/catalog
 
+//- buy 
++style('buy', 'blocks')
+include ../../blocks/buy/buy
+

@@ -1,0 +1,36 @@
+.buy {
+  padding: 90px 0;
+}
+.buy__wrap {
+  position: relative;
+}
+.buy__wrap:before {
+  top: -15px;
+  left: -20px;
+  width: 1170px;
+  height: 600px;
+  background: url("../../uploads/icons/map-line.svg") no-repeat;
+  content: "";
+  position: absolute;
+}
+.buy__map {
+  clip-path: path("M182.638 68.8025C436.504 20.5061 428.878 55.8988 594.695 20.5061C760.512 -14.8867 880.796 -4.33219 1003.59 68.8025C1163.78 164.211 1154.66 378.345 1003.59 483.192C875.098 572.368 762.919 525.776 594.695 535.913C424.426 546.173 313.665 609.279 139.263 535.913C-35.1381 462.546 -71.2278 117.099 182.638 68.8025Z");
+}
+
+.map {
+  width: 100%;
+  height: 595px;
+}
+.map__area {
+  width: 100%;
+  height: 100%;
+}
+
+.ymaps-2-1-79-ground-pane {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.ymaps-2-1-79-map-copyrights-promo {
+  display: none;
+}

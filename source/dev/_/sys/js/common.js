@@ -151,4 +151,58 @@ document.addEventListener('DOMContentLoaded', function () {
       // });
     }
   }
+
+  // MAP
+  let $mapBuy = document.querySelector('#map-buy');
+  if ($mapBuy && ymaps) {
+    ymaps.ready(mapInit);
+
+    function mapInit() {
+      let mapPosition, mapPlaceholder;
+
+      mapPosition = $mapBuy.getAttribute('data-map');
+      mapPosition = mapPosition.split(',');
+
+      for (let i = 0; i < mapPosition.length; i++) {
+        mapPosition[i] = Number(mapPosition[i]);
+      }
+
+      mapPlaceholder = $mapBuy.getAttribute('data-map');
+      mapPlaceholder = mapPlaceholder.split(',');
+
+      let ymap = new ymaps.Map($mapBuy, {
+        center: [mapPosition[0], mapPosition[1]],
+        zoom: 4,
+        controls: [],
+      });
+
+      let placemark = new ymaps.Placemark(mapPlaceholder, {
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: '_/uploads/icons/heart-green-line.svg',
+        iconImageSize: [23, 24],
+      }, {});
+
+      ymap.geoObjects.add(placemark);
+
+      ymap.behaviors.disable('scrollZoom');
+
+      // function setMapPostion() {
+      //   let dw = window.innerWidth;
+
+      //   if (dw > 1220) {
+      //     ymap.setCenter([mapPosition[0], mapPosition[1]]);
+      //   } else if (dw <= 1220 && dw > 767) {
+      //     ymap.setCenter([mapPosition[0], mapPosition[1] - 0.01]);
+      //   } else {
+      //     ymap.setCenter(mapPosition);
+      //   }
+      // }
+
+      // setMapPostion();
+      // window.addEventListener('resize', () => {
+      //   setMapPostion();
+      // });
+    }
+  }
 })
