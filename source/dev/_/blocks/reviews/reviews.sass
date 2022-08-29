@@ -43,10 +43,22 @@
 		margin: 18px 0 10px
 	&__text
 		line-height: 27px
-		overflow: hidden
-		display: -webkit-box
-		-webkit-line-clamp: 6
-		-webkit-box-orient: vertical
+		&-value, &-arrow
+			display: inline
+		&-arrow
+			cursor: pointer
+			svg
+				display: inline
+				vertical-align: middle
+				margin-left: 9px
+		&.--show
+			.reviews__text-arrow
+				display: none
+
+		// overflow: hidden
+		// display: -webkit-box
+		// -webkit-line-clamp: 6
+		// -webkit-box-orient: vertical
 	&__controls
 		margin-top: 40px
 		align-items: center

@@ -49,10 +49,20 @@
 }
 .reviews__text {
   line-height: 27px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
+}
+.reviews__text-value, .reviews__text-arrow {
+  display: inline;
+}
+.reviews__text-arrow {
+  cursor: pointer;
+}
+.reviews__text-arrow svg {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 9px;
+}
+.reviews__text.--show .reviews__text-arrow {
+  display: none;
 }
 .reviews__controls {
   margin-top: 40px;
