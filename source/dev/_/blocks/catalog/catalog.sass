@@ -45,15 +45,18 @@
 			transform: translateY(5px)
 			background: url('../../uploads/icons/line.svg') repeat-x
 			background-position-x: center
+			transform: scale(0)
 		&:after
 			z-index: -1
 			top: 10px
-			left: 50%
-			height: 100%
-			width: 100%
-			transform: translateX(-50%) scale(0)
-			background: url('../../uploads/icons/nav-bg.svg') no-repeat
-			background-size: contain
+			left: 0
+			right: 0
+			height: calc(100% - 10px)
+			width: calc(100% + 10px)
+			// transform: translateX(-50%) scale(0)
+			background: url('../../uploads/icons/fav-bg.png') no-repeat
+			background-size: 100% 100%
+			image-rendering: -webkit-optimize-contrast
 		&:hover
 			&:before, &:after
 				opacity: 1
@@ -61,7 +64,7 @@
 			&:before
 				transform: translateY(0)
 			&:after
-				transform: translateX(-50%) scale(1)
+				transform: scale(1)
 	&.--lg
 		padding-left: 38px
 		align-items: flex-start
