@@ -274,6 +274,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function mapInit() {
       let mapPosition, mapPlaceholder;
+      let mapItems = document.querySelectorAll('.map__item');
 
       mapPosition = $mapBuy.getAttribute('data-map');
       mapPosition = mapPosition.split(',');
@@ -287,18 +288,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
       let ymap = new ymaps.Map($mapBuy, {
         center: [mapPosition[0], mapPosition[1]],
-        zoom: 4.5,
+        zoom: 4,
         controls: [],
       });
 
-      let placemark = new ymaps.Placemark(mapPlaceholder, {
-      }, {
-        iconLayout: 'default#image',
-        iconImageHref: '_/uploads/icons/heart-green-line.svg',
-        iconImageSize: [23, 24],
-      }, {});
+      mapItems.forEach((item) => {
+        item._placeholder = item.dataset.placeholder.split(', ');
+        for (let i = 0; i < item._placeholder.length; i++) {
+          item._placeholder[i] = Number(item._placeholder[i]);
+        }
 
-      ymap.geoObjects.add(placemark);
+        let placemark = new ymaps.Placemark(item._placeholder, {
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: '_/uploads/icons/heart-green-line.svg',
+          iconImageSize: [23, 24],
+        }, {});
+
+
+
+        ymap.geoObjects.add(placemark);
+      });
+
+      // let placemark = new ymaps.Placemark(mapPlaceholder, {
+      // }, {
+      //   iconLayout: 'default#image',
+      //   iconImageHref: '_/uploads/icons/heart-green-line.svg',
+      //   iconImageSize: [23, 24],
+      // }, {});
+
+      // ymap.geoObjects.add(placemark);
 
       ymap.behaviors.disable('scrollZoom');
 
