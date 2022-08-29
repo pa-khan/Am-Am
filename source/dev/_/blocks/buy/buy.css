@@ -27,8 +27,8 @@
 }
 
 .ymaps-2-1-79-ground-pane {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
 }
 
 .ymaps-2-1-79-map-copyrights-promo {
