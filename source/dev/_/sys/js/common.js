@@ -30,6 +30,23 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
+  var inputs = document.querySelectorAll('.input');
+  if (inputs.length > 0) {
+    inputs.forEach((input) => {
+      input.area = input.querySelector('input');
+
+      input.area.addEventListener('focusout', () => {
+        input.classList.remove('--error');
+      });
+
+      if (input.classList.contains('--tel')) {
+        IMask(input.area, {
+          mask: '+7 (000) 000-00-00'
+        })
+      }
+    });
+  }
+
   // ANIMATION
   let anBlocks = document.querySelectorAll('.an');
 
