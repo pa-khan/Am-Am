@@ -60,6 +60,21 @@
 .product__info-text p:last-of-type {
   margin-bottom: 0;
 }
+.product__info-text-value, .product__info-text-arrow {
+  display: inline;
+}
+.product__info-text-arrow {
+  cursor: pointer;
+}
+.product__info-text-arrow svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  transform: rotate(90deg);
+}
+.product__info-text.--show .product__info-text-arrow {
+  display: none;
+}
 
 .params__item {
   width: 100%;

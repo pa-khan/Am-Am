@@ -30,6 +30,23 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
+  var inputs = document.querySelectorAll('.input');
+  if (inputs.length > 0) {
+    inputs.forEach((input) => {
+      input.area = input.querySelector('input');
+
+      input.area.addEventListener('focusout', () => {
+        input.classList.remove('--error');
+      });
+
+      if (input.classList.contains('--tel')) {
+        IMask(input.area, {
+          mask: '+7 (000) 000-00-00'
+        })
+      }
+    });
+  }
+
   // ANIMATION
   let anBlocks = document.querySelectorAll('.an');
 
@@ -112,27 +129,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const reviewsTexts = reviewsSlider.querySelectorAll('.reviews__text');
     reviewsTexts.forEach((text) => {
-      if (text.innerText.length >= 175) {
-
-        const value = document.createElement('div');
-        value.className = 'reviews__text-value';
-        value.setAttribute('data-text', text.innerText);
-        value.innerText = text.innerText.substr(0, 175) + '...';
-
-        const arrow = document.createElement('div');
-        arrow.className = 'reviews__text-arrow';
-        arrow.innerHTML = '<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d = "M1 1L13.9342 10.5L1 20" stroke = "#656565" stroke - linecap="square" /></svg >';
-        arrow.addEventListener('click', () => {
-          text.classList.add('--show');
-          value.innerText = value.dataset.text;
-        });
-
-        text.innerHTML = '';
-
-        text.append(value, arrow);
-      }
+      moreText(175, text, 'reviews__text-value', 'reviews__text-arrow');
     });
   }
+
+
 
   // MOBILE SLIDRES
   function MobileSlider(windowSize, wrap, list, items, options = { slidesPerView: 1 }, removeSlide) {
@@ -213,6 +214,15 @@ document.addEventListener('DOMContentLoaded', function () {
     spaceBetween: 30,
     speed: 900,
   });
+
+
+  // PRODUCT
+  let productInfoTexts = document.querySelectorAll('.product__info-text.--has-toggle');
+  if (productInfoTexts.length > 0) {
+    productInfoTexts.forEach((text) => {
+      moreText(445, text, 'product__info-text-value', 'product__info-text-arrow');
+    });
+  }
 
   // MAP
   let $map = document.querySelector('#map');
@@ -337,6 +347,31 @@ document.addEventListener('DOMContentLoaded', function () {
       // window.addEventListener('resize', () => {
       //   setMapPostion();
       // });
+    }
+  }
+
+
+  function moreText(textSize, block, classText, classArrow, icon = '<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d = "M1 1L13.9342 10.5L1 20" stroke = "#656565" stroke - linecap="square" /></svg >') {
+    if (block.innerText.length >= textSize) {
+
+      const value = document.createElement('div');
+      value.className = classText;
+      value.setAttribute('data-text', block.innerText);
+      value.innerText = block.innerText.substr(0, textSize) + '...';
+
+      console.log(value.dataset.text.length);
+
+      const arrow = document.createElement('div');
+      arrow.className = classArrow;
+      arrow.innerHTML = icon;
+      arrow.addEventListener('click', () => {
+        block.classList.add('--show');
+        value.innerText = value.dataset.text;
+      });
+
+      block.innerHTML = '';
+
+      block.append(value, arrow);
     }
   }
 })
