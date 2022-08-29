@@ -43,7 +43,7 @@
   height: 30px;
   width: calc( 100% + 50px );
   transform: translateX(-50%) scale(0);
-  background: url("../../uploads/icons/nav-bg.svg") no-repeat;
+  background: url("../../uploads/icons/nav-bg.png") no-repeat;
   background-size: 100% 27px;
 }
 .header__nav ul li:hover:before, .header__nav ul li:hover:after {

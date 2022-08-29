@@ -79,3 +79,29 @@
     max-width: 220px;
   }
 }
+@media screen and (max-width: 992px) {
+  .footer__company {
+    font-size: 11px;
+    max-width: 209px;
+  }
+  .footer__nav {
+    max-width: 136px;
+    margin-left: 36px;
+    flex-direction: column;
+  }
+  .footer__nav ul {
+    margin-bottom: 20px;
+  }
+  .footer__nav ul:last-of-type {
+    margin-bottom: 0;
+  }
+  .footer__nav ul li a {
+    font-size: 18px;
+  }
+  .footer__socials {
+    top: 0;
+    right: 0;
+    max-width: 203px;
+    position: absolute;
+  }
+}

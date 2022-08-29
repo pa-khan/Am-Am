@@ -788,3 +788,28 @@ path, circle, rect, line {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 992px) {
+  .socials {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .socials__item {
+    margin-right: 20px;
+    margin-bottom: 0;
+    display: block;
+  }
+  .socials__item:last-of-type {
+    margin-right: 0;
+  }
+  .socials__item:hover {
+    transform: translateY(-5px) translateX(0);
+  }
+  .socials__img {
+    width: auto;
+    max-width: 33px;
+    height: 30px;
+  }
+  .socials__text {
+    display: none;
+  }
+}
