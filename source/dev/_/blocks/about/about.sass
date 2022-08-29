@@ -20,6 +20,7 @@
 	&__info
 		width: calc( 100% - 657px )
 		margin-top: 85px
+		padding-right: 30px
 		padding-left: 42px
 		position: relative
 		&:before
@@ -43,13 +44,16 @@
 			&:last-of-type
 				margin-bottom: 0
 	&__act
-		margin-top: -58px
-		margin-right: 35px
-		align-items: flex-end
-		justify-content: flex-end
-	&__arrow
-		top: 24px
+		margin-top: 44px
 		position: relative
+	&__learn
+		width: calc( 100% - 73px )
+	&__arrow
+		top: 44px
+		right: 70px
+		position: absolute
+	&__play
+		top: -30px
 
 @media screen and (max-width: 1220px)
 	.about
@@ -72,8 +76,8 @@
 				margin-bottom: 25px
 			br
 				display: none
-		&__act
-			margin-top: 0
+		&__learn
+			padding-right: 50px
 
 @media screen and (max-width: 992px)
 	// .about

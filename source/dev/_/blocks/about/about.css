@@ -22,6 +22,7 @@
 .about__info {
   width: calc( 100% - 657px );
   margin-top: 85px;
+  padding-right: 30px;
   padding-left: 42px;
   position: relative;
 }
@@ -51,14 +52,19 @@
   margin-bottom: 0;
 }
 .about__act {
-  margin-top: -58px;
-  margin-right: 35px;
-  align-items: flex-end;
-  justify-content: flex-end;
+  margin-top: 44px;
+  position: relative;
+}
+.about__learn {
+  width: calc( 100% - 73px );
 }
 .about__arrow {
-  top: 24px;
-  position: relative;
+  top: 44px;
+  right: 70px;
+  position: absolute;
+}
+.about__play {
+  top: -30px;
 }
 
 @media screen and (max-width: 1220px) {
@@ -88,7 +94,7 @@
   .about__text br {
     display: none;
   }
-  .about__act {
-    margin-top: 0;
+  .about__learn {
+    padding-right: 50px;
   }
 }

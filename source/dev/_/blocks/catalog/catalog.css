@@ -96,6 +96,7 @@
 }
 .p-item.--lg .p-item__img {
   width: 142px;
+  max-height: 290px;
   margin-bottom: 20px;
 }
 .p-item.--lg .p-item__name {

@@ -25,9 +25,17 @@
 
 @media screen and (max-width: 1220px) {
   .favs__list {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 0fr));
+    max-width: 800px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 0fr));
   }
-  .favs__item .p-item.--lg .p-item__img {
-    width: 122px;
+  .favs__item.--up {
+    margin-top: 0 !important;
+  }
+  .favs__item:nth-of-type(7) {
+    display: none;
+  }
+  .favs__item:nth-of-type(8) {
+    grid-row-end: 4;
   }
 }
