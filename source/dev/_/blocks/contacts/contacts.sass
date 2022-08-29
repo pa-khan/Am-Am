@@ -117,8 +117,15 @@
 				top: -130px
 				width: 789px
 				height: 712px
-				margin-left: 10px
-				clip-path: path('M732 338.544C732 440.263 671.59 524.572 601.91 591.923C530.302 661.138 447.925 712 337.5 712C228.965 712 155.522 659.064 84.1951 591.923C12.3381 524.282 -57 442.053 -57 338.544C-57 132.29 119.624 0 337.5 0C472.007 0 530.7 32.9627 601.91 120.077C646.048 174.072 732 259.621 732 338.544Z')
+				margin-left: -50px
+				clip-path: path('M789 338.544C789 440.263 728.59 524.572 658.91 591.923C587.302 661.138 504.925 712 394.5 712C285.965 712 212.522 659.064 141.195 591.923C69.3381 524.282 0 442.053 0 338.544C0 132.29 176.624 0 394.5 0C529.007 0 587.7 32.9627 658.91 120.077C703.048 174.072 789 259.621 789 338.544Z')
+			&:after
+				top: -130px
+				left: -20px
+				transform: none
+				width: 778px
+				height: 712px
+				background-size: contain
 			&-item
 				width: calc( 50% - 38px )
 				margin-bottom: 76px
@@ -129,9 +136,26 @@
 					display: block
 				a
 					margin-bottom: 30px
+		&__desc
+			max-width: 496px
+			margin: 0 auto
+			padding-bottom: 50px
+			&-text
+				strong
+					font-size: 24px
+					margin-bottom: 8px
+					display: block
+					&.inline
+						display: inline
+				p
+					i
+						display: block
+						line-height: 34px
 
 	.map
 		height: 514px
+		margin-top: -125px
+		border-radius: 0
 		position: relative
 
 @media screen and (max-width: 767px)

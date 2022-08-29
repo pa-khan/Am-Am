@@ -55,12 +55,18 @@
   display: inline;
 }
 .reviews__text-arrow {
+  left: 0;
   cursor: pointer;
+  position: relative;
+  transition: 0.4s;
 }
 .reviews__text-arrow svg {
   display: inline;
   vertical-align: middle;
   margin-left: 9px;
+}
+.reviews__text-arrow:hover {
+  left: 5px;
 }
 .reviews__text-arrow:hover svg path {
   stroke: #54AA39;

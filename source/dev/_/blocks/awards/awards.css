@@ -38,8 +38,10 @@
 .awards__item {
   width: calc( 100% / 5 - 100px );
   margin: 0 50px 50px;
-  transition: 0.4s;
 }
-.awards__item:hover {
+.awards__item img {
+  transition: 0.3s;
+}
+.awards__item:hover img {
   transform: translateY(-5px);
 }

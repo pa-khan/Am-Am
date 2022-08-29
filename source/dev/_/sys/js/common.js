@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       let ymap = new ymaps.Map($mapBuy, {
         center: [mapPosition[0], mapPosition[1]],
-        zoom: 4.5,
+        zoom: 4,
         controls: [],
       });
 
@@ -311,8 +311,8 @@ document.addEventListener('DOMContentLoaded', function () {
         let placemark = new ymaps.Placemark(item._placeholder, {
         }, {
           iconLayout: 'default#image',
-          iconImageHref: '_/uploads/icons/placemark.png',
-          iconImageSize: [50, 52],
+          iconImageHref: '_/uploads/icons/heart-green-line.svg',
+          iconImageSize: [23, 24],
         }, {});
 
 
