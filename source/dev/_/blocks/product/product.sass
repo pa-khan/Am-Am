@@ -48,6 +48,19 @@
 				margin-bottom: 20px
 				&:last-of-type
 					margin-bottom: 0
+			&-value, &-arrow
+				display: inline
+			&-arrow
+				cursor: pointer
+
+				svg
+					display: inline-block
+					vertical-align: middle
+					margin-left: 8px
+					transform: rotate(90deg)
+			&.--show
+				.product__info-text-arrow
+					display: none
 
 .params
 	&__item
