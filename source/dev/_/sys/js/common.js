@@ -112,12 +112,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const reviewsTexts = reviewsSlider.querySelectorAll('.reviews__text');
     reviewsTexts.forEach((text) => {
-      if (text.innerText.length >= 150) {
+      if (text.innerText.length >= 175) {
 
         const value = document.createElement('div');
         value.className = 'reviews__text-value';
         value.setAttribute('data-text', text.innerText);
-        value.innerText = text.innerText.substr(0, 150) + '...';
+        value.innerText = text.innerText.substr(0, 175) + '...';
 
         const arrow = document.createElement('div');
         arrow.className = 'reviews__text-arrow';
@@ -252,9 +252,9 @@ document.addEventListener('DOMContentLoaded', function () {
         let dw = window.innerWidth;
 
         if (dw > 1220) {
-          ymap.setCenter([mapPosition[0] - 0.001, mapPosition[1] - 0.001]);
+          ymap.setCenter([mapPosition[0] - 0.0001, mapPosition[1] - 0.001]);
         } else if (dw <= 1220 && dw > 767) {
-          ymap.setCenter([mapPosition[0], mapPosition[1] - 0.01]);
+          ymap.setCenter([mapPosition[0], mapPosition[1] - 0.001]);
         } else {
           ymap.setCenter(mapPosition);
         }
@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       let ymap = new ymaps.Map($mapBuy, {
         center: [mapPosition[0], mapPosition[1]],
-        zoom: 4,
+        zoom: 4.5,
         controls: [],
       });
 

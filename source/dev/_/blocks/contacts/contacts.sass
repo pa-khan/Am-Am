@@ -8,6 +8,7 @@
 		z-index: 2
 		max-width: 410px
 		padding: 50px 0 0 0
+		margin-right: auto
 		position: relative
 		&:before, &:after
 			content: ""
@@ -65,7 +66,6 @@
 				font-size: 24px
 
 .map
-	z-index: -1
 	width: 100%
 	height: 784px
 	top: 0
@@ -84,11 +84,16 @@
 .ymaps-2-1-79-map-copyrights-promo
 	display: none
 
+.ymaps-2-1-79-controls__toolbar_left
+	opacity: 0
+
 @media screen and (max-width: 1220px)
 	.contacts
 		&__info
 			&:before
 				margin-left: -140px
+			&:after
+				margin-left: -115px
 			&-item
 				margin-bottom: 70px
 		&__desc
@@ -100,7 +105,34 @@
 					font-size: 22px
 
 @media screen and (max-width: 992px)
-	// .contacts
+	.contacts
+		&__info
+			max-width: 512px
+			margin: 0 auto
+			padding: 0
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			&:before
+				top: -130px
+				width: 789px
+				height: 712px
+				margin-left: 10px
+				clip-path: path('M732 338.544C732 440.263 671.59 524.572 601.91 591.923C530.302 661.138 447.925 712 337.5 712C228.965 712 155.522 659.064 84.1951 591.923C12.3381 524.282 -57 442.053 -57 338.544C-57 132.29 119.624 0 337.5 0C472.007 0 530.7 32.9627 601.91 120.077C646.048 174.072 732 259.621 732 338.544Z')
+			&-item
+				width: calc( 50% - 38px )
+				margin-bottom: 76px
+				&:last-of-type
+					width: 100%
+			&-text
+				strong
+					display: block
+				a
+					margin-bottom: 30px
+
+	.map
+		height: 514px
+		position: relative
 
 @media screen and (max-width: 767px)
 	// .contacts

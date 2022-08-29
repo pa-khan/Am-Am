@@ -43,6 +43,7 @@
 		margin: 18px 0 10px
 	&__text
 		line-height: 27px
+		transition: .3s
 		&-value, &-arrow
 			display: inline
 		&-arrow
@@ -51,14 +52,13 @@
 				display: inline
 				vertical-align: middle
 				margin-left: 9px
+			&:hover
+				svg
+					path
+						stroke: #54AA39
 		&.--show
 			.reviews__text-arrow
 				display: none
-
-		// overflow: hidden
-		// display: -webkit-box
-		// -webkit-line-clamp: 6
-		// -webkit-box-orient: vertical
 	&__controls
 		margin-top: 40px
 		align-items: center
