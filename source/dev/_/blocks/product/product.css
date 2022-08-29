@@ -102,3 +102,20 @@
 .params__item:last-of-type {
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 1220px) {
+  .product__main {
+    padding: 180px 0 100px;
+  }
+  .product__preview {
+    width: calc( 100% - 450px - 85px);
+  }
+  .product__preview:before {
+    width: 700px;
+    height: 670px;
+    background-size: contain;
+  }
+  .product__about {
+    width: 370px;
+  }
+}

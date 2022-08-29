@@ -88,7 +88,17 @@
 			margin-bottom: 0
 
 @media screen and (max-width: 1220px)
-	// .product
+	.product
+		&__main
+			padding: 180px 0 100px
+		&__preview
+			width: calc( 100% - 450px - 85px)
+			&:before
+				width: 700px
+				height: 670px
+				background-size: contain
+		&__about
+			width: 370px
 
 @media screen and (max-width: 992px)
 	// .product
