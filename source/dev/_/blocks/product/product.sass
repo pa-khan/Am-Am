@@ -51,13 +51,17 @@
 			&-value, &-arrow
 				display: inline
 			&-arrow
+				transition: .4s
 				cursor: pointer
-
 				svg
 					display: inline-block
 					vertical-align: middle
 					margin-left: 8px
 					transform: rotate(90deg)
+				&:hover
+					svg
+						path
+							stroke: #54AA39
 			&.--show
 				.product__info-text-arrow
 					display: none

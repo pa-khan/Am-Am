@@ -5,6 +5,20 @@ const mailPattern = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  // FANCYBOX SETUP
+  Fancybox.bind("[data-fancybox]", {
+    dragToClose: false,
+    autoFocus: false,
+  });
+
+  Fancybox.bind("[data-imgs]", {
+    dragToClose: false,
+    autoFocus: false,
+    Image: {
+      click: null,
+    },
+  });
+
   // CHECK INIT
   let checks = document.querySelectorAll('.check');
   if (checks) {

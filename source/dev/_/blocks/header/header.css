@@ -1,13 +1,22 @@
 .header {
   z-index: 10;
   padding: 15px 0;
+  min-height: 165px;
   position: relative;
 }
 .header__wrap {
   justify-content: space-between;
 }
 .header__logo {
+  top: 0;
+  left: 50%;
   max-width: 105px;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.header__inner {
+  width: 100%;
+  justify-content: space-between;
 }
 .header__nav {
   width: calc( 50% - 105px );
@@ -58,6 +67,51 @@
   transform: translateX(-50%) scale(1);
 }
 
+.ham {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  padding: 2px;
+}
+.ham div {
+  width: 32px;
+  height: 3px;
+  background: #656565;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+.ham div:nth-of-type(1) {
+  transition: background 0.3s, transform 0.3s ease-in-out;
+  transform-origin: 0 0;
+}
+.ham div:nth-of-type(2) {
+  transition: background 0.3s, transform 0.15s ease-in-out;
+}
+.ham div:nth-of-type(3) {
+  transition: background 0.3s, transform 0.3s ease-in-out;
+  transform-origin: 0 100%;
+  margin-bottom: 0;
+}
+.ham:hover div {
+  background: #54AA39;
+}
+.ham.--toggle div {
+  background: #656565;
+}
+.ham.--toggle div:nth-of-type(1) {
+  transform: rotate(45deg);
+}
+.ham.--toggle div:nth-of-type(2) {
+  transform: scaleY(0);
+}
+.ham.--toggle div:nth-of-type(3) {
+  transform: rotate(-45deg);
+}
+.ham.--toggle:hover div {
+  background: #656565;
+}
+
 @media screen and (max-width: 1220px) {
   .header__logo {
     max-width: 85px;
@@ -71,5 +125,58 @@
   }
   .header__nav ul li a {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header__wrap {
+    align-items: center;
+  }
+  .header__logo {
+    z-index: 10;
+    max-width: 70px;
+    height: 100px;
+    left: 0;
+    transform: none;
+    position: relative;
+  }
+  .header__inner {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.4s;
+    background: #fff;
+    visibility: hidden;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header__inner.--show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header__nav {
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .header__nav:last-of-type {
+    margin-bottom: 0;
+  }
+  .header__nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__nav ul li {
+    margin-bottom: 30px;
+  }
+  .header__nav ul li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .ham {
+    display: flex;
   }
 }

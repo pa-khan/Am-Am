@@ -3,11 +3,19 @@
 .header
 	z-index: 10
 	padding: 15px 0
+	min-height: 165px
 	position: relative
 	&__wrap
 		justify-content: space-between
 	&__logo
+		top: 0
+		left: 50%
 		max-width: 105px
+		transform: translateX(-50%)
+		position: absolute
+	&__inner
+		width: 100%
+		justify-content: space-between
 	&__nav
 		width: calc( 50% - 105px )
 		margin-top: 28px
@@ -30,7 +38,6 @@
 					transform: translateY(5px)
 					background: url('../../uploads/icons/line.svg') repeat-x
 					background-position-x: center
-
 				&:after
 					z-index: -1
 					top: 0
@@ -50,6 +57,43 @@
 					&:after
 						transform: translateX(-50%) scale(1)
 
+.ham
+	display: none
+	flex-direction: column
+	position: relative
+	cursor: pointer
+	padding: 2px
+	div
+		width: 32px
+		height: 3px
+		background: $gray
+		border-radius: 5px
+		margin-bottom: 8px
+		&:nth-of-type(1)
+			transition: background 0.3s, transform 0.3s ease-in-out
+			transform-origin: 0 0
+		&:nth-of-type(2)
+			transition: background 0.3s, transform 0.15s ease-in-out
+		&:nth-of-type(3)
+			transition: background 0.3s, transform 0.3s ease-in-out
+			transform-origin: 0 100%
+			margin-bottom: 0
+	&:hover
+		div
+			background: #54AA39
+	&.--toggle
+		div
+			background: $gray
+			&:nth-of-type(1)
+				transform: rotate(45deg)
+			&:nth-of-type(2)
+				transform: scaleY(0)
+			&:nth-of-type(3)
+				transform: rotate(-45deg)
+		&:hover
+			div
+				background: $gray
+
 @media screen and (max-width: 1220px)
 	.header
 		&__logo
@@ -65,7 +109,48 @@
 						font-size: 16px
 
 @media screen and (max-width: 992px)
-	// .header
+	.header
+		&__wrap
+			align-items: center
+		&__logo
+			z-index: 10
+			max-width: 70px
+			height: 100px
+			left: 0
+			transform: none
+			position: relative
+		&__inner
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			opacity: 0
+			transition: .4s
+			background: #fff
+			visibility: hidden
+			position: fixed
+			flex-direction: column
+			justify-content: center
+			&.--show
+				opacity: 1
+				visibility: visible
+		&__nav
+			margin-top: 0
+			margin-bottom: 20px
+			width: 100%
+			&:last-of-type
+				margin-bottom: 0
+			ul
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				li
+					margin-bottom: 30px
+					&:last-of-type
+						margin-bottom: 0
+
+	.ham
+		display: flex
 
 @media screen and (max-width: 767px)
 	// .header

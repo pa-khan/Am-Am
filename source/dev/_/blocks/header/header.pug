@@ -3,23 +3,25 @@ include ../../sys/pug/vars
 header.header
 	.case
 		.header__wrap.row
-			.header__nav
-				ul
-					li
-						a(href="about.html") Об Ам-Ам
-					li
-						a(href="catalog.html") Продукты
-					li
-						a(href=".html") Производство
 			a.header__logo.logo(href="index.html")
 				img(src="_/uploads/logos/logo.png" srcset="_/uploads/logos/logo-x2.png 2x", alt="" width="105" heigth="150")
-			.header__nav
-				ul
-					li
-						a(href=".html") Акция
-					li
-						a(href=".html") Статьи
-					li
-						a(href=".html") Новости
-					li
-						a(href="contacts.html") Контакты
+			.header__inner.row
+				.header__nav
+					ul
+						li
+							a(href="about.html") Об Ам-Ам
+						li
+							a(href="catalog.html") Продукты
+						li
+							a(href=".html") Производство
+				.header__nav
+					ul
+						li
+							a(href=".html") Акция
+						li
+							a(href=".html") Статьи
+						li
+							a(href=".html") Новости
+						li
+							a(href="contacts.html") Контакты
+			.header__ham.ham

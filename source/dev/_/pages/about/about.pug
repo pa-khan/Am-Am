@@ -11,30 +11,30 @@ block content
 		.about.pt0
 			.case
 				.about__wrap.row
-					.about__preview
+					.about__preview.an.fadeIn-scale
 						.about__img.cover
 							img(src="_/uploads/about-img.jpg", alt="" width="630" heigth="452")
 					.about__info
-						.about__title.h2 #[h2 Об Ам-Ам]
-						.about__text
+						.about__title.h2.an.fadeIn-up #[h2 Об Ам-Ам]
+						.about__text.an.fadeIn-up(data-timeout="0.1s")
 							p Секрету нашего успеха уже 16 лет. #[br]Он прост — без химии, без добавок, #[br]без консервантов, без красителей!
 							p Узнайте о нас больше за 3 минуты.
-						.about__act.row
+						.about__act.row.an.fadeIn-up(data-timeout="0.2s")
 							.about__arrow
 								img(src="_/uploads/icons/arrow.svg", alt="" width="128" heigth="24")
-							.about__play.play
+							a.about__play.play(data-fancybox href="" data-src="_/uploads/am.mp4")
 								img(src="_/uploads/icons/play.svg", alt="" width="19" heigth="20")
-	
+		
 		+style('rec', 'blocks')
 		.rec
 			.case
-				.rec__title.h2.tac Молоко, которое рекомендуют мамы!
-				.rec__desc.tac 360 тысяч детей в 18 субъектах Российской Федерации ежедневно кормит вкусными, натуральными и полезными молочными продуктами #[br]марки «Ам-Ам» Брянский гормолокозавод
+				.rec__title.h2.tac.an.fadeIn-up Молоко, которое рекомендуют мамы!
+				.rec__desc.tac.an.fadeIn-up(data-timeout="0.1s") 360 тысяч детей в 18 субъектах Российской Федерации ежедневно кормит вкусными, натуральными и полезными молочными продуктами #[br]марки «Ам-Ам» Брянский гормолокозавод
 				.rec__wrap.row
-					.rec__preview
+					.rec__preview.an.fadeIn-scale
 						.rec__img.cover
 							img(src="_/uploads/rec-img.jpg", alt="")
-					.rec__info
+					.rec__info.an.fadeIn
 						p Сегодня ОАО «Брянский гормолзавод» занимает третье место в Российской Федерации по объему поставок жидких детских молочных продуктов.
 						p 60-летний юбилей предприятия (завод был основан в декабре 1953 года) мы отметили запуском нового современного автоматизированного цеха — это наш совместный проект с корпорацией Tetra Pak. Запуск нового оборудования в 3 раза увеличил мощность завода.
 						p #[i Председатель совета директоров Валерий Цуркан.]
@@ -42,24 +42,24 @@ block content
 		+style('certs', 'blocks')
 		.certs
 			.case
-				.certs__title.h2.tac #[h2 Молочная продукция «Ам-Ам» - это]
-				.certs__desc.tac единственный вид молочной продукции, #[br]который проходит государственную регистрацию
-				.certs__list.row
-					.certs__item
+				.certs__title.h2.tac.an.fadeIn-up #[h2 Молочная продукция «Ам-Ам» - это]
+				.certs__desc.tac.an.fadeIn-up(data-timeout="0.1s") единственный вид молочной продукции, #[br]который проходит государственную регистрацию
+				.certs__list.row.an.fadeIn
+					a.certs__item(href="" data-imgs="" data-fancybox="" data-src="_/uploads/certs-1.jpg")
 						img(src="_/uploads/certs-1.jpg", alt="" width="300" height="425")
-					.certs__item
+					a.certs__item(href="" data-imgs="" data-fancybox="" data-src="_/uploads/certs-2.jpg")
 						img(src="_/uploads/certs-2.jpg", alt="" width="300" height="425")
-					.certs__item
+					a.certs__item(href="" data-imgs="" data-fancybox="" data-src="_/uploads/certs-3.jpg")
 						img(src="_/uploads/certs-3.jpg", alt="" width="300" height="425")
 
 		+style('natural', 'blocks')
 		.natural
 			.case
-				.natural__title.h3.tac #[h3 Ни одного искусственного компонента нет в наших продуктах.]
-				.natural__preview
+				.natural__title.h3.tac.an.fadeIn-up #[h3 Ни одного искусственного компонента нет в наших продуктах.]
+				.natural__preview.an.fadeIn-scale
 					.natural__img
 						img(src="_/uploads/natural-img.png", alt="")
-				.natural__list.row
+				.natural__list.row.an.fadeIn
 					.natural__item.--sm
 						.natural__text Продукы адаптированы к особенностям пищеварения детей и отвечает последним требованиям педиатрии
 					.natural__item.--sm
@@ -74,134 +74,135 @@ block content
 			.case
 				.farm__wrap.row
 					.farm__info
-						.farm__title.h2 #[h2 Собственная молочная ферма]
-						.farm__text
+						.farm__title.h2.an.fadeIn-up #[h2 Собственная молочная ферма]
+						.farm__text.an.fadeIn-up(data-timeout="0.1s")
 							p Брянский гормолзавод в июне 2013 года приобрел животноводческое предприятие в Карачевском районе. В настоящее время инвестиции в проект составили более 65 миллионов рублей. В планах — создание фабрики-фермы по производству молока на 2400 голов дойного стада.
 							p Первая роботизированная, энергонезависимая ферма уже возводится в карачевском селе Гощь. В её оснащении применяется израильское, шведское, итальянское, белорусское и российское передовое оборудование.
-					.farm__preview
+					.farm__preview.an.fadeIn-scale
 						.farm__img.cover
 							img(src="_/uploads/farm-img.jpg", alt="")
 
 		+style('reviews', 'blocks')
 		.reviews
 			.case
-				.reviews__title.h2.tac #[h2 Отзывы о продукции “Ам-Ам”]
-				.reviews__desc.tac На различных интернет-сайтах, где продвинутые мамочки делятся советами, на вопросы, какое питание выбрать для деток с отклонениями в работе пищеварительной системы или аллергией, мамы рекомендуют продукцию от ОАО «Брянский гормолзавод». 
-				.reviews__slider.swiper
-					.reviews__slider-wrap.swiper-wrapper
-						.reviews__slide.swiper-slide
-							.reviews__preview
-								.reviews__img.cover
-									img(src="_/uploads/reviews-1.jpg", alt="")
-							.reviews__info
-								.reviews__rate.rate
-									.rate__item
-									.rate__item
-									.rate__item
-									.rate__item
-									.rate__item.--none
-								.reviews__name Миша Кириллов и его мама пишут:
-								.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
-						.reviews__slide.swiper-slide
-							.reviews__preview
-								.reviews__img.cover
-									img(src="_/uploads/reviews-2.jpg", alt="")
-							.reviews__info
-								.reviews__rate.rate
-									.rate__item
-									.rate__item
-									.rate__item
-									.rate__item
-									.rate__item
-								.reviews__name Настенька и ее мама пишут:
-								.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
-						.reviews__slide.swiper-slide
-							.reviews__preview
-								.reviews__img.cover
-									img(src="_/uploads/reviews-3.jpg", alt="")
-							.reviews__info
-								.reviews__rate.rate
-									.rate__item
-									.rate__item
-									.rate__item
-									.rate__item
-									.rate__item
-								.reviews__name Лика, Мика и их родители пишут:
-								.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
-						.reviews__slide.swiper-slide
-							.reviews__preview
-								.reviews__img.cover
-									img(src="_/uploads/reviews-1.jpg", alt="")
-							.reviews__info
-								.reviews__rate.rate
-									.rate__item
-									.rate__item
-									.rate__item
-									.rate__item
-									.rate__item.--none
-								.reviews__name Миша Кириллов и его мама пишут:
-								.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
-						.reviews__slide.swiper-slide
-							.reviews__preview
-								.reviews__img.cover
-									img(src="_/uploads/reviews-2.jpg", alt="")
-							.reviews__info
-								.reviews__rate.rate
-									.rate__item
-									.rate__item
-									.rate__item
-									.rate__item
-									.rate__item
-								.reviews__name Настенька и ее мама пишут:
-								.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
-						.reviews__slide.swiper-slide
-							.reviews__preview
-								.reviews__img.cover
-									img(src="_/uploads/reviews-3.jpg", alt="")
-							.reviews__info
-								.reviews__rate.rate
-									.rate__item
-									.rate__item
-									.rate__item
-									.rate__item
-									.rate__item
-								.reviews__name Лика, Мика и их родители пишут:
-								.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
-						.reviews__slide.swiper-slide
-							.reviews__preview
-								.reviews__img.cover
-									img(src="_/uploads/reviews-1.jpg", alt="")
-							.reviews__info
-								.reviews__rate.rate
-									.rate__item
-									.rate__item
-									.rate__item
-									.rate__item
-									.rate__item
-								.reviews__name Лика, Мика и их родители пишут:
-								.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
-					.reviews__controls.row
-						.reviews__arrow.swiper-button-prev
-							<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9341 0.811523L0.999971 10.3115L13.9341 19.8115" stroke="#656565" stroke-linecap="square"/></svg>
-						.reviews__pagination.swiper-pagination
-						.reviews__arrow.swiper-button-next
-							<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.13477 1L14.0689 10.5L1.13477 20" stroke="#656565" stroke-linecap="square"/></svg>
+				.reviews__title.h2.tac.an.fadeIn-up #[h2 Отзывы о продукции “Ам-Ам”]
+				.reviews__desc.tac.an.fadeIn-up(data-timeout="0.1s") На различных интернет-сайтах, где продвинутые мамочки делятся советами, на вопросы, какое питание выбрать для деток с отклонениями в работе пищеварительной системы или аллергией, мамы рекомендуют продукцию от ОАО «Брянский гормолзавод». 
+				.reviews__wrap.an.fadeIn
+					.reviews__slider.swiper
+						.reviews__slider-wrap.swiper-wrapper
+							.reviews__slide.swiper-slide
+								.reviews__preview
+									.reviews__img.cover
+										img(src="_/uploads/reviews-1.jpg", alt="")
+								.reviews__info
+									.reviews__rate.rate
+										.rate__item
+										.rate__item
+										.rate__item
+										.rate__item
+										.rate__item.--none
+									.reviews__name Миша Кириллов и его мама пишут:
+									.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
+							.reviews__slide.swiper-slide
+								.reviews__preview
+									.reviews__img.cover
+										img(src="_/uploads/reviews-2.jpg", alt="")
+								.reviews__info
+									.reviews__rate.rate
+										.rate__item
+										.rate__item
+										.rate__item
+										.rate__item
+										.rate__item
+									.reviews__name Настенька и ее мама пишут:
+									.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
+							.reviews__slide.swiper-slide
+								.reviews__preview
+									.reviews__img.cover
+										img(src="_/uploads/reviews-3.jpg", alt="")
+								.reviews__info
+									.reviews__rate.rate
+										.rate__item
+										.rate__item
+										.rate__item
+										.rate__item
+										.rate__item
+									.reviews__name Лика, Мика и их родители пишут:
+									.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
+							.reviews__slide.swiper-slide
+								.reviews__preview
+									.reviews__img.cover
+										img(src="_/uploads/reviews-1.jpg", alt="")
+								.reviews__info
+									.reviews__rate.rate
+										.rate__item
+										.rate__item
+										.rate__item
+										.rate__item
+										.rate__item.--none
+									.reviews__name Миша Кириллов и его мама пишут:
+									.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
+							.reviews__slide.swiper-slide
+								.reviews__preview
+									.reviews__img.cover
+										img(src="_/uploads/reviews-2.jpg", alt="")
+								.reviews__info
+									.reviews__rate.rate
+										.rate__item
+										.rate__item
+										.rate__item
+										.rate__item
+										.rate__item
+									.reviews__name Настенька и ее мама пишут:
+									.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
+							.reviews__slide.swiper-slide
+								.reviews__preview
+									.reviews__img.cover
+										img(src="_/uploads/reviews-3.jpg", alt="")
+								.reviews__info
+									.reviews__rate.rate
+										.rate__item
+										.rate__item
+										.rate__item
+										.rate__item
+										.rate__item
+									.reviews__name Лика, Мика и их родители пишут:
+									.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
+							.reviews__slide.swiper-slide
+								.reviews__preview
+									.reviews__img.cover
+										img(src="_/uploads/reviews-1.jpg", alt="")
+								.reviews__info
+									.reviews__rate.rate
+										.rate__item
+										.rate__item
+										.rate__item
+										.rate__item
+										.rate__item
+									.reviews__name Лика, Мика и их родители пишут:
+									.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
+						.reviews__controls.row
+							.reviews__arrow.swiper-button-prev
+								<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9341 0.811523L0.999971 10.3115L13.9341 19.8115" stroke="#656565" stroke-linecap="square"/></svg>
+							.reviews__pagination.swiper-pagination
+							.reviews__arrow.swiper-button-next
+								<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.13477 1L14.0689 10.5L1.13477 20" stroke="#656565" stroke-linecap="square"/></svg>
 
 		+style('win', 'blocks')
 		.win
 			.case
-				.win__title.h2.tac #[h2 Наши победители]
-				.win__desc.tac По итогам выставки передовых достижений АПК России «Золотая осень» наши продукты традиционно получают награды
+				.win__title.h2.tac.an.fadeIn-up #[h2 Наши победители]
+				.win__desc.tac.an.fadeIn-up(data-timeout="0.1s") По итогам выставки передовых достижений АПК России «Золотая осень» наши продукты традиционно получают награды
 				.win__list.row
-					.win__item
+					.win__item.an.fadeIn-scale
 						.win__img
 							img(src="_/uploads/products/item-9.png", alt="")
 						.win__text «Золото» — у кисломолочного продукта для детского питания «Биолакт Нью» 3,2%,
-					.win__item.--reverse
+					.win__item.--reverse.an.fadeIn-scale
 						.win__img
 							img(src="_/uploads/products/item-7.png", alt="")
 						.win__text «Серебро» — у молока #[br]питьевого для детского питания #[br]«Ам-ам „Мамина забота“»
-					.win__item.--fd
+					.win__item.--fd.an.fadeIn-scale
 						.win__img
 							img(src="_/uploads/products/item-10.png", alt="")
 						.win__text «Бронза» — у творога «ДМ 5%»
