@@ -45,6 +45,7 @@
   transform: translateX(-50%) scale(0);
   background: url("../../uploads/icons/nav-bg.png") no-repeat;
   background-size: 100% 27px;
+  image-rendering: -webkit-optimize-contrast;
 }
 .header__nav ul li:hover:before, .header__nav ul li:hover:after {
   opacity: 1;
