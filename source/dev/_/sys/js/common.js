@@ -109,6 +109,29 @@ document.addEventListener('DOMContentLoaded', function () {
         },
       }
     });
+
+    const reviewsTexts = reviewsSlider.querySelectorAll('.reviews__text');
+    reviewsTexts.forEach((text) => {
+      if (text.innerText.length >= 175) {
+
+        const value = document.createElement('div');
+        value.className = 'reviews__text-value';
+        value.setAttribute('data-text', text.innerText);
+        value.innerText = text.innerText.substr(0, 175) + '...';
+
+        const arrow = document.createElement('div');
+        arrow.className = 'reviews__text-arrow';
+        arrow.innerHTML = '<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d = "M1 1L13.9342 10.5L1 20" stroke = "#656565" stroke - linecap="square" /></svg >';
+        arrow.addEventListener('click', () => {
+          text.classList.add('--show');
+          value.innerText = value.dataset.text;
+        });
+
+        text.innerHTML = '';
+
+        text.append(value, arrow);
+      }
+    });
   }
 
   // MOBILE SLIDRES
