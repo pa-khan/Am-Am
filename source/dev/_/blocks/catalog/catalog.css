@@ -1,6 +1,14 @@
 .catalog__item {
   width: calc( 100% / 4 );
 }
+.catalog__filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter__select {
+  width: auto;
+}
 
 .p-item {
   display: flex;
