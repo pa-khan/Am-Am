@@ -10,14 +10,15 @@ block content
 		.case
 			.intro__wrap.row
 				.intro__info
-					.intro__title.h1 #[h1 Детские продукты для здорового питания малышей и взрослых]
-					.intro__list.h-list
+					.intro__title.h1.an.fadeIn-up #[h1 Детские продукты для здорового питания малышей и взрослых]
+					.intro__list.h-list.an.fadeIn-up(data-timeout="0.1s")
 						ul
 							li Без добавок
 							li Без консервантов
 							li Без красителей
-					.intro__btn.btn.--green.--md Где купить
-				.intro__preview
+					.intro_btn-wrap.an.fadeIn-up(data-timeout="0.2s")
+						.intro__btn.btn.--green.--md Где купить
+				.intro__preview.an.fadeIn-scale
 					.intro__img
 						img(src="_/uploads/intro-img.png", alt="" width="704" heigth="813")
 
@@ -25,26 +26,26 @@ block content
 	.about
 		.case
 			.about__wrap.row
-				.about__preview
+				.about__preview.an.fadeIn-scale
 					.about__img.cover
 						img(src="_/uploads/about-img.jpg", alt="" width="630" heigth="452")
 				.about__info
-					.about__title.h2 #[h2 Об Ам-Ам]
-					.about__text
+					.about__title.h2.an.fadeIn-up #[h2 Об Ам-Ам]
+					.about__text.an.fadeIn-up(data-timeout="0.1s")
 						p Секрету нашего успеха уже 16 лет. #[br]Он прост — без химии, без добавок, #[br]без консервантов, без красителей!
 						p Узнайте о нас больше за 3 минуты.
-					.about__act.row
+					.about__act.row.an.fadeIn-up(data-timeout="0.2s")
 						.about__arrow
 							img(src="_/uploads/icons/arrow.svg", alt="" width="128" heigth="24")
-						.about__play.play
+						a.about__play.play(data-fancybox href="" data-src="_/uploads/am.mp4")
 							img(src="_/uploads/icons/play.svg", alt="" width="19" heigth="20")
 
 	+style('catalog', 'blocks')
 	+style('favs', 'blocks')
 	.favs
 		.case
-			.favs__title.h2 #[h2 Любимые продукты малышей]
-			.favs__list
+			.favs__title.h2.an.fadeIn-up #[h2 Любимые продукты малышей]
+			.favs__list.an.fadeIn
 				.fav__item.p-item.--lg.--f-right
 					.p-item__img
 						img(src="_/uploads/products/item-1.png", alt="")
@@ -92,7 +93,7 @@ block content
 						img(src="_/uploads/products/item-8.png", alt="")
 					a.p-item__name(href="")
 						.p-item__name-text Фруктовое пюре «Груша-яблоко»
-			.favs__act.row
+			.favs__act.row.an.fadeIn-up
 				.favs__btn.btn.--green.--md Где купить
 				a.favs__link(href="").link Смотреть все
 					<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L13.9342 10.5L1 20" stroke="#656565" stroke-linecap="square"/></svg>
@@ -102,126 +103,127 @@ block content
 		.case
 			.awards__list-wrap
 				.awards__list.row
-					.awards__item
+					.awards__item.an.fadeIn-scale
 						img(src="_/uploads/award-1.png", alt="")
-					.awards__item
+					.awards__item.an.fadeIn-scale(data-timeout="0.1s")
 						img(src="_/uploads/award-2.png", alt="")
-					.awards__item
+					.awards__item.an.fadeIn-scale(data-timeout="0.2s")
 						img(src="_/uploads/award-3.png", alt="")
-					.awards__item
+					.awards__item.an.fadeIn-scale(data-timeout="0.3s")
 						img(src="_/uploads/award-4.png", alt="")
-					.awards__item
+					.awards__item.an.fadeIn-scale(data-timeout="0.4s")
 						img(src="_/uploads/award-5.png", alt="")
 
 	+style('reviews', 'blocks')
 	.reviews
 		.case
-			.reviews__title.h2 #[h2 Что понравилось нашим маленьким покупателям]
-			.reviews__slider.swiper
-				.reviews__slider-wrap.swiper-wrapper
-					.reviews__slide.swiper-slide
-						.reviews__preview
-							.reviews__img.cover
-								img(src="_/uploads/reviews-1.jpg", alt="")
-						.reviews__info
-							.reviews__rate.rate
-								.rate__item
-								.rate__item
-								.rate__item
-								.rate__item
-								.rate__item.--none
-							.reviews__name Миша Кириллов и его мама пишут:
-							.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
-					.reviews__slide.swiper-slide
-						.reviews__preview
-							.reviews__img.cover
-								img(src="_/uploads/reviews-2.jpg", alt="")
-						.reviews__info
-							.reviews__rate.rate
-								.rate__item
-								.rate__item
-								.rate__item
-								.rate__item
-								.rate__item
-							.reviews__name Настенька и ее мама пишут:
-							.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
-					.reviews__slide.swiper-slide
-						.reviews__preview
-							.reviews__img.cover
-								img(src="_/uploads/reviews-3.jpg", alt="")
-						.reviews__info
-							.reviews__rate.rate
-								.rate__item
-								.rate__item
-								.rate__item
-								.rate__item
-								.rate__item
-							.reviews__name Лика, Мика и их родители пишут:
-							.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
-					.reviews__slide.swiper-slide
-						.reviews__preview
-							.reviews__img.cover
-								img(src="_/uploads/reviews-1.jpg", alt="")
-						.reviews__info
-							.reviews__rate.rate
-								.rate__item
-								.rate__item
-								.rate__item
-								.rate__item
-								.rate__item.--none
-							.reviews__name Миша Кириллов и его мама пишут:
-							.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
-					.reviews__slide.swiper-slide
-						.reviews__preview
-							.reviews__img.cover
-								img(src="_/uploads/reviews-2.jpg", alt="")
-						.reviews__info
-							.reviews__rate.rate
-								.rate__item
-								.rate__item
-								.rate__item
-								.rate__item
-								.rate__item
-							.reviews__name Настенька и ее мама пишут:
-							.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
-					.reviews__slide.swiper-slide
-						.reviews__preview
-							.reviews__img.cover
-								img(src="_/uploads/reviews-3.jpg", alt="")
-						.reviews__info
-							.reviews__rate.rate
-								.rate__item
-								.rate__item
-								.rate__item
-								.rate__item
-								.rate__item
-							.reviews__name Лика, Мика и их родители пишут:
-							.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
-					.reviews__slide.swiper-slide
-						.reviews__preview
-							.reviews__img.cover
-								img(src="_/uploads/reviews-1.jpg", alt="")
-						.reviews__info
-							.reviews__rate.rate
-								.rate__item
-								.rate__item
-								.rate__item
-								.rate__item
-								.rate__item
-							.reviews__name Лика, Мика и их родители пишут:
-							.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
-				.reviews__controls.row
-					.reviews__arrow.swiper-button-prev
-						<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9341 0.811523L0.999971 10.3115L13.9341 19.8115" stroke="#656565" stroke-linecap="square"/></svg>
-					.reviews__pagination.swiper-pagination
-					.reviews__arrow.swiper-button-next
-						<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.13477 1L14.0689 10.5L1.13477 20" stroke="#656565" stroke-linecap="square"/></svg>
+			.reviews__title.h2.an.fadeIn-up #[h2 Что понравилось нашим маленьким покупателям]
+			.reviews__wrap.an.fadeIn
+				.reviews__slider.swiper
+					.reviews__slider-wrap.swiper-wrapper
+						.reviews__slide.swiper-slide
+							.reviews__preview
+								.reviews__img.cover
+									img(src="_/uploads/reviews-1.jpg", alt="")
+							.reviews__info
+								.reviews__rate.rate
+									.rate__item
+									.rate__item
+									.rate__item
+									.rate__item
+									.rate__item.--none
+								.reviews__name Миша Кириллов и его мама пишут:
+								.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
+						.reviews__slide.swiper-slide
+							.reviews__preview
+								.reviews__img.cover
+									img(src="_/uploads/reviews-2.jpg", alt="")
+							.reviews__info
+								.reviews__rate.rate
+									.rate__item
+									.rate__item
+									.rate__item
+									.rate__item
+									.rate__item
+								.reviews__name Настенька и ее мама пишут:
+								.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
+						.reviews__slide.swiper-slide
+							.reviews__preview
+								.reviews__img.cover
+									img(src="_/uploads/reviews-3.jpg", alt="")
+							.reviews__info
+								.reviews__rate.rate
+									.rate__item
+									.rate__item
+									.rate__item
+									.rate__item
+									.rate__item
+								.reviews__name Лика, Мика и их родители пишут:
+								.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
+						.reviews__slide.swiper-slide
+							.reviews__preview
+								.reviews__img.cover
+									img(src="_/uploads/reviews-1.jpg", alt="")
+							.reviews__info
+								.reviews__rate.rate
+									.rate__item
+									.rate__item
+									.rate__item
+									.rate__item
+									.rate__item.--none
+								.reviews__name Миша Кириллов и его мама пишут:
+								.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
+						.reviews__slide.swiper-slide
+							.reviews__preview
+								.reviews__img.cover
+									img(src="_/uploads/reviews-2.jpg", alt="")
+							.reviews__info
+								.reviews__rate.rate
+									.rate__item
+									.rate__item
+									.rate__item
+									.rate__item
+									.rate__item
+								.reviews__name Настенька и ее мама пишут:
+								.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
+						.reviews__slide.swiper-slide
+							.reviews__preview
+								.reviews__img.cover
+									img(src="_/uploads/reviews-3.jpg", alt="")
+							.reviews__info
+								.reviews__rate.rate
+									.rate__item
+									.rate__item
+									.rate__item
+									.rate__item
+									.rate__item
+								.reviews__name Лика, Мика и их родители пишут:
+								.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
+						.reviews__slide.swiper-slide
+							.reviews__preview
+								.reviews__img.cover
+									img(src="_/uploads/reviews-1.jpg", alt="")
+							.reviews__info
+								.reviews__rate.rate
+									.rate__item
+									.rate__item
+									.rate__item
+									.rate__item
+									.rate__item
+								.reviews__name Лика, Мика и их родители пишут:
+								.reviews__text Добрый день! Биотворог детский "Ам-ам" меня устраивает по составу, хорошо, в частности, что в нем есть бифидобактерии, а в качестве регулятора кислотности -лимонный сок, хотя и бифидобактерии регулятора
+					.reviews__controls.row
+						.reviews__arrow.swiper-button-prev
+							<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9341 0.811523L0.999971 10.3115L13.9341 19.8115" stroke="#656565" stroke-linecap="square"/></svg>
+						.reviews__pagination.swiper-pagination
+						.reviews__arrow.swiper-button-next
+							<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.13477 1L14.0689 10.5L1.13477 20" stroke="#656565" stroke-linecap="square"/></svg>
 
 	+style('promo', 'blocks')
 	.promo
 		.case
 			.promo__wrap.row
-				.promo__info
+				.promo__info.an.fadeIn-up
 					.promo__title.h2 #[h2 Акция!]
 					.promo__arrow
 						img(src="_/uploads/icons/arrow.svg", alt="" width="128" heigth="24")
@@ -229,14 +231,14 @@ block content
 						p Отправьте отзыв о любом продукте “Ам-Ам” на нашу электронную почту и получите целый набор на сумму #[i 2645 рублей бесплатно.]
 					a.promo__link.link(href="") Узнать подробности
 						<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L13.9342 10.5L1 20" stroke="#656565" stroke-linecap="square"/></svg>
-				.promo__img
+				.promo__img.an.fadeIn-scale
 					img(src="_/uploads/intro-img.png", alt="" width="375" height="432")
 
 	+style('news', 'blocks')
 	.intro-news
 		.case
-			.intro-news__title.h2 #[h2 Новости от Ам-Ам]
-			.intro-news__inner
+			.intro-news__title.h2.an.fadeIn-up #[h2 Новости от Ам-Ам]
+			.intro-news__inner.an.fadeIn
 				.intro-news__list.row
 					a.intro-news__item.n-item(href="")
 						.n-item__preview
@@ -264,8 +266,8 @@ block content
 	+style('buy', 'blocks')
 	.buy
 		.case
-			.buy__title.h2 #[h2 Где купить продукты Ам-Ам]
-			.buy__wrap
+			.buy__title.h2.an.fadeIn-up #[h2 Где купить продукты Ам-Ам]
+			.buy__wrap.an.fadeIn
 				.buy__map.map
 					.map__area#map-buy(data-map="55.753215, 37.622504" data-placeholder="55.753215, 37.622504")
 					script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
@@ -284,8 +286,8 @@ block content
 	+style('arts', 'blocks')
 	.intro-arts
 		.case
-			.intro-arts__title.h2 #[h2 Полезные статьи для мам]
-			.intro-arts__inner
+			.intro-arts__title.h2.an.fadeIn-up #[h2 Полезные статьи для мам]
+			.intro-arts__inner.an.fadeIn
 				.intro-arts__list.row
 					a.intro-arts__item.a-item(href="")
 						.a-item__preview
@@ -310,7 +312,7 @@ block content
 			a.intro-arts__link.link(href="") Все статьи
 				<svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L13.9342 10.5L1 20" stroke="#656565" stroke-linecap="square"/></svg>
 
-	.form
+	.form.an.fadeIn-scale
 		.case
 			.form__wrap
 				.form__subtitle Подпишитесь на нашу рассылку #[br]и получайте полезные материалы и новости компании прямо на почту

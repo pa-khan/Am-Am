@@ -27,6 +27,31 @@
 	font-family: $ffTitle
 	line-height: 36px
 
+// ANIMATION
+.fadeIn
+	opacity: 0
+	&.--loaded
+		opacity: 1
+		transition: 1.5s
+		transition-property: opacity
+
+	&-up
+		opacity: 0
+		transform: translateY(40px)
+		&.--loaded
+			opacity: 1
+			transition: 1s
+			transition-property: opacity, transform
+			transform: translateY(0)
+	&-scale
+		opacity: 0
+		transform: scale(.5)
+		&.--loaded
+			opacity: 1
+			transition: 1.5s
+			transition-property: opacity, transform
+			transform: scale(1)
+
 // COMMON ELEMENTS
 .inner
 	overflow: hidden
@@ -192,6 +217,13 @@
 	&__btn
 		max-width: 203px
 		margin-left: -15px
+
+.fancybox
+	&__content
+		&:focus:not(.carousel__button.is-close)
+			outline: none !important
+		video
+			outline: none !important
 
 // SLDIER
 .swiper-button-prev, .swiper-button-next

@@ -104,4 +104,7 @@
     max-width: 203px;
     position: absolute;
   }
+  .footer__info {
+    margin-top: 56px;
+  }
 }

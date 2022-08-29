@@ -8,7 +8,6 @@
 }
 
 html, body {
-  height: 100%;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
 }
@@ -509,6 +508,35 @@ path, circle, rect, line {
   line-height: 36px;
 }
 
+.fadeIn {
+  opacity: 0;
+}
+.fadeIn.--loaded {
+  opacity: 1;
+  transition: 1.5s;
+  transition-property: opacity;
+}
+.fadeIn-up {
+  opacity: 0;
+  transform: translateY(40px);
+}
+.fadeIn-up.--loaded {
+  opacity: 1;
+  transition: 1s;
+  transition-property: opacity, transform;
+  transform: translateY(0);
+}
+.fadeIn-scale {
+  opacity: 0;
+  transform: scale(0.5);
+}
+.fadeIn-scale.--loaded {
+  opacity: 1;
+  transition: 1.5s;
+  transition-property: opacity, transform;
+  transform: scale(1);
+}
+
 .inner {
   overflow: hidden;
 }
@@ -704,6 +732,13 @@ path, circle, rect, line {
 .form__btn {
   max-width: 203px;
   margin-left: -15px;
+}
+
+.fancybox__content:focus:not(.carousel__button.is-close) {
+  outline: none !important;
+}
+.fancybox__content video {
+  outline: none !important;
 }
 
 .swiper-button-prev, .swiper-button-next {
