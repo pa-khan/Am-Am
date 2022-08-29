@@ -371,6 +371,7 @@ path, circle, rect, line {
 .select__bg img {
   width: 100%;
   height: 56px;
+  image-rendering: -webkit-optimize-contrast;
 }
 .select__title {
   color: #000;
@@ -398,14 +399,44 @@ path, circle, rect, line {
   overflow: auto;
   transition: 0.3s;
 }
+.select__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 52px;
+}
 .select__item {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   font-size: 15px;
   padding: 8px 12px;
   transition: 0.3s;
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+}
+.select__item::before, .select__item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+  image-rendering: -webkit-optimize-contrast;
+}
+.select__item:before {
+  z-index: -2;
+  background: url("../../uploads/icons/select-item-line.png") no-repeat center/100% 26px;
+}
+.select__item:after {
+  opacity: 0;
+  z-index: -1;
+  background: url("../../uploads/icons/select-item-line-green.png") no-repeat center/100% 26px;
+}
+.select__item.--selected::after, .select__item:hover::after {
+  opacity: 1;
 }
 .select.--open {
   z-index: 100;
@@ -422,6 +453,7 @@ path, circle, rect, line {
   opacity: 1;
   visibility: visible;
   transform: translateY(0px);
+  overflow: visible;
 }
 
 .textarea {
