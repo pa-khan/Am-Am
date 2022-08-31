@@ -1,13 +1,15 @@
 .buy {
-  padding: 82px 0 90px;
+  padding: 82px 0 78px;
 }
 .buy__wrap {
+  margin-top: 15px;
+  margin-left: 15px;
   position: relative;
 }
 .buy__wrap:before {
   top: -15px;
   left: -20px;
-  width: 1170px;
+  width: 1172px;
   height: 600px;
   background: url("../../uploads/icons/map-line.svg") no-repeat;
   content: "";

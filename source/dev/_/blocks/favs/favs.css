@@ -8,7 +8,7 @@
   display: grid;
   grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fill, minmax(374px, 0fr));
-  gap: 40px 0;
+  gap: 55px 0;
   align-items: flex-start;
   justify-content: space-between;
 }
