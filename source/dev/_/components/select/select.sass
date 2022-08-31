@@ -1,114 +1,159 @@
 @import ../../sys/sass/vars
 
 .select
-  z-index: 10
-  width: 100%
-  transition: .3s
-  position: relative
-  cursor: pointer
-  select
-    display: none
-  &__wrap
-    display: flex
-    flex-wrap: wrap
-    align-items: center
-    position: relative
-  &__label
-    font-size: 18px
-    min-width: 83px
-    margin-right: 20px
-  &__area
-    color: $cMain
-    font-size: 18px
-    padding: 17px 14px
-    transition: .3s
-    min-width: 125px
-    height: 56px
-    display: flex
-    align-items: center
-    justify-content: space-between
-    position: relative
-  &__bg
-    top: 0
-    left: 0
-    width: 100%
-    height: 56px
-    position: absolute
-    img
-      width: 100%
-      height: 56px
-      image-rendering: -webkit-optimize-contrast
-  &__title
-    color: $cMain
-    width: calc(100% - 21px -10px)
-    transition: .3s
-    display: flex
-    flex-wrap: wrap
-  &__icon
-    width: 21px
-    height: 12px
-    margin-left: 10px
-    transition: .3s
-    background: url(../../uploads/icons/chevron.svg) no-repeat
-    position: relative
-  &__drop
-    width: 100%
-    top: 100%
-    left: 0
-    opacity: 0
-    visibility: hidden
-    position: absolute
-    color: $cMain
-    overflow: auto
-    transition: .3s
-  &__list
-    display: flex
-    flex-direction: column
-    align-items: flex-end
-    padding-right: 52px
-  &__item
-    // width: 100%
-    display: flex
-    flex-wrap: wrap
-    align-items: center
-    font-size: 15px
-    padding: 8px 12px
-    transition: .3s
-    position: relative
-    z-index: 1
-    white-space: nowrap
-    &::before, &:after
-      content: ''
-      position: absolute
-      top: 0
-      left: 0
-      right: 0
-      bottom: 0
-      transition: .3s
-      image-rendering: -webkit-optimize-contrast
-    &:before
-      z-index: -2
-      background: url('../../uploads/icons/select-item-line.png') no-repeat center / 100% 26px
-    &:after
-      opacity: 0
-      z-index: -1
-      background: url('../../uploads/icons/select-item-line-green.png') no-repeat center / 100% 26px
-    &.--selected, &:hover
-      &::before
-        // opacity: 0
-      &::after
-        opacity: 1
-  &.--open
-    z-index: 100
-    .select
-      &__area
-        z-index: 2
-        border-color: $cMain
-        border-bottom-color: transparent
-      &__icon
-        transform: scale(1, -1)
-      &__drop
-        opacity: 1
-        visibility: visible
-        transform: translateY(0px)
-        overflow: visible
+	z-index: 10
+	width: 100%
+	transition: .3s
+	position: relative
+	cursor: pointer
+	select
+		display: none
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		position: relative
+	&__label
+		font-size: 18px
+		min-width: 83px
+		margin-right: 20px
+	&__area
+		color: $cMain
+		font-size: 18px
+		padding: 17px 14px
+		transition: .3s
+		min-width: 125px
+		height: 56px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		position: relative
+	&__bg
+		top: 0
+		left: 0
+		width: 100%
+		height: 56px
+		position: absolute
+		img
+			width: 100%
+			height: 56px
+			image-rendering: -webkit-optimize-contrast
+	&__title
+		color: $cMain
+		width: calc(100% - 21px -10px)
+		transition: .3s
+		display: flex
+		flex-wrap: wrap
+	&__icon
+		width: 21px
+		height: 12px
+		margin-left: 10px
+		transition: .3s
+		background: url(../../uploads/icons/chevron.svg) no-repeat
+		position: relative
+	&__drop
+		width: 100%
+		top: 100%
+		left: 0
+		opacity: 0
+		visibility: hidden
+		position: absolute
+		color: $cMain
+		overflow: auto
+		transition: .3s
+	&__list
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		padding-right: 52px
+	&__item
+		// width: 100%
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		font-size: 15px
+		padding: 8px 12px
+		transition: .3s
+		position: relative
+		z-index: 1
+		white-space: nowrap
+		&::before, &:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			transition: .3s
+			image-rendering: -webkit-optimize-contrast
+		&:before
+			z-index: -2
+			background: url('../../uploads/icons/select-item-line.png') no-repeat center / 100% 26px
+		&:after
+			opacity: 0
+			z-index: -1
+			background: url('../../uploads/icons/select-item-line-green.png') no-repeat center / 100% 26px
+		&.--selected, &:hover
+			&::before
+				// opacity: 0
+			&::after
+				opacity: 1
+	&.--open
+		z-index: 100
+		.select
+			&__area
+				z-index: 2
+				border-color: $cMain
+				border-bottom-color: transparent
+			&__icon
+				transform: scale(1, -1)
+			&__drop
+				opacity: 1
+				visibility: visible
+				transform: translateY(0px)
+				overflow: visible
+
+	&.--list
+		.select
+			&__label
+				display: none
+			&__area
+				display: none
+			&__drop
+				opacity: 1
+				overflow: hidden
+				visibility: visible
+				position: relative
+			&__list
+				margin: 0 -8px -24px
+				padding-right: 0
+				flex-wrap: wrap
+				flex-direction: row
+			&__item
+				font-size: 18px
+				padding: 8px 16px
+				margin: 0 8px 24px
+				&:before
+					opacity: 0
+					bottom: 0
+					right: auto
+					top: auto
+					width: 100%
+					height: 1px
+					transform: translateY(5px)
+					background: url('../../uploads/icons/line.svg') repeat-x
+					background-position-x: center
+				&:after
+					transform: scale(0)
+				&:hover
+					&:before
+						opacity: 1
+						transform: translateY(0)
+					&:after
+						transform: scale(1)
+				&.--selected
+					&:before
+						opacity: 1
+						transform: translateY(0)
+					&:after
+						transform: scale(1)
