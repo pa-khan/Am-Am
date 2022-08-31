@@ -1,20 +1,24 @@
 @import ../../sys/sass/vars
 
-.catalog
-	padding: 23px 0 100px
-	&__filter
-		margin-bottom: 50px
-		display: flex
-		flex-wrap: wrap
-	&__item
-		width: calc( 100% / 4 )
-
-.filter
-	&__select
-		width: auto
-		&:nth-of-type(2)
-			margin-top: -46px
-			margin-left: auto
+.intro-catalog
+	padding-bottom: 66px
+	&__title
+		margin-bottom: 78px
+	&__list
+		display: grid
+		grid-auto-flow: dense
+		grid-template-columns:(376px 370px 370px)
+		// grid-template-columns: repeat(auto-fill, minmax(320px, 375px))
+		gap: 55px 0
+		align-items: flex-start
+		justify-content: space-between
+	&__act
+		margin-top: 46px
+		justify-content: center
+	&__btn
+		max-width: 203px
+	&__link
+		margin-left: 70px
 
 .p-item
 	display: flex
@@ -24,6 +28,12 @@
 	&__img
 		width: 200px
 		max-height: 164px
+	&__params
+		right: 25px
+		bottom: 105px
+		font-size: 14px
+		line-height: 17px
+		position: absolute
 	&__name
 		min-height: 60px
 		width: calc( 100% - 184px )
@@ -85,6 +95,7 @@
 			background-size: contain
 			content: ""
 			position: absolute
+	
 	&.--lg
 		padding-left: 38px
 		align-items: flex-start
@@ -114,25 +125,54 @@
 	&.--f-up
 		margin-top: -58%
 
-.intro-catalog
-	padding-bottom: 66px
-	&__title
-		margin-bottom: 78px
+.catalog
+	padding: 23px 0 100px
+	&__filter
+		padding-bottom: 50px
+		display: flex
+		flex-wrap: wrap
 	&__list
 		display: grid
-		grid-auto-flow: dense
-		grid-template-columns:(376px 370px 370px)
-		// grid-template-columns: repeat(auto-fill, minmax(320px, 375px))
-		gap: 55px 0
-		align-items: flex-start
-		justify-content: space-between
-	&__act
-		margin-top: 46px
-		justify-content: center
-	&__btn
-		max-width: 203px
-	&__link
-		margin-left: 70px
+		grid-template-columns: repeat(4, 1fr)
+		gap: 30px 20px
+		align-items: flex-end
+	&__item
+		padding-left: 0 !important
+		.p-item
+			&__img
+				margin-bottom: 10px
+			&__name
+				width: 100%
+				margin-left: 0
+				padding-left: 8px
+				font-size: 18px
+				line-height: 27px
+			&__bg
+				left: 0
+				bottom: -20px
+				width: 275px
+				height: 275px
+				clip-path: path('M229.039 24.9416C257.9 51.3777 267.581 88.8348 270.266 124.27C273.024 160.687 268.037 195.104 242.008 223.521C216.424 251.452 184.092 256.595 148.229 257.5C112.099 258.413 72.4237 254.886 43.0551 227.985C-15.4654 174.381 -11.366 94.5472 39.9921 38.4784C71.6982 3.86411 94.8859 -2.67334 136.389 1.64153C162.113 4.31597 206.647 4.43028 229.039 24.9416Z')
+				&:before
+					top: 45px
+					right: 30px
+		&.--lg
+			.p-item
+				&__img
+					margin-left: 25px
+				&__bg
+					bottom: -20px
+					&:before
+						top: 45px
+						right: 30px
+
+.filter
+	&__select
+		width: auto
+		&:nth-of-type(2)
+			margin-top: -46px
+			margin-left: auto
+
 
 @media screen and (max-width: 1220px)
 	// .catalog
