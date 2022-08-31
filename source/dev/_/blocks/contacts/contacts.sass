@@ -1,6 +1,7 @@
 @import ../../sys/sass/vars
 
 .contacts
+	padding: 30px 0 0
 	&__main
 		min-height: 784px
 		margin-bottom: 100px
@@ -50,9 +51,10 @@
 				font-size: 24px
 				line-height: 41px
 	&__desc
-		padding-bottom: 60px
+		padding-bottom: 48px
+		justify-content: space-between
 		&-col
-			width: 50%
+			width: calc( 50% - 15px )
 		&-title
 			margin-bottom: 35px
 		&-text
@@ -97,9 +99,6 @@
 			&-item
 				margin-bottom: 70px
 		&__desc
-			justify-content: space-between
-			&-col
-				width: calc( 50% - 10px )
 			&-text
 				strong
 					font-size: 22px

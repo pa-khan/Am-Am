@@ -1,3 +1,6 @@
+.contacts {
+  padding: 30px 0 0;
+}
 .contacts__main {
   min-height: 784px;
   margin-bottom: 100px;
@@ -59,10 +62,11 @@
   line-height: 41px;
 }
 .contacts__desc {
-  padding-bottom: 60px;
+  padding-bottom: 48px;
+  justify-content: space-between;
 }
 .contacts__desc-col {
-  width: 50%;
+  width: calc( 50% - 15px );
 }
 .contacts__desc-title {
   margin-bottom: 35px;
@@ -117,12 +121,6 @@
   }
   .contacts__info-item {
     margin-bottom: 70px;
-  }
-  .contacts__desc {
-    justify-content: space-between;
-  }
-  .contacts__desc-col {
-    width: calc( 50% - 10px );
   }
   .contacts__desc-text strong {
     font-size: 22px;
