@@ -763,6 +763,78 @@ path, circle, rect, line {
   text-align: center;
 }
 
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination__links {
+  margin: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pagination__link {
+  width: 45px;
+  height: 46px;
+  font-size: 24px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.pagination__link:before, .pagination__link:after {
+  content: "";
+  transition: 0.3s;
+  position: absolute;
+}
+.pagination__link:before {
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  width: 45px;
+  height: 48px;
+  background: linear-gradient(90deg, #84E28E -9.36%, #54AA39 100%);
+  opacity: 0;
+  transform: scale(0);
+  visibility: hidden;
+  clip-path: path("M46.1346 24.5362C46.1346 45.7472 35.9455 47 23.3767 47C11.8296 41.9275 0.618774 45.7472 0.618774 24.5362C0.618774 3.32516 10.8078 0.623047 23.3767 0.623047C35.2601 5.69553 46.1346 3.32516 46.1346 24.5362Z");
+}
+.pagination__link:after {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 48px;
+  background: url("../../uploads/icons/slider-arrow-line.svg") no-repeat;
+}
+.pagination__link:last-of-type {
+  margin-right: 0;
+}
+.pagination__link:hover:before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.pagination__link.--current {
+  cursor: default;
+}
+.pagination__link.--current:before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.pagination__arrow {
+  transform: translateX(0);
+}
+.pagination__arrow.--prev:hover {
+  transform: translateX(-5px);
+}
+.pagination__arrow.--next:hover {
+  transform: translateX(5px);
+}
+
 .form__wrap {
   width: 100%;
   max-width: 828px;

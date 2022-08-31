@@ -192,6 +192,9 @@
   top: 45px;
   right: 30px;
 }
+.catalog__pagination {
+  margin-top: 55px;
+}
 
 .filter__select {
   width: auto;

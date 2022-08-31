@@ -121,7 +121,18 @@ block content
 							a.p-item__name(href="")
 								.p-item__name-text Молоко #[br]ультрапастеризованное
 							.p-item__bg
-					.catalog__
+					.catalog__pagination.pagination
+						a.pagination__arrow.--prev(href="")
+							<svg width="15" height="22" viewBox="0 0 15 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.069 1.5L1.13483 11L14.069 20.5" stroke="#656565" stroke-linecap="square"/></svg>
+						.pagination__links
+							a.pagination__link(href="").--current 1
+							a.pagination__link(href="") 2
+							a.pagination__link(href="") 3
+							a.pagination__link(href="") 4
+							a.pagination__link(href="") 5
+							a.pagination__link(href="") 6
+						a.pagination__arrow.--next(href="")
+							<svg width="15" height="22" viewBox="0 0 15 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.782806 1.5L13.717 11L0.782806 20.5" stroke="#656565" stroke-linecap="square"/></svg>
 
 		+style('awards', 'blocks')
 		.awards
