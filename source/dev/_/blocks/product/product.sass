@@ -1,40 +1,51 @@
 @import ../../sys/sass/vars
 
 .product
+	padding-bottom: 25px
 	&__main
-		padding: 190px 0 68px
+		padding: 0px 0 72px
+		align-items: flex-end
 	&__preview
 		width: calc( 100% - 480px - 85px)
-		padding-left: 100px
+		padding: 200px 100px 0
 		margin-right: auto
 		position: relative
-		&:before
-			z-index: -1
-			top: -220px
-			left: -10px
-			width: 767px
-			height: 741px
-			background: url('../../uploads/products/logo-product.png') no-repeat
+		&:before, &:after
 			content: ""
 			position: absolute
+		&:before
+			z-index: -1
+			top: 0
+			left: 0
+			width: 769px
+			height: 765px
+			background: $yellow-grad
+			clip-path: path('M639.62 68.6619C720.223 142.493 747.26 247.105 754.757 346.07C762.462 447.774 748.535 543.897 675.839 623.261C604.387 701.266 514.091 715.629 413.931 718.159C313.026 720.707 202.219 710.857 120.198 635.726C-43.2396 486.02 -31.7907 263.058 111.644 106.468C200.193 9.79605 264.953 -8.4619 380.863 3.5888C452.706 11.058 577.081 11.3773 639.62 68.6619Z')
+		&:after
+			top: 70px
+			right: 5px
+			width: 130px
+			height: 136px
+			background: url('../../uploads/logos/logo-white.png') no-repeat
+			background-size: contain
 	&__img
 		max-width: 400px
 		display: flex
 		justify-content: center
 	&__about
 		width: 480px
-		margin-top: 60px
 		margin-right: 85px
+		margin-bottom: 70px
 		margin-left: auto
 	&__title
-		margin-bottom: 52px
+		margin-bottom: 50px
 	&__params
 		max-width: 370px
 	&__info
-		margin: 0 -15px -67px
+		margin: 0 -15px -70px
 		&-item
 			width: calc( 50% - 30px )
-			margin: 0 15px 67px
+			margin: 0 15px 70px
 		&-title
 			margin-bottom: 32px
 			i
@@ -43,7 +54,7 @@
 		&-params
 			max-width: 470px
 		&-text
-			line-height: 31px
+			line-height: 29px
 			p
 				margin-bottom: 20px
 				&:last-of-type
