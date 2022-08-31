@@ -129,7 +129,7 @@ path, circle, rect, line {
 }
 @media screen and (max-width: 992px) {
   .case {
-    width: 730px;
+    width: 750px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -139,12 +139,13 @@ path, circle, rect, line {
 }
 @media screen and (max-width: 580px) {
   .case {
-    width: 390px;
-  }
-}
-@media screen and (max-width: 410px) {
-  .case {
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .case .case {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -650,10 +651,15 @@ path, circle, rect, line {
   transform: translateX(-5px);
 }
 .socials__img {
-  width: 23px;
+  width: 22px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.socials__img svg {
+  width: 100%;
+  height: 100%;
 }
 .socials__text {
   width: calc( 100% - 23px );
@@ -988,7 +994,7 @@ path, circle, rect, line {
     flex-wrap: wrap;
   }
   .socials__item {
-    margin-right: 20px;
+    margin-right: 23px;
     margin-bottom: 0;
     display: block;
   }
@@ -999,11 +1005,33 @@ path, circle, rect, line {
     transform: translateY(-5px) translateX(0);
   }
   .socials__img {
-    width: auto;
-    max-width: 33px;
+    width: 33px;
     height: 30px;
   }
   .socials__text {
     display: none;
+  }
+
+  .form__wrap {
+    padding: 100px 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form__wrap {
+    padding: 80px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .socials__item {
+    margin-right: 35px;
+  }
+
+  .form__wrap {
+    padding: 70px 0;
   }
 }

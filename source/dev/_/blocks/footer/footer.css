@@ -83,6 +83,7 @@
   .footer__company {
     font-size: 11px;
     max-width: 209px;
+    margin-left: 20px;
   }
   .footer__nav {
     max-width: 136px;
@@ -99,12 +100,76 @@
     font-size: 18px;
   }
   .footer__socials {
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 24px;
     max-width: 203px;
+    margin-right: 0;
+    justify-content: flex-end;
     position: absolute;
   }
   .footer__info {
-    margin-top: 56px;
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 70px 0 50px;
+  }
+  .footer__wrap {
+    flex-direction: column;
+  }
+  .footer__company {
+    order: 1;
+    max-width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .footer__logo {
+    margin: 0 auto 40px;
+  }
+  .footer__socials {
+    order: 2;
+    top: 0;
+    right: 0;
+    margin-bottom: 20px;
+    position: relative;
+    margin-right: auto;
+  }
+  .footer__info {
+    order: 3;
+    margin-top: 0;
+    margin-bottom: 28px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .footer__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__nav {
+    order: 4;
+    margin-left: 0;
+    max-width: 100%;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  .footer__desc {
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+}
+@media screen and (max-width: 580px) {
+  .footer__socials {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  .footer__tel {
+    margin-top: 13px;
+  }
+  .footer__btn {
+    font-size: 16px;
   }
 }

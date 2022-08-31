@@ -113,6 +113,9 @@
 }
 
 @media screen and (max-width: 1220px) {
+  .contacts {
+    padding: 0;
+  }
   .contacts__info:before {
     margin-left: -140px;
   }
@@ -127,7 +130,11 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .contacts {
+    padding: 115px 0 0;
+  }
   .contacts__info {
+    left: 10px;
     max-width: 512px;
     margin: 0 auto;
     padding: 0;
@@ -139,12 +146,12 @@
     top: -130px;
     width: 789px;
     height: 712px;
-    margin-left: -50px;
+    margin-left: -45px;
     clip-path: path("M789 338.544C789 440.263 728.59 524.572 658.91 591.923C587.302 661.138 504.925 712 394.5 712C285.965 712 212.522 659.064 141.195 591.923C69.3381 524.282 0 442.053 0 338.544C0 132.29 176.624 0 394.5 0C529.007 0 587.7 32.9627 658.91 120.077C703.048 174.072 789 259.621 789 338.544Z");
   }
   .contacts__info:after {
     top: -130px;
-    left: -20px;
+    left: -25px;
     transform: none;
     width: 778px;
     height: 712px;
@@ -164,9 +171,9 @@
     margin-bottom: 30px;
   }
   .contacts__desc {
-    max-width: 496px;
+    max-width: 480px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
   .contacts__desc-text strong {
     font-size: 24px;
@@ -186,5 +193,93 @@
     margin-top: -125px;
     border-radius: 0;
     position: relative;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    padding: 70px 0 0;
+  }
+  .contacts__info-text strong {
+    font-size: 22px;
+  }
+  .contacts__info:before {
+    top: -90px;
+    height: 616px;
+    clip-path: path("M732 292.897C732 380.902 671.59 453.843 601.91 512.113C530.302 571.995 447.925 616 337.5 616C228.965 616 155.522 570.202 84.195 512.113C12.3381 453.592 -57 382.45 -57 292.897C-57 114.453 119.624 0 337.5 0C472.007 0 530.7 28.5183 601.91 103.887C646.048 150.602 732 224.616 732 292.897Z");
+  }
+  .contacts__info:after {
+    top: -110px;
+    left: 0;
+    height: 640px;
+    margin-left: -165px;
+  }
+  .contacts__desc-text strong {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .contacts {
+    padding: 10px 0 0;
+  }
+  .contacts__main {
+    margin-bottom: 70px;
+    min-height: auto;
+  }
+  .contacts__info {
+    left: 0;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .contacts__info:before {
+    top: -50px;
+    height: 796px;
+    margin-left: 0;
+    clip-path: path("M789 378.484C789 492.205 728.59 586.459 658.91 661.756C587.302 739.137 504.925 796 394.5 796C285.965 796 212.522 736.819 141.195 661.756C69.3381 586.136 0 494.205 0 378.484C0 147.897 176.624 0 394.5 0C529.007 0 587.7 36.8516 658.91 134.244C703.048 194.609 789 290.251 789 378.484Z");
+  }
+  .contacts__info:after {
+    display: none;
+  }
+  .contacts__info-item {
+    width: 100%;
+    margin-bottom: 55px;
+  }
+  .contacts__info-title {
+    margin-bottom: 22px;
+  }
+  .contacts__info-text p, .contacts__info-text a {
+    margin-bottom: 20px;
+  }
+  .contacts__info-text strong {
+    font-size: 24px;
+  }
+  .contacts__info-text br {
+    display: none;
+  }
+  .contacts__map {
+    width: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -185px;
+    overflow: visible;
+  }
+  .contacts__desc {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .contacts__desc-col {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+  .contacts__desc-col:last-of-type {
+    margin-bottom: 0;
+  }
+  .contacts__desc-title {
+    margin-bottom: 25px;
+  }
+  .contacts__desc-text strong {
+    font-size: 24px;
+  }
+  .contacts__desc-text p, .contacts__desc-text a {
+    margin-bottom: 25px;
   }
 }

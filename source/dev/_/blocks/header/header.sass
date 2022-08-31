@@ -62,13 +62,12 @@
 	flex-direction: column
 	position: relative
 	cursor: pointer
-	padding: 2px
 	div
-		width: 32px
-		height: 3px
+		width: 50px
+		height: 5px
 		background: $gray
 		border-radius: 5px
-		margin-bottom: 8px
+		margin-bottom: 15px
 		&:nth-of-type(1)
 			transition: background 0.3s, transform 0.3s ease-in-out
 			transform-origin: 0 0
@@ -86,6 +85,7 @@
 			background: $gray
 			&:nth-of-type(1)
 				transform: rotate(45deg)
+				margin-bottom: 9px
 			&:nth-of-type(2)
 				transform: scaleY(0)
 			&:nth-of-type(3)
@@ -96,6 +96,7 @@
 
 @media screen and (max-width: 1220px)
 	.header
+		min-height: 155px
 		&__logo
 			max-width: 85px
 			height: 121px
@@ -110,11 +111,12 @@
 
 @media screen and (max-width: 992px)
 	.header
-		&__wrap
-			align-items: center
+		padding: 0
+		min-height: 100px
 		&__logo
 			z-index: 10
 			max-width: 70px
+			margin-left: 18px
 			height: 100px
 			left: 0
 			transform: none
@@ -125,12 +127,13 @@
 			right: 0
 			bottom: 0
 			opacity: 0
+			padding-top: 132px
 			transition: .4s
 			background: #fff
 			visibility: hidden
 			position: fixed
 			flex-direction: column
-			justify-content: center
+			justify-content: flex-start
 			&.--show
 				opacity: 1
 				visibility: visible
@@ -148,9 +151,33 @@
 					margin-bottom: 30px
 					&:last-of-type
 						margin-bottom: 0
+		&__ham
+			margin-top: 24px
 
 	.ham
 		display: flex
 
-@media screen and (max-width: 767px)
-	// .header
+@media screen and (max-width: 580px)
+	.header
+		&__logo
+			margin-left: 0
+		&__nav
+			ul
+				li
+					margin-bottom: 20px
+					&:after
+						width: calc( 100% + 60px )
+					a
+						font-size: 18px
+		&__ham
+			margin-top: 15px
+
+	.ham
+		div
+			width: 40px
+			margin-bottom: 10px
+		&.--toggle
+			div
+				&:nth-of-type(1)
+					margin-bottom: 7px
+					

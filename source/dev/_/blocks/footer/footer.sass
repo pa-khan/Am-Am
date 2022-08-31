@@ -67,6 +67,7 @@
 		&__company
 			font-size: 11px
 			max-width: 209px
+			margin-left: 20px
 		&__nav
 			max-width: 136px
 			margin-left: 36px
@@ -79,12 +80,62 @@
 					a
 						font-size: 18px
 		&__socials
-			top: 0
-			right: 0
+			top: 5px
+			right: 24px
 			max-width: 203px
+			margin-right: 0
+			justify-content: flex-end
 			position: absolute
 		&__info
-			margin-top: 56px
+			margin-top: 60px
 
 @media screen and (max-width: 767px)
-	// .footer
+	.footer
+		padding: 70px 0 50px
+		&__wrap
+			flex-direction: column
+		&__company
+			order: 1
+			max-width: 100%
+			margin-left: 0
+			text-align: center
+		&__logo
+			margin: 0 auto 40px
+		&__socials
+			order: 2
+			top: 0
+			right: 0
+			margin-bottom: 20px
+			position: relative
+			margin-right: auto
+		&__info
+			order: 3
+			margin-top: 0
+			margin-bottom: 28px
+			max-width: 100%
+			text-align: center
+		&__btn
+			margin-left: auto
+			margin-right: auto
+		&__nav
+			order: 4
+			margin-left: 0
+			max-width: 100%
+			margin-bottom: 70px
+			text-align: center
+		&__desc
+			left: 50%
+			bottom: 0
+			width: 100%
+			transform: translateX(-50%)
+			position: absolute
+		
+@media screen and (max-width: 580px)
+	.footer
+		&__socials
+			max-width: 100%
+			margin-bottom: 25px
+		&__tel
+			margin-top: 13px
+		&__btn
+			font-size: 16px

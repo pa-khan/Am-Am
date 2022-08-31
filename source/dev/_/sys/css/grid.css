@@ -18,7 +18,7 @@
 }
 @media screen and (max-width: 992px) {
   .case {
-    width: 730px;
+    width: 750px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -28,12 +28,13 @@
 }
 @media screen and (max-width: 580px) {
   .case {
-    width: 390px;
-  }
-}
-@media screen and (max-width: 410px) {
-  .case {
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .case .case {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
