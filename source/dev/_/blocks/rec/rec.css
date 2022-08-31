@@ -1,5 +1,5 @@
 .rec {
-  padding-bottom: 122px;
+  padding: 30px 0 120px;
 }
 .rec__title {
   margin-bottom: 45px;
@@ -16,13 +16,13 @@
 }
 .rec__preview:before {
   z-index: -1;
-  content: "";
   top: -10px;
   left: 15px;
   width: 359px;
   height: 355px;
   background: url("../../uploads/icons/reviews-line.svg") no-repeat;
   background-size: contain;
+  content: "";
   position: absolute;
 }
 .rec__img {
@@ -33,10 +33,7 @@
 .rec__info {
   width: calc( 100% - 335px );
   line-height: 31px;
-  padding-top: 15px;
-  padding-left: 65px;
-  padding-right: 50px;
-  padding-bottom: 40px;
+  padding: 15px 60px 40px 65px;
   position: relative;
 }
 .rec__info:before {
@@ -51,6 +48,15 @@
   background: linear-gradient(131.45deg, rgba(252, 227, 130, 0.3) 7.7%, #FCE382 91.64%);
   position: absolute;
   clip-path: path("M1203 198.276C1203 257.851 1110.89 307.228 1004.65 346.674C895.468 387.211 769.867 417 601.5 417C436.015 417 324.035 385.997 215.282 346.674C105.721 307.058 0 258.899 0 198.276C0 77.4787 269.301 0 601.5 0C806.584 0 896.074 19.3054 1004.65 70.3261C1071.95 101.95 1203 152.054 1203 198.276Z");
+}
+.rec__info:after {
+  width: 84px;
+  height: 82px;
+  top: 0;
+  right: 0;
+  background: url("../../uploads/icons/quote.png") no-repeat;
+  content: "";
+  position: absolute;
 }
 .rec__info p {
   margin-bottom: 20px;

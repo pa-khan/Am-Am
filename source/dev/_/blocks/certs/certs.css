@@ -2,7 +2,7 @@
   padding-bottom: 120px;
 }
 .certs__title {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 .certs__desc {
   line-height: 31px;
@@ -10,7 +10,7 @@
   margin: 0 auto 72px;
 }
 .certs__list {
-  margin: 0 -50px -100px;
+  margin: 0 -20px -100px;
   position: relative;
 }
 .certs__list:before, .certs__list:after {
@@ -28,7 +28,7 @@
 }
 .certs__list:after {
   top: 105px;
-  right: 330px;
+  right: 290px;
 }
 .certs__item {
   width: calc( 100% / 3 - 100px );
