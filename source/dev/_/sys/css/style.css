@@ -129,7 +129,7 @@ path, circle, rect, line {
 }
 @media screen and (max-width: 992px) {
   .case {
-    width: 750px;
+    width: 730px;
   }
 }
 @media screen and (max-width: 767px) {

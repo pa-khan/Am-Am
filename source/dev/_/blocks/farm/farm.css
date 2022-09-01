@@ -74,3 +74,18 @@
     margin-right: 50px;
   }
 }
+@media screen and (max-width: 992px) {
+  .farm__info {
+    width: 663px;
+    padding-right: 110px;
+  }
+  .farm__info:before {
+    width: 663px;
+    height: 530px;
+    clip-path: path("M663 252.006C663 327.724 612.237 390.482 553.685 440.617C493.512 492.139 424.291 530 331.5 530C240.298 530 178.583 490.596 118.647 440.617C58.2651 390.266 0 329.056 0 252.006C0 98.4741 148.418 0 331.5 0C444.526 0 493.846 24.5369 553.685 89.3834C590.774 129.576 663 193.257 663 252.006Z");
+  }
+  .farm__preview {
+    margin-top: 10px;
+    margin-right: -5px;
+  }
+}

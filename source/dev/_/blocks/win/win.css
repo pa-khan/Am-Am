@@ -115,3 +115,33 @@
     margin-top: 40px;
   }
 }
+@media screen and (max-width: 992px) {
+  .win__item {
+    width: 100%;
+    margin-top: -25px;
+  }
+  .win__item.--reverse:before {
+    right: -20px;
+    left: auto;
+  }
+  .win__item.--reverse .win__text {
+    padding-left: 170px;
+    padding-right: 40px;
+  }
+  .win__item.--fd {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .win__item.--fd .win__text {
+    width: 100%;
+    padding-right: 0;
+  }
+  .win__text {
+    padding-left: 40px;
+    padding-right: 140px;
+  }
+  .win__link {
+    margin-top: 52px;
+  }
+}

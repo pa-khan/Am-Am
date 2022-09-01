@@ -80,7 +80,45 @@
 			padding-right: 50px
 
 @media screen and (max-width: 992px)
-	// .about
+	.about
+		padding: 100px 0 40px
+		&__preview
+			width: 470px
+			margin-left: -30px
+			&:before
+				width: 469px
+				height: 336px
+				left: 0
+				top: 5px
+		&__img
+			width: 450px
+			height: 322px
+			clip-path: path('M73.1706 38.3876C175.066 11.0752 172.006 31.0904 238.561 11.0752C305.116 -8.93999 353.395 -2.97126 402.682 38.3876C466.979 92.3427 463.319 213.439 402.682 272.732C351.108 323.162 306.082 296.814 238.561 302.546C170.219 308.349 125.762 344.036 55.7611 302.546C-14.2396 261.056 -28.7252 65.7001 73.1706 38.3876Z')
+		&__info
+			width: calc( 100% - 470px )
+			margin-top: 40px
+			padding-top: 28px
+			padding-left: 0
+			padding-right: 0
+			&:before
+				left: -100px
+				margin-top: -32px
+				width: 455px
+				height: 410px
+				clip-path: path('M455 194.948C455 253.522 420.163 302.071 379.98 340.854C338.685 380.711 291.18 410 227.5 410C164.91 410 122.557 379.517 81.4243 340.854C39.9858 301.904 0 254.553 0 194.948C0 76.178 101.855 0 227.5 0C305.067 0 338.914 18.9813 379.98 69.1456C405.433 100.238 455 149.501 455 194.948Z')
+		&__title
+			margin-bottom: 20px
+		&__act
+			margin-top: 70px
+			margin-left: -472px
+			max-width: 548px
+		&__learn
+			padding-right: 80px
+		&__arrow
+			top: 20px
+			right: 80px
+		&__play
+			top: -45px
 
 @media screen and (max-width: 767px)
 	// .about

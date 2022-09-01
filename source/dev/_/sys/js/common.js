@@ -129,10 +129,11 @@ document.addEventListener('DOMContentLoaded', function () {
       breakpoints: {
         0: {
           slidesPerView: 1,
+          
         },
         768: {
           slidesPerView: 2,
-          spaceBetween: 60,
+          spaceBetween: 35,
         },
         1221: {
           slidesPerView: 3,
@@ -146,8 +147,6 @@ document.addEventListener('DOMContentLoaded', function () {
       moreText(175, text, 'reviews__text-value', 'reviews__text-arrow');
     });
   }
-
-
 
   // MOBILE SLIDRES
   function MobileSlider(windowSize, wrap, list, items, options = { slidesPerView: 1 }, removeSlide) {
@@ -228,7 +227,6 @@ document.addEventListener('DOMContentLoaded', function () {
     spaceBetween: 30,
     speed: 900,
   });
-
 
   // PRODUCT
   let productInfoTexts = document.querySelectorAll('.product__info-text.--has-toggle');
