@@ -184,7 +184,7 @@
 			margin: 0 auto
 			grid-template-columns: repeat(auto-fill, minmax(380px, 0fr))
 		&__item
-			&.--up
+			&.--f-up
 				margin-top: 0 !important
 			&:nth-of-type(7)
 				display: none
@@ -192,7 +192,19 @@
 				grid-row-end: 4
 
 @media screen and (max-width: 992px)
-	// .catalog
+	.intro-catalog
+		&__list
+			max-width: 100%
+			grid-template-columns: repeat(auto-fill, minmax(340px, 0fr))
+		&__item
+			&:nth-of-type(3)
+				display: none
+			&:nth-of-type(8)
+				display: none
+
+	.p-item
+		&.--lg
+			padding-left: 44px
 
 @media screen and (max-width: 767px)
 	// .catalog

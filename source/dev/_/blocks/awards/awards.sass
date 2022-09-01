@@ -44,7 +44,23 @@
 	// .awards
 
 @media screen and (max-width: 992px)
-	// .awards
+	.awards
+		padding: 35px 0 90px
+		&__list-wrap
+			&:before
+				width: 756px
+				height: 169px
+				clip-path: path('M753.887 56.6575C760.603 133.504 592.365 152.813 384.342 171.032C191.624 169.393 7.28728 199.483 0.571412 122.636C-6.14445 45.7896 161.636 21.2302 369.658 3.01073C567.943 4.16216 747.172 -20.1889 753.887 56.6575Z')
+			&:after
+				width: 753px
+				height: 185px
+				background-size: contain
+		&__list
+			padding: 65px
+			margin: 0 -35px -50px
+		&__item
+			width: calc( 100% / 5 - 75px )
+			margin: 0 35px 50px
 
 @media screen and (max-width: 767px)
 	// .awards

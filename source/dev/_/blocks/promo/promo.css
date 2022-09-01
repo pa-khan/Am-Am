@@ -53,3 +53,21 @@
     margin-right: 40px;
   }
 }
+@media screen and (max-width: 992px) {
+  .promo__info {
+    width: 400px;
+    padding-left: 50px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .promo__info:before {
+    left: -80px;
+  }
+  .promo__img {
+    top: -30px;
+    right: -70px;
+    margin-right: 0;
+    position: absolute;
+  }
+}
