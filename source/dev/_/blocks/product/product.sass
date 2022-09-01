@@ -29,6 +29,7 @@
 			background: url('../../uploads/logos/logo-white.png') no-repeat
 			background-size: contain
 	&__img
+		width: 100%
 		max-width: 400px
 		display: flex
 		justify-content: center
@@ -101,18 +102,106 @@
 @media screen and (max-width: 1220px)
 	.product
 		&__main
-			padding: 180px 0 100px
+			padding: 60px 0 100px
 		&__preview
 			width: calc( 100% - 450px - 85px)
+			padding: 190px 50px 60px
 			&:before
-				width: 700px
-				height: 670px
-				background-size: contain
+				width: 632px
+				height: 630px
+				clip-path: path('M526.047 57.0897C592.337 117.81 614.573 203.844 620.739 285.235C627.075 368.878 615.621 447.932 555.835 513.202C497.072 577.355 422.81 589.166 340.437 591.247C257.451 593.343 166.322 585.242 98.8662 523.453C-35.5477 400.333 -26.1319 216.965 91.8309 88.1819C164.656 8.67747 217.915 -6.33819 313.241 3.57251C372.327 9.71534 474.614 9.97792 526.047 57.0897Z')
+			&:after
+				right: -90px
 		&__about
 			width: 370px
+		&__info
+			margin: 0 -20px -70px
+			&-item
+				width: calc( 50% - 40px )
+				margin: 0 20px 70px
 
 @media screen and (max-width: 992px)
-	// .product
-
+	.product
+		&__main
+			padding: 60px 0 40px
+		&__about
+			order: 1
+			max-width: 290px
+			margin-left: 20px
+			margin-bottom: 42px
+			margin-right: auto
+		&__preview
+			order: 2
+			padding: 45px 0
+			width: calc( 100% - 290px - 20px)
+			&:before
+				width: 769px
+				height: 765px
+				left: auto
+				top: -60px
+				right: -20px
+				clip-path: path('M639.62 68.6619C720.223 142.493 747.26 247.105 754.757 346.07C762.462 447.774 748.535 543.897 675.839 623.261C604.387 701.266 514.091 715.629 413.931 718.159C313.026 720.707 202.219 710.857 120.198 635.726C-43.2396 486.02 -31.7907 263.058 111.644 106.468C200.193 9.79605 264.953 -8.4619 380.863 3.5888C452.706 11.058 577.081 11.3773 639.62 68.6619Z')
+			&:after
+				top: -10px
+				left: -130px
+				right: auto
+		&__info
+			margin: 0 20px
+			max-width: 570px
+			flex-direction: column
+			&-item
+				width: 100%
+				margin: 0 0 75px
+				&:nth-of-type(2)
+					order: 1
+				&:nth-of-type(4)
+					order: 2
+				&:nth-of-type(1)
+					order: 3
+				&:nth-of-type(3)
+					order: 4
+					margin: 0
+					
 @media screen and (max-width: 767px)
-	// .product
+	.product
+		&__main
+			flex-direction: column
+		&__preview
+			order: 1
+			width: 100%
+			padding: 80px 100px 50px
+			&:before
+				right: -220px
+			&:after
+				right: 50px
+				width: 86px
+				height: 90px
+				left: auto
+		&__about
+			order: 2
+			max-width: 100%
+		&__info
+			&-item
+				margin: 0 0 50px
+
+@media screen and (max-width: 580px)
+	.product
+		&__preview
+			padding: 50px 0
+			&:before
+				right: -380px
+			&:after
+				top: -40px
+				right: 0
+		&__about
+			margin-left: 0
+			margin-bottom: 20px
+		&__title
+			margin-bottom: 30px
+		&__info
+			max-width: 100%
+			margin: 0
+			&-title
+				margin-bottom: 22px
+			&-text
+				line-height: 30px
