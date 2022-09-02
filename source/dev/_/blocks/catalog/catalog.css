@@ -243,6 +243,27 @@
   .p-item.--lg {
     padding-left: 44px;
   }
+  .p-item__params {
+    right: 35px;
+  }
+
+  .catalog {
+    padding: 25px 0 100px;
+  }
+  .catalog__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    margin: 0 30px;
+  }
+  .catalog__item .p-item__img {
+    margin-bottom: 20px;
+  }
+  .catalog__item:nth-of-type(n+5) {
+    display: none;
+  }
+  .catalog__pagination {
+    margin-top: 42px;
+  }
 }
 @media screen and (max-width: 767px) {
   .intro-catalog {

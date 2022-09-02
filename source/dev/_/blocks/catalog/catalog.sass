@@ -209,6 +209,23 @@
 	.p-item
 		&.--lg
 			padding-left: 44px
+		&__params
+			right: 35px
+
+	.catalog
+		padding: 25px 0 100px
+		&__list
+			grid-template-columns: repeat(2, 1fr)
+			gap: 80px
+			margin: 0 30px
+		&__item
+			.p-item
+				&__img
+					margin-bottom: 20px
+			&:nth-of-type(n+5)
+				display: none
+		&__pagination
+			margin-top: 42px
 
 @media screen and (max-width: 767px)
 	.intro-catalog

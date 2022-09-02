@@ -483,7 +483,7 @@ path, circle, rect, line {
 }
 .select.--list .select__drop {
   opacity: 1;
-  overflow: hidden;
+  overflow: visible;
   visibility: visible;
   position: relative;
 }
@@ -533,6 +533,11 @@ path, circle, rect, line {
   }
   .select.--list .select__item {
     margin: 0 24px 24px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .select.--list .select__item {
+    margin: 0 9px 24px;
   }
 }
 .textarea {
