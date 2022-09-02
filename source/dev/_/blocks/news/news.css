@@ -100,3 +100,12 @@
     -webkit-line-clamp: 5;
   }
 }
+@media screen and (max-width: 767px) {
+  .intro-news {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+  .intro-news:before {
+    top: 110px;
+  }
+}

@@ -27,7 +27,7 @@
   width: 1010px;
   height: 248px;
   transform: translateX(-50%);
-  background: url("../../uploads/icons/awards-line.svg") no-repeat;
+  background: url("../../uploads/icons/awards-line.png") no-repeat;
 }
 .awards__list {
   padding: 88px 130px;
@@ -67,5 +67,26 @@
   .awards__item {
     width: calc( 100% / 5 - 75px );
     margin: 0 35px 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .awards__list-wrap:before {
+    width: 620px;
+    height: 300px;
+    clip-path: path("M624.059 151.704C595.38 286.265 454.877 294.213 283.646 294.213C133.193 262.034 -24.7005 286.265 3.97783 151.704C32.6562 17.1421 175.119 0 346.35 0C501.385 32.1796 652.737 17.1421 624.059 151.704Z");
+  }
+  .awards__list-wrap:after {
+    width: 600px;
+    height: 300px;
+    background-size: 100% 300px;
+  }
+  .awards__list {
+    padding: 45px;
+  }
+  .awards__item {
+    width: calc( 100% / 3 - 75px );
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

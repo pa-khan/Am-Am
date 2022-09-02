@@ -106,3 +106,32 @@
     height: 453px;
   }
 }
+@media screen and (max-width: 767px) {
+  .intro {
+    padding: 70px 0;
+  }
+  .intro__wrap {
+    flex-direction: column;
+  }
+  .intro__info {
+    width: 100%;
+  }
+  .intro__info:before {
+    top: -50px;
+  }
+  .intro__list {
+    max-width: 250px;
+  }
+  .intro__preview {
+    width: 400px;
+    right: -50px;
+    margin-top: -200px;
+    position: relative;
+  }
+  .intro__img:before {
+    left: 10px;
+    bottom: 0;
+    width: 350px;
+    height: 350px;
+  }
+}

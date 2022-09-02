@@ -43,6 +43,7 @@
   margin-right: 85px;
   margin-bottom: 70px;
   margin-left: auto;
+  position: relative;
 }
 .product__title {
   margin-bottom: 50px;
@@ -52,6 +53,7 @@
 }
 .product__info {
   margin: 0 -15px -70px;
+  position: relative;
 }
 .product__info-item {
   width: calc( 50% - 30px );

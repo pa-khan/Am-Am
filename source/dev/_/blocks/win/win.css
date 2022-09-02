@@ -214,8 +214,12 @@
   .win__item.--reverse:before {
     right: -20px;
   }
+  .win__item.--reverse .win__img {
+    margin-left: 0;
+  }
   .win__item.--reverse .win__text {
     padding-left: 0;
+    margin-left: auto;
     word-break: normal;
   }
   .win__item.--fd {
@@ -224,7 +228,8 @@
     margin-top: 60px;
   }
   .win__item.--fd .win__text {
-    padding-top: 20px;
+    max-width: 290px;
+    padding-top: 40px;
     padding-right: 0;
     padding-left: 0;
   }
@@ -233,13 +238,15 @@
   }
   .win__text {
     padding-right: 0;
+    max-width: 260px;
   }
   .win__link {
     margin-top: 30px;
   }
 }
-@media screen and (max-width: 389px) {
+@media screen and (max-width: 390px) {
   .win__text {
+    max-width: 100%;
     word-break: break-all;
   }
 }

@@ -126,6 +126,9 @@
     padding: 30px 0 70px;
   }
   .rec__title {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
   }
   .rec__desc {
@@ -145,7 +148,12 @@
     clip-path: path("M242.347 26.8911C273.082 54.9934 283.391 94.8115 286.25 132.481C289.188 171.192 283.877 207.779 256.158 237.987C228.913 267.679 194.483 273.145 156.291 274.108C117.816 275.078 75.5654 271.329 44.2904 242.732C-18.0289 185.75 -13.6634 100.884 41.0286 41.2811C74.7928 4.48506 99.4857 -2.46446 143.683 2.12238C171.077 4.9654 218.501 5.0869 242.347 26.8911Z");
   }
   .rec__info:before {
-    top: -80px;
+    top: -120px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .rec__info:before {
+    top: -150px;
     margin-left: 20px;
     width: 661px;
     height: 706px;

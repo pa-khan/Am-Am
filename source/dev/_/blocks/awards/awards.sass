@@ -25,7 +25,7 @@
 			width: 1010px
 			height: 248px
 			transform: translateX(-50%)
-			background: url('../../uploads/icons/awards-line.svg') no-repeat
+			background: url('../../uploads/icons/awards-line.png') no-repeat
 	&__list
 		padding: 88px 130px
 		margin: 0 -50px -50px
@@ -63,4 +63,20 @@
 			margin: 0 35px 50px
 
 @media screen and (max-width: 767px)
-	// .awards
+	.awards
+		&__list-wrap
+			&:before
+				width: 620px
+				height: 300px
+				clip-path: path('M624.059 151.704C595.38 286.265 454.877 294.213 283.646 294.213C133.193 262.034 -24.7005 286.265 3.97783 151.704C32.6562 17.1421 175.119 0 346.35 0C501.385 32.1796 652.737 17.1421 624.059 151.704Z')
+			&:after
+				width: 600px
+				height: 300px
+				background-size: 100% 300px
+		&__list
+			padding: 45px
+		&__item
+			width: calc( 100% / 3 - 75px )
+			display: flex
+			align-items: center
+			justify-content: center

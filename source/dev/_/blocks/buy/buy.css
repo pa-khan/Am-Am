@@ -49,6 +49,11 @@
     margin-left: -210px;
   }
 }
+@media screen and (max-width: 767px) {
+  .buy {
+    padding: 70px 0;
+  }
+}
 @media screen and (max-width: 580px) {
   .buy__title {
     min-height: 90px;

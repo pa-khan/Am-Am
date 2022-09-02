@@ -224,12 +224,28 @@ document.addEventListener('DOMContentLoaded', function () {
     slidesPerView: 3,
     spaceBetween: 30,
     speed: 900,
+    breakpoints: {
+      0: {
+        slidesPerView: 2.2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+    },
   });
 
   new MobileSlider(1220, '.intro-arts__inner', '.intro-arts__list', '.intro-arts__item', {
     slidesPerView: 3,
     spaceBetween: 30,
     speed: 900,
+    breakpoints: {
+      0: {
+        slidesPerView: 2.2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+    },
   });
 
   new MobileSlider(767, '.certs__inner', '.certs__list', '.certs__item', {

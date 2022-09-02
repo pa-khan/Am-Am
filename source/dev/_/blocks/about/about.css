@@ -152,7 +152,7 @@
 }
 @media screen and (max-width: 767px) {
   .about {
-    padding: 100px 0 70px;
+    padding: 50px 0 70px;
   }
   .about__wrap {
     padding-top: 30px;
@@ -161,7 +161,7 @@
     display: none;
   }
   .about__info {
-    width: 100%;
+    width: 350px;
     margin-top: 0;
     padding-top: 0;
   }

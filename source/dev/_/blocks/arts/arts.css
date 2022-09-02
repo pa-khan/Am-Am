@@ -103,3 +103,8 @@
     -webkit-line-clamp: 4;
   }
 }
+@media screen and (max-width: 767px) {
+  .intro-arts {
+    padding-bottom: 100px;
+  }
+}
