@@ -35,7 +35,7 @@
 }
 .textarea.--gray {
   width: 100%;
-  min-height: 120px;
+  height: 119px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,4 +62,14 @@
 }
 .textarea.--error .textarea__area::placeholder {
   color: #ff1d1d;
+}
+
+@media screen and (max-width: 390px) {
+  .textarea.--gray {
+    height: 88px;
+  }
+  .textarea.--gray:before {
+    width: 280px;
+    height: 88px;
+  }
 }

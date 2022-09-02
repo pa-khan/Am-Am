@@ -36,11 +36,24 @@
   left: 0;
   width: 203px;
   height: 64px;
-  background: url("../../uploads/icons/btn-line.svg") no-repeat;
+  background: url("../../uploads/icons/btn-line.png") no-repeat;
 }
 .btn.--green:hover:before {
   left: 0;
 }
 .btn.--md {
   min-height: 69px;
+}
+
+@media screen and (max-width: 390px) {
+  .btn.--green:before {
+    width: 255px;
+    height: 64px;
+    clip-path: path("M255 33C255 62.2711 197.941 64 127.556 64C62.8923 57 0.112061 62.2711 0.112061 33C0.112061 3.72891 57.1707 0 127.556 0C194.103 7 255 3.72891 255 33Z");
+  }
+  .btn.--green:after {
+    width: 255px;
+    height: 64px;
+    background-size: 100% 64px;
+  }
 }

@@ -30,7 +30,7 @@
 }
 .input.--gray {
   width: 100%;
-  min-height: 64px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,4 +51,14 @@
 }
 .input.--error .input__area::placeholder {
   color: #ff1d1d;
+}
+
+@media screen and (max-width: 390px) {
+  .input.--gray {
+    height: 47px;
+  }
+  .input.--gray:before {
+    width: 280px;
+    height: 47px;
+  }
 }

@@ -28,7 +28,7 @@
 				opacity: 0
 	&.--gray
 		width: 100%
-		min-height: 64px
+		height: 64px
 		display: flex
 		align-items: center
 		justify-content: center
@@ -49,3 +49,11 @@
 				color: #ff1d1d
 				&::placeholder
 					color: #ff1d1d
+
+@media screen and (max-width: 390px)
+	.input
+		&.--gray
+			height: 47px
+			&:before
+				width: 280px
+				height: 47px

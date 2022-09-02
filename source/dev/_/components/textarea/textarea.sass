@@ -32,7 +32,7 @@
 				opacity: 0
 	&.--gray
 		width: 100%
-		min-height: 120px
+		height: 119px
 		display: flex
 		align-items: center
 		justify-content: center
@@ -57,3 +57,11 @@
 				color: #ff1d1d
 				&::placeholder
 					color: #ff1d1d
+
+@media screen and (max-width: 390px)
+	.textarea
+		&.--gray
+			height: 88px
+			&:before
+				width: 280px
+				height: 88px
