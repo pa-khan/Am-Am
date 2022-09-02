@@ -9,11 +9,10 @@
   max-width: 500px;
   margin: 0 auto 72px;
 }
-.certs__list {
-  margin: 0 -20px -100px;
+.certs__inner {
   position: relative;
 }
-.certs__list:before, .certs__list:after {
+.certs__inner:before, .certs__inner:after {
   z-index: -1;
   content: "";
   width: 359px;
@@ -22,13 +21,16 @@
   background-size: contain;
   position: absolute;
 }
-.certs__list:before {
+.certs__inner:before {
   top: -25px;
-  left: 240px;
+  left: 220px;
 }
-.certs__list:after {
+.certs__inner:after {
   top: 105px;
-  right: 290px;
+  right: 270px;
+}
+.certs__list {
+  margin: 0 -20px -100px;
 }
 .certs__item {
   width: calc( 100% / 3 - 100px );
@@ -45,15 +47,15 @@
 }
 
 @media screen and (max-width: 1220px) {
-  .certs__list {
-    margin: 0 -20px -60px;
-  }
-  .certs__list:before {
+  .certs__inner:before {
     left: 125px;
   }
-  .certs__list:after {
+  .certs__inner:after {
     top: 125px;
     right: 125px;
+  }
+  .certs__list {
+    margin: 0 -20px -60px;
   }
   .certs__item {
     width: calc( 100% / 3 - 40px );
@@ -67,20 +69,66 @@
   .certs__desc {
     margin: 0 auto 70px;
   }
-  .certs__list {
-    margin: 0 -15px -60px;
-  }
-  .certs__list:before {
+  .certs__inner:before {
     top: -22px;
     left: 65px;
   }
-  .certs__list:after {
+  .certs__inner:after {
     top: -15px;
     right: 25px;
+  }
+  .certs__list {
+    margin: 0 -15px -60px;
   }
   .certs__item {
     width: calc( 100% / 3 - 30px );
     margin: 0 15px 60px;
     height: 305px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .certs__inner {
+    overflow: visible;
+  }
+  .certs__inner:before {
+    display: none;
+  }
+  .certs__list {
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+  .certs__item {
+    margin: 0;
+    height: 355px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .certs {
+    padding-bottom: 70px;
+  }
+  .certs__title {
+    margin-bottom: 20px;
+  }
+  .certs__desc {
+    width: calc( 100% + 5px );
+    margin: 0 auto 30px;
+  }
+  .certs__desc br {
+    display: none;
+  }
+  .certs__inner:after {
+    top: -25px;
+    right: -125px;
+  }
+  .certs__item {
+    width: 100%;
+    max-width: 216px;
+    height: 305px;
+  }
+  .certs__item img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
   }
 }

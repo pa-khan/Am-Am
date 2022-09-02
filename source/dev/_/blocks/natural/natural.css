@@ -158,3 +158,106 @@
     left: 10px;
   }
 }
+@media screen and (max-width: 767px) {
+  .natural {
+    padding-bottom: 460px;
+  }
+  .natural__preview {
+    left: 0;
+    top: 260px;
+    width: 538px;
+    height: 330px;
+    clip-path: path("M538 156.618C538 203.676 496.808 242.679 449.295 273.837C400.467 305.858 344.296 329.388 269 329.388C194.993 329.388 144.914 304.898 96.2775 273.837C47.2799 242.545 0 204.504 0 156.618C0 61.2003 120.435 0 269 0C360.717 0 400.738 15.2493 449.295 55.5505C479.391 80.53 538 120.107 538 156.618Z");
+  }
+  .natural__img {
+    width: 460px;
+  }
+  .natural__list {
+    flex-direction: column;
+  }
+  .natural__item {
+    width: 100%;
+    max-width: 390px;
+    margin-bottom: 30px;
+  }
+  .natural__item.--sm .natural__text {
+    max-width: 100%;
+  }
+  .natural__item:nth-of-type(1):before {
+    top: 160px;
+    transform: rotate(90deg);
+  }
+  .natural__item:nth-of-type(2) {
+    margin-bottom: 360px;
+  }
+  .natural__item:nth-of-type(2):before {
+    top: 130px;
+    left: 280px;
+    transform: scale(-1, 1) rotate(90deg);
+  }
+  .natural__item:nth-of-type(2) .natural__text {
+    padding-right: 10px;
+  }
+  .natural__item:nth-of-type(3):before {
+    top: -50px;
+    left: -50px;
+    transform: scale(-1, 1) rotate(-90deg);
+  }
+  .natural__item:nth-of-type(3) .natural__text {
+    padding-left: 40px;
+  }
+  .natural__item:nth-of-type(4):before {
+    top: -100px;
+    left: 250px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .natural__title {
+    margin-bottom: 30px;
+  }
+  .natural__inner {
+    max-width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .natural__preview {
+    top: 375px;
+    left: 50%;
+    width: 320px;
+    height: 183px;
+    transform: translateX(-50%);
+    clip-path: path("M320 87.135C320 113.316 295.499 135.015 267.239 152.35C238.196 170.165 204.786 183.256 160 183.256C115.981 183.256 86.1939 169.631 57.2654 152.35C28.1219 134.941 0 113.776 0 87.135C0 34.049 71.6344 0 160 0C214.553 0 238.357 8.48401 267.239 30.9057C285.14 44.8031 320 66.8218 320 87.135Z");
+  }
+  .natural__img {
+    width: 240px;
+  }
+  .natural__item {
+    max-width: 250px;
+  }
+  .natural__item:nth-of-type(1):before {
+    top: 220px;
+    left: -45px;
+  }
+  .natural__item:nth-of-type(2) {
+    margin-bottom: 200px;
+  }
+  .natural__item:nth-of-type(2):before {
+    top: 170px;
+    left: 180px;
+  }
+  .natural__item:nth-of-type(2) .natural__text {
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  .natural__item:nth-of-type(3):before {
+    top: -10px;
+    left: -55px;
+  }
+  .natural__item:nth-of-type(4) {
+    margin-right: -40px;
+  }
+  .natural__item:nth-of-type(4):before {
+    top: -80px;
+    left: 130px;
+  }
+}

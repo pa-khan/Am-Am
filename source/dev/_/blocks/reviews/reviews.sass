@@ -92,6 +92,47 @@
 			margin-bottom: 40px
 			br
 				display: block
+		&__desc
+			margin: 0px auto 50px
 
 @media screen and (max-width: 767px)
-	// .reviews
+	.reviews
+		&__preview
+			padding-top: 5px
+			display: flex
+			justify-content: center
+			&:before
+				left: 50%
+				margin-left: 10px
+				transform: translateX(-50%)
+		&__pagination
+			margin: 0 30px
+
+@media screen and (max-width: 580px)
+	.reviews
+		&__desc
+			margin: -20px auto 20px
+		&__slider
+			padding-bottom: 70px
+			overflow: visible
+		&__preview
+			width: 270px
+			height: 267px
+			margin-bottom: 13px
+			margin-left: auto
+			margin-right: auto
+			&:before
+				width: 270px
+				height: 267px
+		&__img
+			width: 250px
+			height: 238px
+			margin-left: -30px
+			clip-path: path('M212.317 22.8448C239.039 47.2781 248.002 81.8973 250.488 114.648C253.042 148.305 248.425 180.116 224.325 206.38C200.637 232.194 170.702 236.947 137.497 237.784C104.045 238.628 67.3109 235.368 40.1193 210.505C-14.0634 160.962 -10.2678 87.1769 37.2833 35.356C66.6392 3.36418 88.1081 -2.67797 126.535 1.31C150.352 3.78181 191.584 3.88747 212.317 22.8448Z')
+		&__info
+			&:before
+				top: -8px
+		&__controls
+			margin-top: 32px
+		&__arrow
+			display: none

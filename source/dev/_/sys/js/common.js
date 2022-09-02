@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
       breakpoints: {
         0: {
           slidesPerView: 1,
-          
+
         },
         768: {
           slidesPerView: 2,
@@ -230,6 +230,21 @@ document.addEventListener('DOMContentLoaded', function () {
     slidesPerView: 3,
     spaceBetween: 30,
     speed: 900,
+  });
+
+  new MobileSlider(767, '.certs__inner', '.certs__list', '.certs__item', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    speed: 900,
+    watchSlidesProgress: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 'auto',
+      },
+      581: {
+        slidesPerView: 2,
+      },
+    },
   });
 
   // PRODUCT

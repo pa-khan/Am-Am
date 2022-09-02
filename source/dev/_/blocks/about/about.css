@@ -150,3 +150,68 @@
     top: -45px;
   }
 }
+@media screen and (max-width: 767px) {
+  .about {
+    padding: 100px 0 70px;
+  }
+  .about__wrap {
+    padding-top: 30px;
+  }
+  .about__preview {
+    display: none;
+  }
+  .about__info {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .about__info:before {
+    left: -30px;
+    margin-top: -20px;
+  }
+  .about__act {
+    max-width: 460px;
+    margin-left: 0;
+  }
+  .about__learn {
+    padding-right: 40px;
+  }
+  .about__arrow {
+    top: 40px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .about {
+    padding: 100px 0 33px;
+  }
+  .about__wrap {
+    padding-top: 50px;
+  }
+  .about__info:before {
+    left: -110px;
+    margin-top: -45px;
+    width: 493px;
+    height: 445px;
+    clip-path: path("M493 211.59C493 275.165 455.253 327.857 411.714 369.952C366.971 413.211 315.498 445 246.5 445C178.683 445 132.792 411.915 88.2245 369.952C43.3253 327.676 0 276.283 0 211.59C0 82.6811 110.362 0 246.5 0C330.545 0 367.219 20.6017 411.714 75.0483C439.293 108.795 493 162.263 493 211.59Z");
+  }
+  .about__title {
+    margin-bottom: 30px;
+  }
+  .about__act {
+    margin-top: 30px;
+  }
+  .about__learn {
+    width: 100%;
+    padding-right: 0;
+    line-height: 31px;
+  }
+  .about__arrow {
+    top: 75px;
+    right: 87px;
+  }
+  .about__play {
+    top: -12px;
+    margin-right: 5px;
+    margin-left: auto;
+  }
+}

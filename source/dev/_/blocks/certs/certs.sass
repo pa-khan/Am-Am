@@ -8,8 +8,7 @@
 		line-height: 31px
 		max-width: 500px
 		margin: 0 auto 72px
-	&__list
-		margin: 0 -20px -100px
+	&__inner
 		position: relative
 		&:before, &:after
 			z-index: -1
@@ -21,10 +20,12 @@
 			position: absolute
 		&:before
 			top: -25px
-			left: 240px
+			left: 220px
 		&:after
 			top: 105px
-			right: 290px
+			right: 270px
+	&__list
+		margin: 0 -20px -100px
 	&__item
 		width: calc( 100% / 3 - 100px )
 		margin: 0 50px 100px
@@ -38,13 +39,14 @@
 
 @media screen and (max-width: 1220px)
 	.certs
-		&__list
-			margin: 0 -20px -60px
+		&__inner
 			&:before
 				left: 125px
 			&:after
 				top: 125px
 				right: 125px
+		&__list
+			margin: 0 -20px -60px
 		&__item
 			width: calc( 100% / 3 - 40px )
 			margin: 0 20px 60px
@@ -54,19 +56,53 @@
 		padding-bottom: 100px
 		&__desc
 			margin: 0 auto 70px
-		&__list
-			margin: 0 -15px -60px
+		&__inner
 			&:before
 				top: -22px
 				left: 65px
 			&:after
 				top: -15px
 				right: 25px
+		&__list
+			margin: 0 -15px -60px
 		&__item
 			width: calc( 100% / 3 - 30px )
 			margin: 0 15px 60px
 			height: 305px
-		
 
 @media screen and (max-width: 767px)
-	// .certs
+	.certs
+		&__inner
+			overflow: visible
+			&:before
+				display: none
+		&__list
+			flex-wrap: nowrap
+			margin: 0
+		&__item
+			margin: 0
+			height: 355px
+
+@media screen and (max-width: 580px)
+	.certs
+		padding-bottom: 70px
+		&__title
+			margin-bottom: 20px
+		&__desc
+			width: calc( 100% + 5px )
+			margin: 0 auto 30px
+			br
+				display: none
+		&__inner
+			&:after
+				top: -25px
+				right: -125px
+		&__item
+			width: 100%
+			max-width: 216px
+			height: 305px
+			img
+				user-select: none
+				-moz-user-select: none
+				-webkit-user-select: none
+				-webkit-touch-callout: none

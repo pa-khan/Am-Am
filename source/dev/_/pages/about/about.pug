@@ -44,20 +44,21 @@ block content
 			.case
 				.certs__title.h2.tac.an.fadeIn-up #[h2 Молочная продукция «Ам-Ам» - это]
 				.certs__desc.tac.an.fadeIn-up(data-timeout="0.1s") единственный вид молочной продукции, #[br]который проходит государственную регистрацию
-				.certs__list.row.an.fadeIn
-					a.certs__item(href="" data-imgs="" data-fancybox="" data-src="_/uploads/certs-1.jpg")
-						img(src="_/uploads/certs-1.jpg", alt="" width="300" height="425")
-					a.certs__item(href="" data-imgs="" data-fancybox="" data-src="_/uploads/certs-2.jpg")
-						img(src="_/uploads/certs-2.jpg", alt="" width="300" height="425")
-					a.certs__item(href="" data-imgs="" data-fancybox="" data-src="_/uploads/certs-3.jpg")
-						img(src="_/uploads/certs-3.jpg", alt="" width="300" height="425")
+				.certs__inner.an.fadeIn
+					.certs__list.row
+						a.certs__item(href="" data-imgs="" data-fancybox="" data-src="_/uploads/certs-1.jpg")
+							img(src="_/uploads/certs-1.jpg", alt="" width="300" height="425")
+						a.certs__item(href="" data-imgs="" data-fancybox="" data-src="_/uploads/certs-2.jpg")
+							img(src="_/uploads/certs-2.jpg", alt="" width="300" height="425")
+						a.certs__item(href="" data-imgs="" data-fancybox="" data-src="_/uploads/certs-3.jpg")
+							img(src="_/uploads/certs-3.jpg", alt="" width="300" height="425")
 
 		+style('natural', 'blocks')
 		.natural
 			.case
 				.natural__title.h3.tac.an.fadeIn-up #[h3 Ни одного искусственного компонента нет в наших продуктах.]
 				.natural__inner
-					.natural__preview.an.fadeIn-scale
+					.natural__preview 
 						.natural__img
 							img(src="_/uploads/natural-img.png", alt="")
 					.natural__list.row.an.fadeIn

@@ -92,10 +92,67 @@
   .rec__info:before {
     width: 662px;
     height: 607px;
-    margin-left: -160px;
+    margin-left: -110px;
     clip-path: path("M661.179 288.618C661.179 375.337 610.555 447.212 552.164 504.631C492.157 563.638 423.125 607 330.589 607C239.638 607 178.092 561.871 118.321 504.631C58.105 446.965 0 376.862 0 288.618C0 112.781 148.01 0 330.589 0C443.305 0 492.49 28.1017 552.164 102.369C589.151 148.402 661.179 221.334 661.179 288.618Z");
   }
   .rec__info:after {
     right: -10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .rec__desc {
+    margin: 0 auto 50px;
+  }
+  .rec__wrap {
+    flex-direction: column;
+  }
+  .rec__preview {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .rec__info {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+  }
+  .rec__info:before {
+    top: -200px;
+    margin-left: -50px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .rec {
+    padding: 30px 0 70px;
+  }
+  .rec__title {
+    margin-bottom: 20px;
+  }
+  .rec__desc {
+    margin: 0 auto 45px;
+  }
+  .rec__preview {
+    width: 310px;
+    left: -20px;
+  }
+  .rec__preview:before {
+    width: 310px;
+    height: 307px;
+  }
+  .rec__img {
+    width: 288px;
+    height: 274px;
+    clip-path: path("M242.347 26.8911C273.082 54.9934 283.391 94.8115 286.25 132.481C289.188 171.192 283.877 207.779 256.158 237.987C228.913 267.679 194.483 273.145 156.291 274.108C117.816 275.078 75.5654 271.329 44.2904 242.732C-18.0289 185.75 -13.6634 100.884 41.0286 41.2811C74.7928 4.48506 99.4857 -2.46446 143.683 2.12238C171.077 4.9654 218.501 5.0869 242.347 26.8911Z");
+  }
+  .rec__info:before {
+    top: -80px;
+    margin-left: 20px;
+    width: 661px;
+    height: 706px;
+    clip-path: path("M661 335.691C661 436.553 610.39 520.151 552.015 586.935C492.024 655.566 423.011 706 330.5 706C239.573 706 178.044 653.51 118.289 586.935C58.0893 519.864 0 438.328 0 335.691C0 131.175 147.97 0 330.5 0C443.186 0 492.357 32.685 552.015 119.065C588.992 172.606 661 257.434 661 335.691Z");
+  }
+  .rec__info:after {
+    top: -10px;
+    right: -18px;
   }
 }

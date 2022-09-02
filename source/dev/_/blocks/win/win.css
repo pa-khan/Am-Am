@@ -145,3 +145,101 @@
     margin-top: 52px;
   }
 }
+@media screen and (max-width: 767px) {
+  .win__item {
+    margin-top: 0;
+  }
+  .win__item:before {
+    left: 50px;
+    width: 445px;
+    height: 280px;
+    clip-path: path("M444.24 133.135C444.24 173.137 410.227 206.292 370.994 232.779C330.676 259.998 284.294 280 222.12 280C161.01 280 119.659 259.183 79.4988 232.779C39.0403 206.178 0 173.841 0 133.135C0 52.024 99.4466 0 222.12 0C297.853 0 330.9 12.9629 370.994 47.2214C395.846 68.4555 444.24 102.098 444.24 133.135Z");
+  }
+  .win__item.--reverse:before {
+    right: 50px;
+  }
+  .win__item.--reverse .win__text {
+    padding-right: 20px;
+    padding-left: 60px;
+  }
+  .win__item.--reverse .win__img {
+    margin-left: auto;
+  }
+  .win__item.--fd {
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+  .win__item.--fd:before {
+    top: -30px;
+    width: 322px;
+    height: 218px;
+    clip-path: path("M320 99.3913C320 129.255 295.499 154.006 267.239 173.779C238.196 194.1 204.786 209.032 160 209.032C115.981 209.032 86.1939 193.491 57.2654 173.779C28.1219 153.921 0 129.78 0 99.3913C0 38.8382 71.6344 0 160 0C214.553 0 238.357 9.67735 267.239 35.2528C285.14 51.105 320 76.2208 320 99.3913Z");
+  }
+  .win__item.--fd .win__text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .win__item.--fd .win__img {
+    width: 220px;
+  }
+  .win__img {
+    width: 150px;
+    max-height: 310px;
+  }
+  .win__text {
+    width: calc( 100% - 150px );
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .win__title {
+    margin-bottom: 20px;
+  }
+  .win__list {
+    margin-top: 30px;
+  }
+  .win__item {
+    width: calc( 100% + 15px );
+    margin-left: -20px;
+  }
+  .win__item:before {
+    left: -20px;
+  }
+  .win__item.--reverse {
+    margin-top: 40px;
+  }
+  .win__item.--reverse:before {
+    right: -20px;
+  }
+  .win__item.--reverse .win__text {
+    padding-left: 0;
+    word-break: normal;
+  }
+  .win__item.--fd {
+    width: calc( 100% + 15px );
+    margin-left: -5px;
+    margin-top: 60px;
+  }
+  .win__item.--fd .win__text {
+    padding-top: 20px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .win__item.--fd .win__img {
+    width: 200px;
+  }
+  .win__text {
+    padding-right: 0;
+  }
+  .win__link {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 389px) {
+  .win__text {
+    word-break: break-all;
+  }
+}
