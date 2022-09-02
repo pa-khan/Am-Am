@@ -126,9 +126,9 @@
     height: 305px;
   }
   .certs__item img {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
+    user-select: auto;
+    -moz-user-select: auto;
+    -webkit-user-select: auto;
+    -webkit-touch-callout: auto;
   }
 }

@@ -199,6 +199,7 @@
   }
   .about__act {
     margin-top: 30px;
+    max-width: 280px;
   }
   .about__learn {
     width: 100%;
