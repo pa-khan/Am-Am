@@ -316,6 +316,7 @@
     align-items: center;
   }
   .intro-catalog__btn {
+    max-width: 280px;
     margin-bottom: 30px;
   }
   .intro-catalog__link {
@@ -325,10 +326,5 @@
   .p-item__name {
     font-size: 22px;
     line-height: 33px;
-  }
-}
-@media screen and (max-width: 390px) {
-  .intro-catalog__btn {
-    max-width: 280px;
   }
 }

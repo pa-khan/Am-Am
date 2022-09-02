@@ -112,5 +112,26 @@
 @media screen and (max-width: 580px) {
   .intro-news {
     padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .intro-news:before {
+    top: 80px;
+  }
+  .intro-news__link {
+    margin-top: 34px;
+  }
+
+  .n-item__preview {
+    margin-bottom: 26px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .intro-news:before {
+    width: 322px;
+    height: 428px;
+    clip-path: path("M327.776 234.527C298.671 428.29 225.104 433.449 136.476 425.695C62.0124 372.234 -22.281 400.211 6.82353 206.447C35.9281 12.6839 111.483 -5.71415 200.112 2.03983C276.947 55.7083 356.88 40.7636 327.776 234.527Z");
+  }
+  .intro-news__title {
+    margin-bottom: 60px;
   }
 }

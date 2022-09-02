@@ -415,12 +415,18 @@
 	.form
 		&__wrap
 			padding: 70px 0
+			&:before, &:after
+				transform: translate(-50%, -50%) scale(.9)
+		&__subtitle
+			margin: 0 auto 20px
+		&__btn
+			max-width: 280px
 
 @media screen and (max-width: 390px)
 	.form
 		&__form
 			max-width: 280px
 		&__check
-			padding: 0 45px
+			padding: 0 25px
 		&__btn
 			max-width: 100%

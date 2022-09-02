@@ -201,7 +201,7 @@ path, circle, rect, line {
   min-height: 69px;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 580px) {
   .btn.--green:before {
     width: 255px;
     height: 64px;
@@ -1074,13 +1074,22 @@ path, circle, rect, line {
   .form__wrap {
     padding: 70px 0;
   }
+  .form__wrap:before, .form__wrap:after {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  .form__subtitle {
+    margin: 0 auto 20px;
+  }
+  .form__btn {
+    max-width: 280px;
+  }
 }
 @media screen and (max-width: 390px) {
   .form__form {
     max-width: 280px;
   }
   .form__check {
-    padding: 0 45px;
+    padding: 0 25px;
   }
   .form__btn {
     max-width: 100%;

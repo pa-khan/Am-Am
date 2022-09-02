@@ -45,7 +45,7 @@
   min-height: 69px;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 580px) {
   .btn.--green:before {
     width: 255px;
     height: 64px;
