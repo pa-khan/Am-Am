@@ -176,3 +176,12 @@
 .select.--list .select__item.--selected:after {
   transform: scale(1);
 }
+
+@media screen and (max-width: 1220px) {
+  .select.--list .select__list {
+    margin: 0 -24px -24px;
+  }
+  .select.--list .select__item {
+    margin: 0 24px 24px;
+  }
+}

@@ -219,6 +219,14 @@
   .intro-catalog__item:nth-of-type(8) {
     grid-row-end: 4;
   }
+
+  .catalog {
+    padding: 0 0 100px;
+  }
+  .catalog__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 60px;
+  }
 }
 @media screen and (max-width: 992px) {
   .intro-catalog__list {

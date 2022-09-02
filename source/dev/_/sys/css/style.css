@@ -114,8 +114,6 @@ path, circle, rect, line {
   width: 1190px;
   padding-left: 10px;
   padding-right: 10px;
-  border-left: 1px solid red;
-  border-right: 1px solid red;
   margin: 0 auto;
 }
 .case .case {
@@ -529,6 +527,14 @@ path, circle, rect, line {
   transform: scale(1);
 }
 
+@media screen and (max-width: 1220px) {
+  .select.--list .select__list {
+    margin: 0 -24px -24px;
+  }
+  .select.--list .select__item {
+    margin: 0 24px 24px;
+  }
+}
 .textarea {
   display: block;
   transition: 0.3s;
