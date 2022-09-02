@@ -255,6 +255,26 @@
 						top: 60px
 						right: 12px
 
+	.catalog
+		padding: 0 0 70px
+		&__list
+			margin: 0
+			gap: 60px 40px
+
+	.p-item
+		&__params
+			right: 10px
+
+	.filter
+		align-items: center
+		flex-direction: column
+		&__select
+			margin-bottom: 20px
+			&:nth-of-type(2)
+				margin-top: 0
+				margin-left: 0
+				margin-bottom: 0
+
 @media screen and (max-width: 580px)
 	.intro-catalog
 		padding-top: 10px
@@ -299,3 +319,25 @@
 		&__name
 			font-size: 22px
 			line-height: 33px
+
+	.p-item
+		&__params
+			right: 25px
+		&.--lg
+			.p-item
+				&__name
+					padding-left: 0
+
+	.catalog
+		margin-top: -20px
+		&__filter
+			padding-bottom: 35px
+		&__list
+			margin: 0 auto
+			max-width: 278px
+			grid-template-columns: 1fr
+			gap: 50px
+		&__item
+			.p-item
+				&__name
+					padding-left: 0

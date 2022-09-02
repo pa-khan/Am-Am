@@ -171,25 +171,57 @@
 	.select
 		&.--list
 			.select
-				&__list
-					// margin: 0 -9px -24px
 				&__item
 					margin: 0 9px 24px
 
-	// 			&__label
-	// 				display: block
-	// 			&__area
-	// 				display: flex
-	// 			&__drop
-	// 				opacity: 0
-	// 				overflow: auto
-	// 				visibility: hidden
-	// 				position: absolute
-	// 			&__list
-	// 				margin: 0
-	// 				padding-right: 52px
-	// 				flex-wrap: nowrap
-	// 				flex-direction: column
-	// 			&__item
-	// 				margin: 0
-	// 				padding: 8px 12px
+@media screen and (max-width: 767px)
+	.select
+		&.--list
+			.select
+				&__label
+					display: block
+				&__area
+					display: flex
+				&__drop
+					opacity: 0
+					overflow: auto
+					visibility: hidden
+					position: absolute
+				&__list
+					margin: 0
+					padding-right: 52px
+					flex-wrap: nowrap
+					flex-direction: column
+				&__item
+					margin: 0
+					padding: 8px 12px
+					&::before, &:after
+						content: ''
+						position: absolute
+						top: 0
+						left: 0
+						right: 0
+						bottom: 0
+						transition: .3s
+						image-rendering: -webkit-optimize-contrast
+					&:before
+						width: auto
+						height: auto
+						transform: none
+						opacity: 1
+						z-index: -2
+						background: url('../../uploads/icons/select-item-line-2.png') no-repeat center / 100% 26px
+					&:after
+						opacity: 0
+						z-index: -1
+						background: url('../../uploads/icons/select-item-line-green.png') no-repeat center / 100% 26px
+					&.--selected, &:hover
+						&:after
+							opacity: 1
+			&.--open
+				.select
+					&__drop
+						opacity: 1
+						visibility: visible
+						transform: translateY(0px)
+						overflow: visible

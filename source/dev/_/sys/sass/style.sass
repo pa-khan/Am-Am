@@ -412,6 +412,26 @@
 		&__item
 			margin-right: 35px
 
+	.pagination
+		&__links
+			margin: 0 20px
+		&__link
+			width: 40px
+			height: 40px
+			font-size: 18px
+			margin-right: 5px
+			&:before, &:after
+				margin-top: -3px
+				margin-left: -2px
+			&:after
+				transform: scale(.70)
+			&:hover
+				&:before
+					transform: scale(.70)
+			&.--current
+				&:before
+					transform: scale(.70)
+
 	.form
 		&__wrap
 			padding: 70px 0
@@ -423,6 +443,11 @@
 			max-width: 280px
 
 @media screen and (max-width: 390px)
+	.pagination
+		&__link
+			&:nth-of-type(n+4)
+				display: none
+
 	.form
 		&__form
 			max-width: 280px

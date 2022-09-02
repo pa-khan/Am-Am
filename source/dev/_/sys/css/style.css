@@ -540,6 +540,62 @@ path, circle, rect, line {
     margin: 0 9px 24px;
   }
 }
+@media screen and (max-width: 767px) {
+  .select.--list .select__label {
+    display: block;
+  }
+  .select.--list .select__area {
+    display: flex;
+  }
+  .select.--list .select__drop {
+    opacity: 0;
+    overflow: auto;
+    visibility: hidden;
+    position: absolute;
+  }
+  .select.--list .select__list {
+    margin: 0;
+    padding-right: 52px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .select.--list .select__item {
+    margin: 0;
+    padding: 8px 12px;
+  }
+  .select.--list .select__item::before, .select.--list .select__item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  .select.--list .select__item:before {
+    width: auto;
+    height: auto;
+    transform: none;
+    opacity: 1;
+    z-index: -2;
+    background: url("../../uploads/icons/select-item-line-2.png") no-repeat center/100% 26px;
+  }
+  .select.--list .select__item:after {
+    opacity: 0;
+    z-index: -1;
+    background: url("../../uploads/icons/select-item-line-green.png") no-repeat center/100% 26px;
+  }
+  .select.--list .select__item.--selected:after, .select.--list .select__item:hover:after {
+    opacity: 1;
+  }
+  .select.--list.--open .select__drop {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    overflow: visible;
+  }
+}
 .textarea {
   display: block;
   transition: 0.3s;
@@ -1082,6 +1138,29 @@ path, circle, rect, line {
     margin-right: 35px;
   }
 
+  .pagination__links {
+    margin: 0 20px;
+  }
+  .pagination__link {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .pagination__link:before, .pagination__link:after {
+    margin-top: -3px;
+    margin-left: -2px;
+  }
+  .pagination__link:after {
+    transform: scale(0.7);
+  }
+  .pagination__link:hover:before {
+    transform: scale(0.7);
+  }
+  .pagination__link.--current:before {
+    transform: scale(0.7);
+  }
+
   .form__wrap {
     padding: 70px 0;
   }
@@ -1096,6 +1175,10 @@ path, circle, rect, line {
   }
 }
 @media screen and (max-width: 390px) {
+  .pagination__link:nth-of-type(n+4) {
+    display: none;
+  }
+
   .form__form {
     max-width: 280px;
   }
