@@ -208,11 +208,14 @@
 
 @media screen and (max-width: 767px)
 	.intro-catalog
+		padding-top: 20px
+		&__title
+			margin-bottom: 50px
 		&__list
 			grid-template-columns: repeat(auto-fill, minmax(260px, 0fr))
 			gap: 35px 0
 		&__item
-			align-items: flex-start !important
+			align-items: flex-start
 			flex-direction: column
 			&.--lg
 				padding-left: 10px
@@ -230,3 +233,52 @@
 					&:before
 						top: 60px
 						right: 12px
+
+@media screen and (max-width: 580px)
+	.intro-catalog
+		padding-top: 10px
+		&__title
+			margin-bottom: 40px
+		&__list
+			max-width: 278px
+			grid-template-columns: 1fr
+		&__item
+			align-items: flex-end
+			flex-direction: row
+			&.--lg
+				padding-left: 30px
+				.p-item
+					&__img
+						margin-left: 0
+						margin-bottom: 17px
+					&__bg
+						left: 0
+						transform: none
+			.p-item
+				&__img
+					margin-left: -20px
+				&__name
+					width: calc( 100% - 184px )
+					margin-left: -18px
+				&__bg
+					left: 100px
+					&:before
+						top: 20px
+						right: 42px
+		&__act
+			flex-direction: column
+			align-items: center
+		&__btn
+			margin-bottom: 30px
+		&__link
+			margin-left: 0
+
+	.p-item
+		&__name
+			font-size: 22px
+			line-height: 33px
+
+@media screen and (max-width: 390px)
+	.intro-catalog
+		&__btn
+			max-width: 280px

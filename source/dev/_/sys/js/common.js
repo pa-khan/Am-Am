@@ -226,6 +226,9 @@ document.addEventListener('DOMContentLoaded', function () {
     speed: 900,
     breakpoints: {
       0: {
+        slidesPerView: 1.2,
+      },
+      581: {
         slidesPerView: 2.2,
       },
       768: {

@@ -114,6 +114,8 @@ path, circle, rect, line {
   width: 1190px;
   padding-left: 10px;
   padding-right: 10px;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
   margin: 0 auto;
 }
 .case .case {
@@ -1055,6 +1057,11 @@ path, circle, rect, line {
   }
 }
 @media screen and (max-width: 580px) {
+  .h1 {
+    font-size: 33px;
+    line-height: 50px;
+  }
+
   .h2 {
     font-size: 30px;
     line-height: 45px;

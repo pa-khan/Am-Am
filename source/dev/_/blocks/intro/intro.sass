@@ -113,3 +113,31 @@
 				bottom: 0
 				width: 350px
 				height: 350px
+
+@media screen and (max-width: 580px)
+	.intro
+		padding: 40px 0
+		&__info
+			&:before
+				top: -75px
+		&__preview
+			width: 388px
+			margin-top: 0
+		&__img
+			&:before
+				left: -10px
+				bottom: -20px
+				width: 380px
+				height: 380px
+
+@media screen and (max-width: 390px)
+	.intro
+		&__btn
+			max-width: 280px
+		&__preview
+			right: -20px
+
+@media screen and (max-width: 340px)
+	.intro
+		&__preview
+			right: 50px

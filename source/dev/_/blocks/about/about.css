@@ -182,7 +182,7 @@
 }
 @media screen and (max-width: 580px) {
   .about {
-    padding: 100px 0 33px;
+    padding: 50px 0 33px;
   }
   .about__wrap {
     padding-top: 50px;
@@ -214,5 +214,10 @@
     top: -12px;
     margin-right: 5px;
     margin-left: auto;
+  }
+}
+@media screen and (max-width: 390px) {
+  .about {
+    padding: 30px 0 33px;
   }
 }

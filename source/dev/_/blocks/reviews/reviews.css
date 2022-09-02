@@ -161,3 +161,14 @@
     display: none;
   }
 }
+@media screen and (max-width: 390px) {
+  .reviews__title {
+    margin-bottom: 20px;
+  }
+  .reviews__preview {
+    margin-bottom: 7px;
+  }
+  .reviews__controls {
+    margin-top: 10px;
+  }
+}

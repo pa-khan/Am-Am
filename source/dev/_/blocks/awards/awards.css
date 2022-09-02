@@ -90,3 +90,37 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 580px) {
+  .awards {
+    padding: 75px 0 95px;
+  }
+  .awards__list-wrap:before {
+    top: -70px;
+  }
+  .awards__list-wrap:after {
+    top: -75px;
+  }
+  .awards__list {
+    padding: 0;
+    margin: 0 -30px -20px;
+  }
+  .awards__item {
+    width: calc( 100% / 3 - 60px );
+    margin: 0 30px 20px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .awards__list-wrap:before {
+    top: -55px;
+    width: 320px;
+    height: 300px;
+    clip-path: path("M310.953 68.0525C313.799 159.48 244.405 181.985 158.595 203.084C79.0802 200.604 3.05477 235.888 0.208669 144.46C-2.63743 53.032 66.5624 24.2804 152.372 3.18109C234.183 5.09678 308.107 -23.3754 310.953 68.0525Z");
+  }
+  .awards__list-wrap:after {
+    top: -60px;
+    width: 320px;
+    height: 219px;
+    background: url("../../uploads/icons/awards-line-mob.png") no-repeat;
+    background-size: 100% 219px;
+  }
+}

@@ -135,3 +135,34 @@
     height: 350px;
   }
 }
+@media screen and (max-width: 580px) {
+  .intro {
+    padding: 40px 0;
+  }
+  .intro__info:before {
+    top: -75px;
+  }
+  .intro__preview {
+    width: 388px;
+    margin-top: 0;
+  }
+  .intro__img:before {
+    left: -10px;
+    bottom: -20px;
+    width: 380px;
+    height: 380px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .intro__btn {
+    max-width: 280px;
+  }
+  .intro__preview {
+    right: -20px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .intro__preview {
+    right: 50px;
+  }
+}

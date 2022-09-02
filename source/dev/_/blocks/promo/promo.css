@@ -47,6 +47,9 @@
   width: 375px;
   margin-right: 135px;
 }
+.promo__link-mob {
+  display: none;
+}
 
 @media screen and (max-width: 1220px) {
   .promo__img {
@@ -101,5 +104,51 @@
     margin-top: -50px;
     margin-left: auto;
     position: relative;
+  }
+}
+@media screen and (max-width: 580px) {
+  .promo {
+    padding: 40px 0 30px;
+  }
+  .promo__info {
+    padding-left: 0;
+  }
+  .promo__info:before {
+    top: -55px;
+    left: -130px;
+    width: 491px;
+    height: 476px;
+    clip-path: path("M491 226.33C491 294.333 453.406 350.697 410.044 395.724C365.482 441.997 314.218 476 245.5 476C177.958 476 132.254 440.61 87.8666 395.724C43.1495 350.503 0 295.53 0 226.33C0 88.4409 109.914 0 245.5 0C329.204 0 365.729 22.0369 410.044 80.2764C437.511 116.374 491 173.567 491 226.33Z");
+  }
+  .promo__text {
+    margin: 20px 0;
+    max-width: 245px;
+  }
+  .promo__arrow {
+    right: 0;
+    margin-top: 130px;
+    transform: scale(1, -1) rotate(-90deg);
+  }
+  .promo__link {
+    display: none;
+  }
+  .promo__link-mob {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .promo__img {
+    width: 350px;
+    height: 394px;
+    right: -55px;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 390px) {
+  .promo__arrow {
+    right: -50px;
+  }
+  .promo__img {
+    right: -20px;
   }
 }
